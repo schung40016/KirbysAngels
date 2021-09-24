@@ -15,11 +15,11 @@ C:/Users/howdy/Desktop/Projects/KirbysAngels/Eternal
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-54639
+65402
 Successfully changed project path to: C:/Users/howdy/Desktop/Projects/KirbysAngels/Eternal
 C:/Users/howdy/Desktop/Projects/KirbysAngels/Eternal
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 37.83 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 49.77 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.17f1 (a4537701e4ab)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/Resources/UnitySubsystems
@@ -35,72 +35,98 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56152
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56888
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002813 seconds.
+Registered in 0.002717 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 36.23 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 50.19 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.339 seconds
+- Completed reload, in  1.379 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1339ms)
-		BeginReloadAssembly (67ms)
+	ReloadAssembly (1379ms)
+		BeginReloadAssembly (85ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (488ms)
-			LoadAssemblies (64ms)
+		EndReloadAssembly (506ms)
+			LoadAssemblies (81ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (176ms)
+			SetupTypeCache (179ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (38ms)
-			SetupLoadedEditorAssemblies (191ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (202ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (36ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (50ms)
 				BeforeProcessingInitializeOnLoad (19ms)
-				ProcessInitializeOnLoadAttributes (94ms)
-				ProcessInitializeOnLoadMethodAttributes (36ms)
+				ProcessInitializeOnLoadAttributes (93ms)
+				ProcessInitializeOnLoadMethodAttributes (34ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004783 seconds.
+Registered in 0.005162 seconds.
 Begin MonoManager ReloadAssembly
+Symbol file data-0000021E41D903C0 doesn't match image C:\Users\howdy\Desktop\Projects\KirbysAngels\Eternal\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021E4066C040 doesn't match image C:\Users\howdy\Desktop\Projects\KirbysAngels\Eternal\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021FFC09CDA0 doesn't match image C:\Users\howdy\Desktop\Projects\KirbysAngels\Eternal\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021FFC407440 doesn't match image C:\Users\howdy\Desktop\Projects\KirbysAngels\Eternal\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021E408F1020 doesn't match image C:\Users\howdy\Desktop\Projects\KirbysAngels\Eternal\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021E410CA7A0 doesn't match image C:\Users\howdy\Desktop\Projects\KirbysAngels\Eternal\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021FFC8D5010 doesn't match image C:\Users\howdy\Desktop\Projects\KirbysAngels\Eternal\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021FFC407440 doesn't match image C:\Users\howdy\Desktop\Projects\KirbysAngels\Eternal\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021E406F1040 doesn't match image C:\Users\howdy\Desktop\Projects\KirbysAngels\Eternal\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021FFBF67040 doesn't match image C:\Users\howdy\Desktop\Projects\KirbysAngels\Eternal\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021E408F1020 doesn't match image C:\Users\howdy\Desktop\Projects\KirbysAngels\Eternal\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021FFBF67040 doesn't match image C:\Users\howdy\Desktop\Projects\KirbysAngels\Eternal\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021E40BE5020 doesn't match image C:\Users\howdy\Desktop\Projects\KirbysAngels\Eternal\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.37 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.51 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.276 seconds
+- Completed reload, in  1.359 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1277ms)
-		BeginReloadAssembly (173ms)
+	ReloadAssembly (1360ms)
+		BeginReloadAssembly (175ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (20ms)
-		EndReloadAssembly (1026ms)
-			LoadAssemblies (97ms)
+			CreateAndSetChildDomain (21ms)
+		EndReloadAssembly (1105ms)
+			LoadAssemblies (106ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (314ms)
+			SetupTypeCache (341ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (51ms)
-			SetupLoadedEditorAssemblies (451ms)
+			RebuildScriptCaches (50ms)
+			SetupLoadedEditorAssemblies (493ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (94ms)
-				ProcessInitializeOnLoadAttributes (337ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (101ms)
+				ProcessInitializeOnLoadAttributes (371ms)
 				ProcessInitializeOnLoadMethodAttributes (5ms)
 				AfterProcessingInitializeOnLoad (9ms)
 				EditorAssembliesLoaded (0ms)
@@ -109,15 +135,15 @@ Domain Reload Profiling:
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
-Refreshing native plugins compatible for Editor in 0.36 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 0.69 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1397 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 64.9 MB.
-System memory in use after: 64.9 MB.
+System memory in use before: 66.8 MB.
+System memory in use after: 66.9 MB.
 
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 1830.
-Total: 3.512700 ms (FindLiveObjects: 0.174900 ms CreateObjectMapping: 0.042000 ms MarkObjects: 3.210200 ms  DeleteObjects: 0.084100 ms)
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 1835.
+Total: 3.567700 ms (FindLiveObjects: 0.211100 ms CreateObjectMapping: 0.039500 ms MarkObjects: 3.224700 ms  DeleteObjects: 0.090200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -132,17 +158,148 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Scenes/SampleScene.unity
-  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85059f4f9e1a832ed95adaa0d25c5c4c') in 0.022420 seconds 
-  Import took 0.025579 seconds .
+  path: Assets/ZRNAssets/005339_08932_25_14/Materials/mat_PQ_Road.mat
+  artifactKey: Guid(76262e3b6a23aaa4faf35ecc923b40e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ZRNAssets/005339_08932_25_14/Materials/mat_PQ_Road.mat using Guid(76262e3b6a23aaa4faf35ecc923b40e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a0b19cb83f606ea23a349ebb8aeda10') in 0.132839 seconds 
+  Import took 0.135604 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 3.887929 seconds.
-  path: Assets/Scenes/Eternal_Test.unity
-  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Eternal_Test.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '642408c9b4f1559dbb664a62d76c5cc8') in 0.010686 seconds 
-  Import took 0.014190 seconds .
+  Time since last request: 0.000331 seconds.
+  path: Assets/ZRNAssets/005339_08932_25_14/Textures/tex_PQ_Ground.tga
+  artifactKey: Guid(1cbe3a788f6f35743816ad47aaf7a679) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ZRNAssets/005339_08932_25_14/Textures/tex_PQ_Ground.tga using Guid(1cbe3a788f6f35743816ad47aaf7a679) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7645ab02ca6ea19b3a16245f90c643b2') in 0.016496 seconds 
+  Import took 0.019416 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/ZRNAssets/005339_08932_25_14/Materials/mat_PQ_Police.mat
+  artifactKey: Guid(7ac0fa57857494346948a26609a8e3b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ZRNAssets/005339_08932_25_14/Materials/mat_PQ_Police.mat using Guid(7ac0fa57857494346948a26609a8e3b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '520fcf100ceb9f6ce4c66a2fc99068c7') in 0.188414 seconds 
+  Import took 0.191297 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Assets/ZRNAssets/PQAssets/Query-Chan/Textures/icon/PQ_PowerOfGames.png
+  artifactKey: Guid(9b0e99331d884404fa5329556602d044) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ZRNAssets/PQAssets/Query-Chan/Textures/icon/PQ_PowerOfGames.png using Guid(9b0e99331d884404fa5329556602d044) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3472f61ce620f78534e2b3a11660fef6') in 0.011673 seconds 
+  Import took 0.014356 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/ZRNAssets/005339_08932_25_14/Materials/mat_PQ_Ground.mat
+  artifactKey: Guid(0959566374a99714c8f110a905c8b07e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ZRNAssets/005339_08932_25_14/Materials/mat_PQ_Ground.mat using Guid(0959566374a99714c8f110a905c8b07e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e88d9ecc5fc0445ff2877078801cf556') in 0.016979 seconds 
+  Import took 0.019825 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000303 seconds.
+  path: Assets/ZRNAssets/005339_08932_25_14/Textures/tex_PQ_Road.tga
+  artifactKey: Guid(26e05b38199d0aa40a696e8abf770db0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ZRNAssets/005339_08932_25_14/Textures/tex_PQ_Road.tga using Guid(26e05b38199d0aa40a696e8abf770db0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1264a8ffb154ba4e891c0a74a3b282a') in 0.007609 seconds 
+  Import took 0.010301 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 357.561508 seconds.
+  path: Assets/ZRNAssets/005339_08932_25_14/Models/PQ_Remake_AKIHABARA.fbx
+  artifactKey: Guid(c925872ce3bfa384589bf34b953d5a65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ZRNAssets/005339_08932_25_14/Models/PQ_Remake_AKIHABARA.fbx using Guid(c925872ce3bfa384589bf34b953d5a65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ad371da19d6f3744c12ef0e6fc96887') in 16.510368 seconds 
+  Import took 16.556460 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004589 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0000021E414DBA80 doesn't match image C:\Users\howdy\Desktop\Projects\KirbysAngels\Eternal\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021FFC3BACC0 doesn't match image C:\Users\howdy\Desktop\Projects\KirbysAngels\Eternal\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021FFC33B020 doesn't match image C:\Users\howdy\Desktop\Projects\KirbysAngels\Eternal\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021FFC087050 doesn't match image C:\Users\howdy\Desktop\Projects\KirbysAngels\Eternal\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021E40BE5020 doesn't match image C:\Users\howdy\Desktop\Projects\KirbysAngels\Eternal\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021FFC3BACC0 doesn't match image C:\Users\howdy\Desktop\Projects\KirbysAngels\Eternal\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021E41E31010 doesn't match image C:\Users\howdy\Desktop\Projects\KirbysAngels\Eternal\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021FFC3BACC0 doesn't match image C:\Users\howdy\Desktop\Projects\KirbysAngels\Eternal\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021E4A64E030 doesn't match image C:\Users\howdy\Desktop\Projects\KirbysAngels\Eternal\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021E41E57220 doesn't match image C:\Users\howdy\Desktop\Projects\KirbysAngels\Eternal\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021E40BE5020 doesn't match image C:\Users\howdy\Desktop\Projects\KirbysAngels\Eternal\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021FFBF67040 doesn't match image C:\Users\howdy\Desktop\Projects\KirbysAngels\Eternal\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021E4066C040 doesn't match image C:\Users\howdy\Desktop\Projects\KirbysAngels\Eternal\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.97 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.287 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1288ms)
+		BeginReloadAssembly (127ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (39ms)
+		EndReloadAssembly (1081ms)
+			LoadAssemblies (99ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (320ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (54ms)
+			SetupLoadedEditorAssemblies (460ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (107ms)
+				ProcessInitializeOnLoadAttributes (328ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.51 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1411 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 81.0 MB.
+System memory in use after: 80.3 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 1898.
+Total: 3.923200 ms (FindLiveObjects: 0.189400 ms CreateObjectMapping: 0.042600 ms MarkObjects: 3.147200 ms  DeleteObjects: 0.542300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1.887972 seconds.
+  path: Assets/ZRNAssets/005339_08932_25_14/Models/PQ_Remake_AKIHABARA.fbx
+  artifactKey: Guid(c925872ce3bfa384589bf34b953d5a65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ZRNAssets/005339_08932_25_14/Models/PQ_Remake_AKIHABARA.fbx using Guid(c925872ce3bfa384589bf34b953d5a65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ad371da19d6f3744c12ef0e6fc96887') in 17.243583 seconds 
+  Import took 17.297764 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
