@@ -45,6 +45,11 @@ public class PlayerMovement : MonoBehaviour
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }
 
+        // Light Attack. 
+        // Heavy Attack.
+        // Special Attack.
+
+
         // Responsible for applying gravity to the player.
         velocity.y += gravity * Time.deltaTime;
 
