@@ -15,10 +15,17 @@ public class PlayerMovement : MonoBehaviour
     Vector3 velocity;
     bool isGrounded;
 
-    // Start is called before the first frame update
-    void Start()
-    {
+    Animator animator;
+    ControlManager controlManager;
+    int currentComboPriority = 0;
 
+    // Start is called before the first frame update
+    void Awake()
+    {
+        if (controlManager == null)
+        {
+            controlManager = FindObjectOfType<ControlManager>();
+        }
     }
 
     // Update is called once per frame
@@ -49,10 +56,35 @@ public class PlayerMovement : MonoBehaviour
         // Heavy Attack.
         // Special Attack.
 
-
         // Responsible for applying gravity to the player.
         velocity.y += gravity * Time.deltaTime;
 
         controller.Move(velocity * Time.deltaTime);
+    }
+
+    public void PlayMove(Moves move, int ComboPriority)
+    {
+        if (Moves.None != move)
+        {
+            if (ComboPriority > currentComboPriority)
+            {
+                currentComboPriority = ComboPriority;
+                //ResetTriggers();
+                controlManager.ResetCombo();
+            }
+            else
+            {
+                return;
+            }
+            // Use Switch statements to handle animation and moves.
+        }
+    }
+
+    void ResetTriggers()
+    {
+        foreach(AnimatorControllerParameter parameter in animator.parameters)
+        {
+            animator.ResetTrigger(parameter.name);
+        }
     }
 }
