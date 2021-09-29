@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    // Physics
     [SerializeField] private CharacterController controller;
     [SerializeField] private float speed = 20.0f;
     [SerializeField] private float gravity = -9.81f;
@@ -15,10 +16,21 @@ public class PlayerMovement : MonoBehaviour
     Vector3 velocity;
     bool isGrounded;
 
-    // Start is called before the first frame update
-    void Start()
-    {
+    // Combo & Animation
+    Animator animator;
+    ControlManager controlManager;
+    int currentComboPriority = 0;
+    public Transform attackPoint;
+    public float attackRange = 0.5f;
+    public LayerMask enemyLayers;
 
+    // Start is called before the first frame update
+    void Awake()
+    {
+        if (controlManager == null)
+        {
+            controlManager = FindObjectOfType<ControlManager>();
+        }
     }
 
     // Update is called once per frame
@@ -45,14 +57,66 @@ public class PlayerMovement : MonoBehaviour
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }
 
-        // Light Attack. 
-        // Heavy Attack.
-        // Special Attack.
-
-
         // Responsible for applying gravity to the player.
         velocity.y += gravity * Time.deltaTime;
 
         controller.Move(velocity * Time.deltaTime);
+    }
+
+    public void PlayMove(Moves move, int comboPriority, int damage)
+    {
+        if (Moves.None != move)
+        {
+            if (comboPriority > currentComboPriority)
+            {
+                currentComboPriority = comboPriority;
+                //ResetTriggers();
+                controlManager.ResetCombo();
+            }
+            else
+            {
+                return;
+            }
+            // Use Switch statements to handle animation and call the Attack Move.
+            switch (move)
+            {
+                case Moves.Punch:
+                    break;
+                case Moves.Kick:
+                    break;
+            }
+            Attack(damage);
+            currentComboPriority = 0;
+        }
+    }
+
+    void ResetTriggers()
+    {
+        foreach(AnimatorControllerParameter parameter in animator.parameters)
+        {
+            animator.ResetTrigger(parameter.name);
+        }
+    }
+
+    void Attack(int damage)
+    {
+        // Check to see if anyone was in range.
+        Collider[] hitEnemies = Physics.OverlapSphere(attackPoint.position, attackRange, enemyLayers);
+
+        // Apply damage.
+        foreach(Collider enemy in hitEnemies)
+        {
+            Debug.Log("We hit " + enemy.name + " for " + damage + " health points.");
+            enemy.GetComponent<Enemy>().TakeDamage(damage);
+        }
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        if (attackPoint == null)
+            return;
+
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(attackPoint.position, attackRange);
     }
 }
