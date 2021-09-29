@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64f0ae3708a68724287b8a63e6c70eeb, type: 3}
+  m_Name: Miko(NPC)
+  m_EditorClassIdentifier: 
+  npcName: Miko
+  dialogue:
+  - Hi. It is nice to see you in the city.
+  - I am hanging around in the city after work.
+  - I saw one yesterday.
+  - See you later.
+  playerDialogue:
+  - Why are you here?
+  - Do you see those monsters yesterday?
+  - GoodBye...
