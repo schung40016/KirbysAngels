@@ -7,7 +7,8 @@ public class Move : ScriptableObject
 {
     [SerializeField] private List<KeyCode> movesKeyCodes;       // List of moves.
     [SerializeField] private Moves moveType;             // Defines the moves.
-    [SerializeField] private int ComboPriority = 0;             // Gives priority to harder moves.
+    [SerializeField] private int comboPriority = 0;             // Gives priority to harder moves.
+    [SerializeField] private int damage; 
  
     public bool isMoveAvailable(List<KeyCode> playerKeyCodes)
     {
@@ -39,11 +40,16 @@ public class Move : ScriptableObject
 
     public int GetMoveComboPriority()
     {
-        return ComboPriority;
+        return comboPriority;
     }
 
     public Moves GetMove()
     {
         return moveType;
+    }
+
+    public int GetDamage()
+    {
+        return damage;
     }
 }

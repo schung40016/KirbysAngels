@@ -65,8 +65,6 @@ public class ControlManager : MonoBehaviour
     {
         controlsTestText.text = "Keys Pressed (";
 
-        Debug.Log(KeysPressed.Count);
-
         foreach (KeyCode kcode in KeysPressed)
         {
             controlsTestText.text += kcode + ",";
