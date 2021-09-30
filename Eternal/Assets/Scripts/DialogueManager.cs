@@ -30,12 +30,16 @@ public class DialogueManager : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    // uncomment this if we don't want mouse over the npc to talk
+    //void Update()
+    //{
+    //    talk();
+    //}
+
+    private void OnMouseOver()
     {
         talk();
     }
-
-
 
 
     void StartConversation()
