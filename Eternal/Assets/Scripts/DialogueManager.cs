@@ -32,11 +32,31 @@ public class DialogueManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        talk();
+    }
+
+
+
+
+    void StartConversation()
+    {
+        isTalking = true;
+        curResponseTracker = 0;
+        dialogueUI.SetActive(true);
+        npcNameAtManager.text = npc.npcName;
+        npcDialogueBox.text = npc.dialogue[0];
+
 
     }
 
-    private void OnMouseOver()
+    void EndDialogue()
     {
+        isTalking = false;
+        dialogueUI.SetActive(false);
+    }
+
+
+    void talk() {
         distance = Vector3.Distance(player.transform.position, this.transform.position);
         if (distance <= 2.5f)
         {
@@ -99,24 +119,10 @@ public class DialogueManager : MonoBehaviour
                 }
             }
         }
-    }
 
 
-    void StartConversation()
-    {
-        isTalking = true;
-        curResponseTracker = 0;
-        dialogueUI.SetActive(true);
-        npcNameAtManager.text = npc.npcName;
-        npcDialogueBox.text = npc.dialogue[0];
-
-
-    }
-
-    void EndDialogue()
-    {
-        isTalking = false;
-        dialogueUI.SetActive(false);
     }
 }
+
+
 
