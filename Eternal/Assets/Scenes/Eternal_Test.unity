@@ -310,7 +310,7 @@ GameObject:
   - component: {fileID: 74792415}
   - component: {fileID: 74792414}
   m_Layer: 5
-  m_Name: Canvas(DialogueMenu)
+  m_Name: Canvas (DialogueMenu)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -452,7 +452,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -400, y: 30}
+  m_AnchoredPosition: {x: -370, y: 30}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &170390501
@@ -571,8 +571,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -300, y: 200}
-  m_SizeDelta: {x: 500, y: 30}
+  m_AnchoredPosition: {x: -351.75165, y: 244.6452}
+  m_SizeDelta: {x: 339.9034, y: 28.8052}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &251774009
 MonoBehaviour:
@@ -1444,7 +1444,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -400, y: -20}
+  m_AnchoredPosition: {x: -370, y: -20}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &578838025
@@ -1693,7 +1693,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -380, y: 140}
+  m_AnchoredPosition: {x: -350, y: 140}
   m_SizeDelta: {x: 300, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &618462051
@@ -1949,6 +1949,7 @@ MonoBehaviour:
   availablesMoves:
   - {fileID: 11400000, guid: e1bfaac87846dcc429c67e665d46f45b, type: 2}
   - {fileID: 11400000, guid: 99a17773981cf2a4eaf9073e0134bf54, type: 2}
+  - {fileID: 11400000, guid: 8bd9ee5f42edae64c9bf12513c194598, type: 2}
 --- !u!1 &759347489 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 101134, guid: c925872ce3bfa384589bf34b953d5a65, type: 3}
@@ -2393,7 +2394,7 @@ GameObject:
   - component: {fileID: 1013700443}
   - component: {fileID: 1013700447}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Canvas (MainMenu)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2456,7 +2457,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 25
+  m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -4573,7 +4574,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -400, y: 80}
+  m_AnchoredPosition: {x: -370, y: 80}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2066641170
