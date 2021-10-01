@@ -34,6 +34,10 @@ public class PlayerMovement : MonoBehaviour
         {
             controlManager = FindObjectOfType<ControlManager>();
         }
+        if (animator == null)
+        {
+            animator = GetComponent<Animator>();
+        }
     }
 
     // Update is called once per frame
@@ -53,11 +57,14 @@ public class PlayerMovement : MonoBehaviour
 
         Vector3 move = transform.right * horizontalInput + transform.forward * forwardInput;
         controller.Move(move * speed * Time.deltaTime);
+        animator.SetFloat("SideRunSpeed", horizontalInput);
+        animator.SetFloat("RunSpeed", forwardInput);
 
         // Jump!!
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
+            animator.SetTrigger("Jump");
         }
 
         // Responsible for applying gravity to the player.
@@ -84,8 +91,13 @@ public class PlayerMovement : MonoBehaviour
             switch (move)
             {
                 case Moves.Punch:
+                    animator.SetTrigger("Punch");
                     break;
                 case Moves.Kick:
+                    animator.SetTrigger("Kick");
+                    break;
+                case Moves.Uppercut:
+                    animator.SetTrigger("UpperCut");
                     break;
             }
             Attack(damage);
