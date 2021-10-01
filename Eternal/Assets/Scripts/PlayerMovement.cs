@@ -16,6 +16,9 @@ public class PlayerMovement : MonoBehaviour
     Vector3 velocity;
     bool isGrounded;
 
+    public float forwardInput;
+    public float horizontalInput;
+
     // Combo & Animation
     Animator animator;
     ControlManager controlManager;
@@ -45,8 +48,8 @@ public class PlayerMovement : MonoBehaviour
         }
 
         // Move player.
-        float forwardInput = Input.GetAxis("Vertical");
-        float horizontalInput = Input.GetAxis("Horizontal");
+        forwardInput = Input.GetAxis("Vertical");
+        horizontalInput = Input.GetAxis("Horizontal");
 
         Vector3 move = transform.right * horizontalInput + transform.forward * forwardInput;
         controller.Move(move * speed * Time.deltaTime);
