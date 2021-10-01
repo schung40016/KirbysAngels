@@ -2765,8 +2765,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef3a39c64b9f7c1418fe9181ca0e5d34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  npc: {fileID: 11400000, guid: b08f053f3fd35ab49a67bf174d856f32, type: 2}
-  player: {fileID: 0}
+  npc: {fileID: 11400000, guid: 09dc090a46e16a74096f1be67079a532, type: 2}
+  player: {fileID: 236675080}
   dialogueUI: {fileID: 1815597444}
   npcNameAtManager: {fileID: 559914106}
   npcDialogueBox: {fileID: 59247598}
@@ -2801,6 +2801,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!65 &1089753910
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1089753904}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.01, y: 0.01657992, z: 0.005988676}
+  m_Center: {x: 0, y: 0.00762092, z: -0.002005667}
 --- !u!1 &1120663572 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 101038, guid: c925872ce3bfa384589bf34b953d5a65, type: 3}
@@ -3476,7 +3489,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   npc: {fileID: 11400000, guid: b08f053f3fd35ab49a67bf174d856f32, type: 2}
-  player: {fileID: 0}
+  player: {fileID: 236675080}
   dialogueUI: {fileID: 1815597444}
   npcNameAtManager: {fileID: 559914106}
   npcDialogueBox: {fileID: 59247598}
@@ -4589,7 +4602,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   npc: {fileID: 11400000, guid: 0df3157fd0004404493e9e34fe5bf7c5, type: 2}
-  player: {fileID: 0}
+  player: {fileID: 236675080}
   dialogueUI: {fileID: 1815597444}
   npcNameAtManager: {fileID: 559914106}
   npcDialogueBox: {fileID: 59247598}
