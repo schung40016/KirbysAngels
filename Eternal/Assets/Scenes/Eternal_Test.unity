@@ -635,7 +635,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &251774008
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1624,7 +1624,7 @@ GameObject:
   - component: {fileID: 618462051}
   - component: {fileID: 618462053}
   m_Layer: 5
-  m_Name: MainText
+  m_Name: MainTitleCard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
