@@ -20,7 +20,7 @@ public class HealthEXPSystem
         return hp;
     }
 
-    public void editHP(int value) {
+    public void addHP(int value) {
 
         hp += value;
     }
@@ -31,7 +31,7 @@ public class HealthEXPSystem
         return exp;
     }
 
-    public void editEXP(int value)
+    public void addEXP(int value)
     {
 
         exp += value;

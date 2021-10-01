@@ -38,7 +38,7 @@ public class PlayerController : MonoBehaviour
 
                 Debug.Log("HP Before: " + healthEXP.getHP().ToString());
                 Debug.Log("HP point got and increase 100 health point");
-                healthEXP.editHP(100);
+                healthEXP.addHP(100);
                 Debug.Log("HP After: " + healthEXP.getHP().ToString());
 
                 //Destroy(hp_pack);
@@ -57,7 +57,7 @@ public class PlayerController : MonoBehaviour
 
                 Debug.Log("EXP Before: " + healthEXP.getEXP().ToString());
                 Debug.Log("EXP point got and increase 100 EXP point");
-                healthEXP.editEXP(100);
+                healthEXP.addEXP(100);
                 Debug.Log("EXP After: " + healthEXP.getEXP().ToString());
 
                 //Destroy(exp_pack);
