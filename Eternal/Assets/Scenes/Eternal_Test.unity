@@ -589,14 +589,12 @@ MonoBehaviour:
   controller: {fileID: 236675081}
   speed: 20
   gravity: -9.81
-  jumpHeight: 3
+  jumpHeight: 5
   groundCheck: {fileID: 501567148}
   groundDistance: 0.4
   groundMask:
     serializedVersion: 2
     m_Bits: 64
-  forwardInput: 0
-  horizontalInput: 0
   attackPoint: {fileID: 832440139}
   attackRange: 1.01
   enemyLayers:
@@ -1164,7 +1162,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 501567147}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: -22.250736, y: 0.3566669, z: 12.926668}
+  m_LocalPosition: {x: -0.01, y: -0.016, z: 0.021}
   m_LocalScale: {x: 0.6666667, y: 0.6666667, z: 0.6666667}
   m_Children: []
   m_Father: {fileID: 236675086}
@@ -2036,7 +2034,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 921ce3f20e44a824a9d2995b578e38c3, type: 2}
     - target: {fileID: 919132149155446097, guid: 8aebb6df5e8dbea46bab956396459b0f, type: 3}
       propertyPath: m_Name
-      value: Snow Patroller
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: 8aebb6df5e8dbea46bab956396459b0f, type: 3}
       propertyPath: m_Controller

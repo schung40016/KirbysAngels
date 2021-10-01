@@ -16,9 +16,6 @@ public class PlayerMovement : MonoBehaviour
     Vector3 velocity;
     bool isGrounded;
 
-    public float forwardInput;
-    public float horizontalInput;
-
     // Combo & Animation
     Animator animator;
     ControlManager controlManager;
@@ -34,6 +31,10 @@ public class PlayerMovement : MonoBehaviour
         {
             controlManager = FindObjectOfType<ControlManager>();
         }
+        if (animator == null)
+        {
+            animator = GetComponent<Animator>();
+        }
     }
 
     // Update is called once per frame
@@ -48,15 +49,20 @@ public class PlayerMovement : MonoBehaviour
         }
 
         // Move player.
-        forwardInput = Input.GetAxis("Vertical");
-        horizontalInput = Input.GetAxis("Horizontal");
+        float forwardInput = Input.GetAxis("Vertical");
+        float horizontalInput = Input.GetAxis("Horizontal");
 
         Vector3 move = transform.right * horizontalInput + transform.forward * forwardInput;
         controller.Move(move * speed * Time.deltaTime);
+        animator.SetFloat("SideRunSpeed", horizontalInput);
+        animator.SetFloat("RunSpeed", forwardInput);
 
         // Jump!!
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
+            animator.enabled = false;
+            animator.enabled = true;
+            animator.SetTrigger("Jump");
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }
 
@@ -84,8 +90,13 @@ public class PlayerMovement : MonoBehaviour
             switch (move)
             {
                 case Moves.Punch:
+                    animator.SetTrigger("Punch");
                     break;
                 case Moves.Kick:
+                    animator.SetTrigger("Kick");
+                    break;
+                case Moves.Uppercut:
+                    animator.SetTrigger("UpperCut");
                     break;
             }
             Attack(damage);
