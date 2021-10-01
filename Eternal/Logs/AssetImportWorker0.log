@@ -1,119 +1,148 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.17f1 (a4537701e4ab) revision 10769271'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home; OS build 19042.1237; Version 2009; 64bit' Language: 'en' Physical Memory: 15789 MB
+OS: 'Windows 10 Education; OS build 19043.1237; Version 2009; 64bit' Language: 'en' Physical Memory: 16291 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
 COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\2020.3.17f1\Editor\Unity.exe
+D:\Unity\2020.3.17f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/howdy/Desktop/Projects/KirbysAngels/Eternal
+D:/CSULA FALL 2021 Main/CS4555/tmp/KirbysAngels/Eternal
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-50748
-Successfully changed project path to: C:/Users/howdy/Desktop/Projects/KirbysAngels/Eternal
-C:/Users/howdy/Desktop/Projects/KirbysAngels/Eternal
+60550
+Successfully changed project path to: D:/CSULA FALL 2021 Main/CS4555/tmp/KirbysAngels/Eternal
+D:/CSULA FALL 2021 Main/CS4555/tmp/KirbysAngels/Eternal
 Using Asset Import Pipeline V2.
 Assets/MeshesModels/Helldemon/Helldemon.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
 
 Please note that FBX files exported from Cinema4D are still supported.
 
-Refreshing native plugins compatible for Editor in 60.37 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 35.36 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.17f1 (a4537701e4ab)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/howdy/Desktop/Projects/KirbysAngels/Eternal/Assets
+[Subsystems] Discovering subsystems at path D:/Unity/2020.3.17f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/CSULA FALL 2021 Main/CS4555/tmp/KirbysAngels/Eternal/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
-    Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 2060 with Max-Q Design (ID=0x1f12)
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 750 Ti (ID=0x1380)
     Vendor:   
-    VRAM:     5980 MB
-    Driver:   27.21.14.5763
+    VRAM:     2007 MB
+    Driver:   27.21.14.6589
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56628
+Mono path[0] = 'D:/Unity/2020.3.17f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Unity/2020.3.17f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'D:/Unity/2020.3.17f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56968
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002965 seconds.
+Register platform support module: D:/Unity/2020.3.17f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: D:/Unity/2020.3.17f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001076 seconds.
 Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
 Assets/MeshesModels/Helldemon/Helldemon.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
 
 Please note that FBX files exported from Cinema4D are still supported.
 
-Refreshing native plugins compatible for Editor in 59.17 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 35.62 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.556 seconds
+- Completed reload, in  0.830 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1556ms)
-		BeginReloadAssembly (76ms)
+	ReloadAssembly (830ms)
+		BeginReloadAssembly (41ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (593ms)
-			LoadAssemblies (73ms)
+		EndReloadAssembly (342ms)
+			LoadAssemblies (41ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (204ms)
+			SetupTypeCache (123ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (49ms)
-			SetupLoadedEditorAssemblies (239ms)
+			RebuildScriptCaches (26ms)
+			SetupLoadedEditorAssemblies (139ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (59ms)
-				BeforeProcessingInitializeOnLoad (23ms)
-				ProcessInitializeOnLoadAttributes (110ms)
-				ProcessInitializeOnLoadMethodAttributes (40ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (36ms)
+				BeforeProcessingInitializeOnLoad (14ms)
+				ProcessInitializeOnLoadAttributes (62ms)
+				ProcessInitializeOnLoadMethodAttributes (22ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.005672 seconds.
+Registered in 0.002132 seconds.
 Begin MonoManager ReloadAssembly
+Symbol file data-0000021E6DA7A080 doesn't match image D:\CSULA FALL 2021 Main\CS4555\tmp\KirbysAngels\Eternal\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021E6D3F1520 doesn't match image D:\CSULA FALL 2021 Main\CS4555\tmp\KirbysAngels\Eternal\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021E6D3E0640 doesn't match image D:\CSULA FALL 2021 Main\CS4555\tmp\KirbysAngels\Eternal\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021E6D406B30 doesn't match image D:\CSULA FALL 2021 Main\CS4555\tmp\KirbysAngels\Eternal\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021E71C6F020 doesn't match image D:\CSULA FALL 2021 Main\CS4555\tmp\KirbysAngels\Eternal\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021E6D406B30 doesn't match image D:\CSULA FALL 2021 Main\CS4555\tmp\KirbysAngels\Eternal\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021E71F5A9A0 doesn't match image D:\CSULA FALL 2021 Main\CS4555\tmp\KirbysAngels\Eternal\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021E71F80BB0 doesn't match image D:\CSULA FALL 2021 Main\CS4555\tmp\KirbysAngels\Eternal\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021E71C9D230 doesn't match image D:\CSULA FALL 2021 Main\CS4555\tmp\KirbysAngels\Eternal\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021E6D834820 doesn't match image D:\CSULA FALL 2021 Main\CS4555\tmp\KirbysAngels\Eternal\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021E7258E020 doesn't match image D:\CSULA FALL 2021 Main\CS4555\tmp\KirbysAngels\Eternal\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021E723E9C20 doesn't match image D:\CSULA FALL 2021 Main\CS4555\tmp\KirbysAngels\Eternal\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021E7253A020 doesn't match image D:\CSULA FALL 2021 Main\CS4555\tmp\KirbysAngels\Eternal\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.58 ms, found 2 plugins.
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.496 seconds
+- Completed reload, in  0.871 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1497ms)
-		BeginReloadAssembly (204ms)
+	ReloadAssembly (872ms)
+		BeginReloadAssembly (120ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (24ms)
-		EndReloadAssembly (1201ms)
-			LoadAssemblies (118ms)
+			CreateAndSetChildDomain (18ms)
+		EndReloadAssembly (703ms)
+			LoadAssemblies (77ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (364ms)
+			SetupTypeCache (215ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (59ms)
-			SetupLoadedEditorAssemblies (529ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (299ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
-				SetLoadedEditorAssemblies (1ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (109ms)
-				ProcessInitializeOnLoadAttributes (396ms)
-				ProcessInitializeOnLoadMethodAttributes (6ms)
-				AfterProcessingInitializeOnLoad (10ms)
+				BeforeProcessingInitializeOnLoad (59ms)
+				ProcessInitializeOnLoadAttributes (229ms)
+				ProcessInitializeOnLoadMethodAttributes (3ms)
+				AfterProcessingInitializeOnLoad (2ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
 Platform modules already initialized, skipping
 Assets/MeshesModels/Helldemon/Helldemon.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
 
@@ -126,14 +155,14 @@ Assets/MeshesModels/Helldemon/Helldemon.c4d: Unity no longer supports importing 
 Please note that FBX files exported from Cinema4D are still supported.
 
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
-Refreshing native plugins compatible for Editor in 0.62 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.56 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1433 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 72.8 MB.
-System memory in use after: 72.8 MB.
+System memory in use before: 72.7 MB.
+System memory in use after: 72.7 MB.
 
 Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 1872.
-Total: 4.676200 ms (FindLiveObjects: 0.220500 ms CreateObjectMapping: 0.051800 ms MarkObjects: 4.241500 ms  DeleteObjects: 0.160800 ms)
+Total: 2.937100 ms (FindLiveObjects: 0.183700 ms CreateObjectMapping: 0.033900 ms MarkObjects: 2.612000 ms  DeleteObjects: 0.106600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -148,162 +177,26 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/MeshesModels/Helldemon
-  artifactKey: Guid(9316a59beda2e3d44b9cfdff2dd0dc49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshesModels/Helldemon using Guid(9316a59beda2e3d44b9cfdff2dd0dc49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22fcbc485b83d3442ae551eeed8b9ca5') in 0.013074 seconds 
-  Import took 0.016127 seconds .
+  path: Assets/Scripts/Pedestrian1.asset
+  artifactKey: Guid(0df3157fd0004404493e9e34fe5bf7c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Pedestrian1.asset using Guid(0df3157fd0004404493e9e34fe5bf7c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31d82eb7444c7f68abfeb4e2589396fa') in 0.033083 seconds 
+  Import took 0.036046 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000300 seconds.
-  path: Assets/MeshesModels/Helldemon/Helldemon.obj
-  artifactKey: Guid(1c810f1f4c99bdb489ef06677b203b71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshesModels/Helldemon/Helldemon.obj using Guid(1c810f1f4c99bdb489ef06677b203b71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc823458c899700afc446016701213ab') in 0.195517 seconds 
-  Import took 0.198987 seconds .
+  Time since last request: 0.000226 seconds.
+  path: Assets/Scripts/Miko(NPC).asset
+  artifactKey: Guid(b08f053f3fd35ab49a67bf174d856f32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Miko(NPC).asset using Guid(b08f053f3fd35ab49a67bf174d856f32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6493fb8c466631e3a9ea5d6f944514ee') in 0.007898 seconds 
+  Import took 0.010774 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000356 seconds.
-  path: Assets/MeshesModels/Helldemon/tex
-  artifactKey: Guid(594d9e8f725c9da42895297cfb63694e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshesModels/Helldemon/tex using Guid(594d9e8f725c9da42895297cfb63694e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bcea7ee075bc522b92b4525abe6c387') in 0.011292 seconds 
-  Import took 0.014829 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1186.792857 seconds.
-  path: Assets/MeshesModels/Helldemon/Breathing Idle.fbx
-  artifactKey: Guid(209111909bd48a5418ab6264ad049381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshesModels/Helldemon/Breathing Idle.fbx using Guid(209111909bd48a5418ab6264ad049381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df898e2a18b8981f8aca42c16b22bb8e') in 0.199759 seconds 
-  Import took 0.203822 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000345 seconds.
-  path: Assets/MeshesModels/Helldemon/Fast Run.fbx
-  artifactKey: Guid(8fbec6b608ed92344b35e1e0fe8d3b7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshesModels/Helldemon/Fast Run.fbx using Guid(8fbec6b608ed92344b35e1e0fe8d3b7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c24932c115a1d3cb48ac419ac001cbd2') in 0.155420 seconds 
-  Import took 0.159859 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000366 seconds.
-  path: Assets/MeshesModels/Helldemon/Mutant Punch.fbx
-  artifactKey: Guid(1127a2ec4fb452844baa481b242495c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshesModels/Helldemon/Mutant Punch.fbx using Guid(1127a2ec4fb452844baa481b242495c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9eccf8b5261373cbfb5e31bf52e2758b') in 0.148055 seconds 
-  Import took 0.152335 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000305 seconds.
-  path: Assets/MeshesModels/Helldemon/Death From Right.fbx
-  artifactKey: Guid(e2cc619a12e36364793ac39e97a5761a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshesModels/Helldemon/Death From Right.fbx using Guid(e2cc619a12e36364793ac39e97a5761a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68c009687b2c8a6a2b6f0dc71dc5f3ea') in 0.137447 seconds 
-  Import took 0.141053 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000481 seconds.
-  path: Assets/MeshesModels/Helldemon/Zombie Reaction Hit.fbx
-  artifactKey: Guid(56db0e29448ca54408bc28bd58c9362b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshesModels/Helldemon/Zombie Reaction Hit.fbx using Guid(56db0e29448ca54408bc28bd58c9362b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '301ca00f41aff44a80ced5c322c5de66') in 0.127489 seconds 
-  Import took 0.131876 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000289 seconds.
-  path: Assets/MeshesModels/Helldemon/Death From Right.fbx
-  artifactKey: Guid(e2cc619a12e36364793ac39e97a5761a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshesModels/Helldemon/Death From Right.fbx using Guid(e2cc619a12e36364793ac39e97a5761a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68c009687b2c8a6a2b6f0dc71dc5f3ea') in 0.132401 seconds 
-  Import took 0.136817 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000404 seconds.
-  path: Assets/MeshesModels/Helldemon/Standing Melee Attack Horizontal.fbx
-  artifactKey: Guid(c63f1c776ba8f3949b4f13804863011e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshesModels/Helldemon/Standing Melee Attack Horizontal.fbx using Guid(c63f1c776ba8f3949b4f13804863011e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '497c72da2add3dbda32c03554e5402f1') in 0.136499 seconds 
-  Import took 0.141368 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.746842 seconds.
-  path: Assets/MeshesModels/Helldemon/tex/HellDemon.jpg
-  artifactKey: Guid(e177f13c88ff90f43b8f947e28ee4ed9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshesModels/Helldemon/tex/HellDemon.jpg using Guid(e177f13c88ff90f43b8f947e28ee4ed9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19984e250d116b9d30e40e654800177a') in 0.032306 seconds 
-  Import took 0.036463 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000365 seconds.
-  path: Assets/MeshesModels/Helldemon/tex/HellDemon_nm.jpg
-  artifactKey: Guid(164f12488b3ecb64e94193f05aeef55f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshesModels/Helldemon/tex/HellDemon_nm.jpg using Guid(164f12488b3ecb64e94193f05aeef55f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee13473bc0b2d5c5db2c4c0d14b436e0') in 0.021264 seconds 
-  Import took 0.024913 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 19.534265 seconds.
-  path: Assets/MeshesModels/Helldemon/Helldemon 1.obj
-  artifactKey: Guid(a882ee2732fd1de479a50ac2495adab9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshesModels/Helldemon/Helldemon 1.obj using Guid(a882ee2732fd1de479a50ac2495adab9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f0bb6ea6b3cd823394b5e470b33db2e') in 0.047251 seconds 
-  Import took 0.051112 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 78.280651 seconds.
-  path: Assets/MeshesModels/Helldemon/Helldemon.obj
-  artifactKey: Guid(1c810f1f4c99bdb489ef06677b203b71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshesModels/Helldemon/Helldemon.obj using Guid(1c810f1f4c99bdb489ef06677b203b71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bbce92b9c9a01545362b2730463be17') in 0.036964 seconds 
-  Import took 0.041254 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 13.922208 seconds.
-  path: Assets/MeshesModels/Helldemon/Materials
-  artifactKey: Guid(5a86920cc38dd0a46bb5cd2196df8acd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshesModels/Helldemon/Materials using Guid(5a86920cc38dd0a46bb5cd2196df8acd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e493e951fa43c78bae1c1ff0d9953c92') in 0.009325 seconds 
-  Import took 0.012486 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 15.653248 seconds.
-  path: Assets/MeshesModels/Helldemon/tex/mt_Demon.mat
-  artifactKey: Guid(f79ef0aecde77904d904c515b46821b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshesModels/Helldemon/tex/mt_Demon.mat using Guid(f79ef0aecde77904d904c515b46821b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be364b0fbf97722358843238539f0ed0') in 0.023968 seconds 
-  Import took 0.027821 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.144886 seconds.
-  path: Assets/MeshesModels/Helldemon/tex/mt_Demon.mat
-  artifactKey: Guid(f79ef0aecde77904d904c515b46821b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshesModels/Helldemon/tex/mt_Demon.mat using Guid(f79ef0aecde77904d904c515b46821b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '178718b80955371d3490c827b020c312') in 0.018546 seconds 
-  Import took 0.022254 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 45.927872 seconds.
-  path: Assets/Controllers/Enemy_Demon.controller
-  artifactKey: Guid(d18165e88a5f2d4408637a51a7767d63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Controllers/Enemy_Demon.controller using Guid(d18165e88a5f2d4408637a51a7767d63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50ee0ed4eb5ba141123eb9d8a917e053') in 0.015780 seconds 
-  Import took 0.019587 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 41.608999 seconds.
-  path: Assets/Controllers/Enemy_Demon.controller
-  artifactKey: Guid(d18165e88a5f2d4408637a51a7767d63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Controllers/Enemy_Demon.controller using Guid(d18165e88a5f2d4408637a51a7767d63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a176df08ea67add31126a98f8f81ffa2') in 0.006714 seconds 
-  Import took 0.011128 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001652 seconds.
-  path: Assets/Controllers/Enemy_Demon.controller
-  artifactKey: Guid(d18165e88a5f2d4408637a51a7767d63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Controllers/Enemy_Demon.controller using Guid(d18165e88a5f2d4408637a51a7767d63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a176df08ea67add31126a98f8f81ffa2') in 0.006775 seconds 
-  Import took 0.010179 seconds .
+  Time since last request: 72.123491 seconds.
+  path: Assets/Scripts/PlayerLook.cs
+  artifactKey: Guid(c345eaac4e939124c8fc38f65ebdfc2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerLook.cs using Guid(c345eaac4e939124c8fc38f65ebdfc2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b10ae9128844caa76084ee3f7d03615') in 0.011355 seconds 
+  Import took 0.014051 seconds .
 
 ========================================================================
 Received Prepare
@@ -312,1545 +205,75 @@ Assets/MeshesModels/Helldemon/Helldemon.c4d: Unity no longer supports importing 
 Please note that FBX files exported from Cinema4D are still supported.
 
 Registering precompiled user dll's ...
-Registered in 0.007795 seconds.
+Registered in 0.002415 seconds.
 Begin MonoManager ReloadAssembly
+Symbol file data-0000021E76B46100 doesn't match image D:\CSULA FALL 2021 Main\CS4555\tmp\KirbysAngels\Eternal\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021E76A3E030 doesn't match image D:\CSULA FALL 2021 Main\CS4555\tmp\KirbysAngels\Eternal\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021E6DBA3620 doesn't match image D:\CSULA FALL 2021 Main\CS4555\tmp\KirbysAngels\Eternal\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021E754E6840 doesn't match image D:\CSULA FALL 2021 Main\CS4555\tmp\KirbysAngels\Eternal\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021E7253A020 doesn't match image D:\CSULA FALL 2021 Main\CS4555\tmp\KirbysAngels\Eternal\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021E71EA9020 doesn't match image D:\CSULA FALL 2021 Main\CS4555\tmp\KirbysAngels\Eternal\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021E71897030 doesn't match image D:\CSULA FALL 2021 Main\CS4555\tmp\KirbysAngels\Eternal\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021E754E6840 doesn't match image D:\CSULA FALL 2021 Main\CS4555\tmp\KirbysAngels\Eternal\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021E6D3D5C30 doesn't match image D:\CSULA FALL 2021 Main\CS4555\tmp\KirbysAngels\Eternal\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021E6DBA3620 doesn't match image D:\CSULA FALL 2021 Main\CS4555\tmp\KirbysAngels\Eternal\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021E71CC3020 doesn't match image D:\CSULA FALL 2021 Main\CS4555\tmp\KirbysAngels\Eternal\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021E75791010 doesn't match image D:\CSULA FALL 2021 Main\CS4555\tmp\KirbysAngels\Eternal\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021E6DBBE660 doesn't match image D:\CSULA FALL 2021 Main\CS4555\tmp\KirbysAngels\Eternal\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.431 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1432ms)
-		BeginReloadAssembly (148ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (45ms)
-		EndReloadAssembly (1192ms)
-			LoadAssemblies (117ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (373ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (53ms)
-			SetupLoadedEditorAssemblies (502ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (105ms)
-				ProcessInitializeOnLoadAttributes (373ms)
-				ProcessInitializeOnLoadMethodAttributes (6ms)
-				AfterProcessingInitializeOnLoad (10ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (11ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.72 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1409 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 88.0 MB.
-System memory in use after: 88.1 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1919.
-Total: 4.883100 ms (FindLiveObjects: 0.286200 ms CreateObjectMapping: 0.068800 ms MarkObjects: 4.485700 ms  DeleteObjects: 0.040500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 16.299938 seconds.
-  path: Assets/MeshesModels/Helldemon/Breathing Idle.fbx
-  artifactKey: Guid(209111909bd48a5418ab6264ad049381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshesModels/Helldemon/Breathing Idle.fbx using Guid(209111909bd48a5418ab6264ad049381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '098f8741670bf3787649cd397f0f5f05') in 0.261076 seconds 
-  Import took 0.265445 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.631314 seconds.
-  path: Assets/MeshesModels/Helldemon/Breathing Idle.fbx
-  artifactKey: Guid(209111909bd48a5418ab6264ad049381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshesModels/Helldemon/Breathing Idle.fbx using Guid(209111909bd48a5418ab6264ad049381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6dcd022781fc941a4e55af3388455aaa') in 0.168789 seconds 
-  Import took 0.173120 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.205023 seconds.
-  path: Assets/MeshesModels/Helldemon/Helldemon.obj
-  artifactKey: Guid(1c810f1f4c99bdb489ef06677b203b71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshesModels/Helldemon/Helldemon.obj using Guid(1c810f1f4c99bdb489ef06677b203b71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ed904ec3027a1b0f51e6ab22e3fde8e') in 0.039602 seconds 
-  Import took 0.043412 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.008571 seconds.
-  path: Assets/MeshesModels/Helldemon/Helldemon.obj
-  artifactKey: Guid(1c810f1f4c99bdb489ef06677b203b71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshesModels/Helldemon/Helldemon.obj using Guid(1c810f1f4c99bdb489ef06677b203b71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ed904ec3027a1b0f51e6ab22e3fde8e') in 0.034898 seconds 
-  Import took 0.038897 seconds .
-
-========================================================================
-Received Prepare
-Assets/MeshesModels/Helldemon/Helldemon.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
-
-Please note that FBX files exported from Cinema4D are still supported.
-
-Registering precompiled user dll's ...
-Registered in 0.005682 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.73 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.447 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1447ms)
-		BeginReloadAssembly (141ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (44ms)
-		EndReloadAssembly (1214ms)
-			LoadAssemblies (116ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (397ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (52ms)
-			SetupLoadedEditorAssemblies (511ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (104ms)
-				ProcessInitializeOnLoadAttributes (381ms)
-				ProcessInitializeOnLoadMethodAttributes (6ms)
-				AfterProcessingInitializeOnLoad (10ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (10ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.72 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1409 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 88.1 MB.
-System memory in use after: 88.2 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1922.
-Total: 5.030700 ms (FindLiveObjects: 0.193200 ms CreateObjectMapping: 0.053700 ms MarkObjects: 4.736400 ms  DeleteObjects: 0.045600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 83.599370 seconds.
-  path: Assets/Controllers/Enemy_Demon.controller
-  artifactKey: Guid(d18165e88a5f2d4408637a51a7767d63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Controllers/Enemy_Demon.controller using Guid(d18165e88a5f2d4408637a51a7767d63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e76a6c6cd7ab8b783011b2767d9b85c') in 0.022053 seconds 
-  Import took 0.026079 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.004025 seconds.
-  path: Assets/Controllers/Enemy_Demon.controller
-  artifactKey: Guid(d18165e88a5f2d4408637a51a7767d63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Controllers/Enemy_Demon.controller using Guid(d18165e88a5f2d4408637a51a7767d63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e76a6c6cd7ab8b783011b2767d9b85c') in 0.006763 seconds 
-  Import took 0.010058 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 46.312798 seconds.
-  path: Assets/ZRNAssets/005339_08932_25_14/Models/PQ_Remake_AKIHABARA.fbx
-  artifactKey: Guid(c925872ce3bfa384589bf34b953d5a65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ZRNAssets/005339_08932_25_14/Models/PQ_Remake_AKIHABARA.fbx using Guid(c925872ce3bfa384589bf34b953d5a65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27f74067a9cc632293008ce8df3c146a') in 18.729577 seconds 
-  Import took 18.782859 seconds .
-
-========================================================================
-Received Prepare
-Assets/MeshesModels/Helldemon/Helldemon.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
-
-Please note that FBX files exported from Cinema4D are still supported.
-
-Registering precompiled user dll's ...
-Registered in 0.004854 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.68 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.289 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1289ms)
-		BeginReloadAssembly (135ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (40ms)
-		EndReloadAssembly (1074ms)
-			LoadAssemblies (103ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (333ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (54ms)
-			SetupLoadedEditorAssemblies (455ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (92ms)
-				ProcessInitializeOnLoadAttributes (335ms)
-				ProcessInitializeOnLoadMethodAttributes (6ms)
-				AfterProcessingInitializeOnLoad (14ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.55 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1409 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 95.7 MB.
-System memory in use after: 95.8 MB.
-
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1925.
-Total: 4.537600 ms (FindLiveObjects: 0.183700 ms CreateObjectMapping: 0.043200 ms MarkObjects: 4.280500 ms  DeleteObjects: 0.028200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Assets/MeshesModels/Helldemon/Helldemon.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
-
-Please note that FBX files exported from Cinema4D are still supported.
-
-Registering precompiled user dll's ...
-Registered in 0.004884 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.56 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.345 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1345ms)
-		BeginReloadAssembly (133ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (37ms)
-		EndReloadAssembly (1128ms)
-			LoadAssemblies (110ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (372ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (62ms)
-			SetupLoadedEditorAssemblies (455ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (95ms)
-				ProcessInitializeOnLoadAttributes (338ms)
-				ProcessInitializeOnLoadMethodAttributes (6ms)
-				AfterProcessingInitializeOnLoad (9ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.53 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1409 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 95.7 MB.
-System memory in use after: 95.8 MB.
-
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1927.
-Total: 4.100500 ms (FindLiveObjects: 0.214000 ms CreateObjectMapping: 0.043400 ms MarkObjects: 3.814600 ms  DeleteObjects: 0.026300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 75.528895 seconds.
-  path: Assets/MeshesModels/Helldemon/Materials/Helldemon-defaultMat.mat
-  artifactKey: Guid(e4da6ff42f21aa84fa43d88c9a80b065) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshesModels/Helldemon/Materials/Helldemon-defaultMat.mat using Guid(e4da6ff42f21aa84fa43d88c9a80b065) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f2481f39c3719c28abd911e21d2d761') in 0.097899 seconds 
-  Import took 0.100877 seconds .
-
-========================================================================
-Received Prepare
-Assets/MeshesModels/Helldemon/Helldemon.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
-
-Please note that FBX files exported from Cinema4D are still supported.
-
-Registering precompiled user dll's ...
-Registered in 0.004898 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.53 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.199 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1199ms)
-		BeginReloadAssembly (119ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (36ms)
-		EndReloadAssembly (1000ms)
-			LoadAssemblies (100ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (309ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (46ms)
-			SetupLoadedEditorAssemblies (429ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (87ms)
-				ProcessInitializeOnLoadAttributes (320ms)
-				ProcessInitializeOnLoadMethodAttributes (5ms)
-				AfterProcessingInitializeOnLoad (9ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.52 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1409 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 95.7 MB.
-System memory in use after: 95.9 MB.
-
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1930.
-Total: 4.451200 ms (FindLiveObjects: 0.190800 ms CreateObjectMapping: 0.041000 ms MarkObjects: 4.194800 ms  DeleteObjects: 0.022400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 13.999198 seconds.
-  path: Assets/MeshesModels/Helldemon/Helldemon.c4d
-  artifactKey: Guid(797e00d900000744f98869a7f4bd280b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshesModels/Helldemon/Helldemon.c4d using Guid(797e00d900000744f98869a7f4bd280b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Assets/MeshesModels/Helldemon/Helldemon.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
-
-Please note that FBX files exported from Cinema4D are still supported.
-
- -> (artifact id: 'cfafb2f03ce3b84615b9f3f25c37bfb6') in 0.022357 seconds 
-  Import took 0.026312 seconds .
-
-========================================================================
-Received Prepare
-Assets/MeshesModels/Helldemon/Helldemon.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
-
-Please note that FBX files exported from Cinema4D are still supported.
-
-Registering precompiled user dll's ...
-Registered in 0.005015 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.82 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.269 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1270ms)
-		BeginReloadAssembly (133ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (38ms)
-		EndReloadAssembly (1059ms)
-			LoadAssemblies (105ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (325ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (50ms)
-			SetupLoadedEditorAssemblies (442ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (92ms)
-				ProcessInitializeOnLoadAttributes (327ms)
-				ProcessInitializeOnLoadMethodAttributes (5ms)
-				AfterProcessingInitializeOnLoad (10ms)
-				EditorAssembliesLoaded (1ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (10ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.58 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1409 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 95.8 MB.
-System memory in use after: 95.9 MB.
-
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1932.
-Total: 4.273800 ms (FindLiveObjects: 0.185400 ms CreateObjectMapping: 0.041800 ms MarkObjects: 4.019200 ms  DeleteObjects: 0.025400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 163.964734 seconds.
-  path: Assets/Controllers/Enemy_Demon.controller
-  artifactKey: Guid(d18165e88a5f2d4408637a51a7767d63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Controllers/Enemy_Demon.controller using Guid(d18165e88a5f2d4408637a51a7767d63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13abaef596a06b505e6b4afe000f31c4') in 0.017002 seconds 
-  Import took 0.020058 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 56.462368 seconds.
-  path: Assets/MeshesModels/Helldemon/Helldemon.obj
-  artifactKey: Guid(1c810f1f4c99bdb489ef06677b203b71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshesModels/Helldemon/Helldemon.obj using Guid(1c810f1f4c99bdb489ef06677b203b71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1dea5d943eac9b329820e59e78d87842') in 0.085197 seconds 
-  Import took 0.088357 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 67.154495 seconds.
-  path: Assets/MeshesModels/Helldemon/Helldemon.obj
-  artifactKey: Guid(1c810f1f4c99bdb489ef06677b203b71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshesModels/Helldemon/Helldemon.obj using Guid(1c810f1f4c99bdb489ef06677b203b71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bae99c847dc4e8886415286c5f4f68c0') in 0.039915 seconds 
-  Import took 0.043188 seconds .
-
-========================================================================
-Received Prepare
-Assets/MeshesModels/Helldemon/Helldemon.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
-
-Please note that FBX files exported from Cinema4D are still supported.
-
-Registering precompiled user dll's ...
-Registered in 0.005499 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.53 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.230 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1231ms)
-		BeginReloadAssembly (120ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (37ms)
-		EndReloadAssembly (1030ms)
-			LoadAssemblies (100ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (316ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (46ms)
-			SetupLoadedEditorAssemblies (450ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (98ms)
-				ProcessInitializeOnLoadAttributes (328ms)
-				ProcessInitializeOnLoadMethodAttributes (5ms)
-				AfterProcessingInitializeOnLoad (11ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.52 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1409 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 95.8 MB.
-System memory in use after: 95.9 MB.
-
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1935.
-Total: 4.076800 ms (FindLiveObjects: 0.183300 ms CreateObjectMapping: 0.042400 ms MarkObjects: 3.827200 ms  DeleteObjects: 0.022300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 66.917977 seconds.
-  path: Assets/MeshesModels/Helldemon/Helldemon.obj
-  artifactKey: Guid(1c810f1f4c99bdb489ef06677b203b71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshesModels/Helldemon/Helldemon.obj using Guid(1c810f1f4c99bdb489ef06677b203b71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '021a1c9564bf5e53634a4693f3a74f9d') in 0.089941 seconds 
-  Import took 0.092841 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 64.928380 seconds.
-  path: Assets/ZRNAssets/PQAssets/Query-Chan/Models/PQchan.fbx
-  artifactKey: Guid(2b96500591fb51446bab5c44bc5fa467) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ZRNAssets/PQAssets/Query-Chan/Models/PQchan.fbx using Guid(2b96500591fb51446bab5c44bc5fa467) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ccd1826fc26b4556e3b384327684bb5') in 0.310817 seconds 
-  Import took 0.316201 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000333 seconds.
-  path: Assets/ZRNAssets/Cars/Models/Car_Sedan_03.fbx
-  artifactKey: Guid(19b6ed05b110c5d49bdaffeb97fd3e1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ZRNAssets/Cars/Models/Car_Sedan_03.fbx using Guid(19b6ed05b110c5d49bdaffeb97fd3e1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19f2b7b5cdc82464e408b012668d3ff2') in 0.081248 seconds 
-  Import took 0.084349 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000234 seconds.
-  path: Assets/ZRNAssets/Cars/Models/Car_Kei_01.fbx
-  artifactKey: Guid(f70fa4911611b5749ae34d006f4b93f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ZRNAssets/Cars/Models/Car_Kei_01.fbx using Guid(f70fa4911611b5749ae34d006f4b93f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd517700bf33e23071ecddac20891a80f') in 0.081650 seconds 
-  Import took 0.085037 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000236 seconds.
-  path: Assets/ZRNAssets/Cars/Models/Car_Sedan_02.fbx
-  artifactKey: Guid(956f5586ec9edcc4594abf7f3a68bd51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ZRNAssets/Cars/Models/Car_Sedan_02.fbx using Guid(956f5586ec9edcc4594abf7f3a68bd51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f3de7bd43da1a1e19a52ff9fe6141c9') in 0.066823 seconds 
-  Import took 0.069845 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000236 seconds.
-  path: Assets/ZRNAssets/Cars/Car_TAXI_03.fbx
-  artifactKey: Guid(09138089c3c6f421cb5374ef0466c53c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ZRNAssets/Cars/Car_TAXI_03.fbx using Guid(09138089c3c6f421cb5374ef0466c53c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b326a303a29af13916e32ad9cffb062') in 0.075086 seconds 
-  Import took 0.078244 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000266 seconds.
-  path: Assets/ZRNAssets/Cars/Models/Car_Hatchback_04.fbx
-  artifactKey: Guid(608f0fdf234fe0f49b4897eefec42f2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ZRNAssets/Cars/Models/Car_Hatchback_04.fbx using Guid(608f0fdf234fe0f49b4897eefec42f2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9d1a7bbf1b2f461419f21661fe188ec') in 0.078932 seconds 
-  Import took 0.081902 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000255 seconds.
-  path: Assets/ZRNAssets/Cars/Car_TAXI_03.fbx
-  artifactKey: Guid(09138089c3c6f421cb5374ef0466c53c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ZRNAssets/Cars/Car_TAXI_03.fbx using Guid(09138089c3c6f421cb5374ef0466c53c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b326a303a29af13916e32ad9cffb062') in 0.054253 seconds 
-  Import took 0.057681 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000265 seconds.
-  path: Assets/ZRNAssets/Cars/Models/Car_Kei_03.fbx
-  artifactKey: Guid(5d7c4e0917dcbc842a0a978f30d35ca3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ZRNAssets/Cars/Models/Car_Kei_03.fbx using Guid(5d7c4e0917dcbc842a0a978f30d35ca3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd68d8df011088e51a18f83f32bc8ead') in 0.065951 seconds 
-  Import took 0.068947 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000283 seconds.
-  path: Assets/ZRNAssets/PQAssets/Query-Chan/Models/PQchan.fbx
-  artifactKey: Guid(2b96500591fb51446bab5c44bc5fa467) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ZRNAssets/PQAssets/Query-Chan/Models/PQchan.fbx using Guid(2b96500591fb51446bab5c44bc5fa467) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ccd1826fc26b4556e3b384327684bb5') in 0.174281 seconds 
-  Import took 0.179026 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000309 seconds.
-  path: Assets/ZRNAssets/Cars/Models/Car_Kei_02.fbx
-  artifactKey: Guid(e115853ad0266f54bab87692519ef13c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ZRNAssets/Cars/Models/Car_Kei_02.fbx using Guid(e115853ad0266f54bab87692519ef13c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b473fb1a9407237c8bdc35e915872684') in 0.067658 seconds 
-  Import took 0.070946 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.281832 seconds.
-  path: Assets/ZRNAssets/Cars/Models/Car_Hatchback_03.fbx
-  artifactKey: Guid(bfef2e7d045e5874faee9e828b19ebd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ZRNAssets/Cars/Models/Car_Hatchback_03.fbx using Guid(bfef2e7d045e5874faee9e828b19ebd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a7ea899aa6e615a6556099858bed3cd') in 0.060624 seconds 
-  Import took 0.063713 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000347 seconds.
-  path: Assets/ZRNAssets/Cars/Models/Car_Hatchback_02.fbx
-  artifactKey: Guid(29c979e8ce65909498d7e8bfcd841d4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ZRNAssets/Cars/Models/Car_Hatchback_02.fbx using Guid(29c979e8ce65909498d7e8bfcd841d4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40fdecb1085a4dd3636a1e73b2eef45e') in 0.065105 seconds 
-  Import took 0.068130 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000284 seconds.
-  path: Assets/ZRNAssets/Cars/Models/Car_Sedan_04.fbx
-  artifactKey: Guid(838f9049be2d5a74fba32229abd9cd4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ZRNAssets/Cars/Models/Car_Sedan_04.fbx using Guid(838f9049be2d5a74fba32229abd9cd4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '512ffeb8bc13a60f265567ce3ba6a7f7') in 0.063969 seconds 
-  Import took 0.067430 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000274 seconds.
-  path: Assets/ZRNAssets/Cars/Models/Car_TAXI_01.fbx
-  artifactKey: Guid(9966bef51f8cb6d4493dcebd711faeab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ZRNAssets/Cars/Models/Car_TAXI_01.fbx using Guid(9966bef51f8cb6d4493dcebd711faeab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fce3a144906ac39f4bc2cb04b2a0c06c') in 0.065524 seconds 
-  Import took 0.068432 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000274 seconds.
-  path: Assets/ZRNAssets/Cars/Car_TAXI_04.fbx
-  artifactKey: Guid(cf44e54909dd04dff9e881d4f0c78015) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ZRNAssets/Cars/Car_TAXI_04.fbx using Guid(cf44e54909dd04dff9e881d4f0c78015) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3a0c0b2c7384988c2591cdb82a4ee76') in 0.063103 seconds 
-  Import took 0.066063 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000366 seconds.
-  path: Assets/ZRNAssets/Cars/Models/Car_Hatchback_01.fbx
-  artifactKey: Guid(5a6eed32a572e564cb45ed3a3d2df7e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ZRNAssets/Cars/Models/Car_Hatchback_01.fbx using Guid(5a6eed32a572e564cb45ed3a3d2df7e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96d7358a851d7d301eb6d062af0ee8ef') in 0.067660 seconds 
-  Import took 0.071077 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000320 seconds.
-  path: Assets/ZRNAssets/Cars/Car_Sedan_02.fbx
-  artifactKey: Guid(60b2a39a62fbc4c6aa251a492af217fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ZRNAssets/Cars/Car_Sedan_02.fbx using Guid(60b2a39a62fbc4c6aa251a492af217fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cab4d04859c9f46024ff722698c4cbcb') in 0.057329 seconds 
-  Import took 0.060703 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000262 seconds.
-  path: Assets/ZRNAssets/Cars/Models/Car_Track_02.fbx
-  artifactKey: Guid(e98027ec41fa73b4b98c5433a92f914c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ZRNAssets/Cars/Models/Car_Track_02.fbx using Guid(e98027ec41fa73b4b98c5433a92f914c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a46a47846d5689a20a74855093bf224') in 0.076147 seconds 
-  Import took 0.080068 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000268 seconds.
-  path: Assets/ZRNAssets/Cars/Models/Car_Sedan_01.fbx
-  artifactKey: Guid(4d7891db533dd4b41a1536b17e6fa76c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ZRNAssets/Cars/Models/Car_Sedan_01.fbx using Guid(4d7891db533dd4b41a1536b17e6fa76c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e67ee392b3f193082c90267dadc842a3') in 0.065460 seconds 
-  Import took 0.068469 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000300 seconds.
-  path: Assets/ZRNAssets/Cars/Car_TAXI_01.fbx
-  artifactKey: Guid(3c30a7463e7c945e5be8e3d79f339dd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ZRNAssets/Cars/Car_TAXI_01.fbx using Guid(3c30a7463e7c945e5be8e3d79f339dd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd06a0102d9fc5732e3cffd95166ba62b') in 0.056717 seconds 
-  Import took 0.059721 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000272 seconds.
-  path: Assets/ZRNAssets/Cars/Models/Car_TAXI_03.fbx
-  artifactKey: Guid(dfa1b4213a6685f4aba17a12d5acb9d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ZRNAssets/Cars/Models/Car_TAXI_03.fbx using Guid(dfa1b4213a6685f4aba17a12d5acb9d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83a3ac7d45d511ac9ee471cdd1122973') in 0.057592 seconds 
-  Import took 0.061097 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000294 seconds.
-  path: Assets/ZRNAssets/Cars/Models/Car_TAXI_02.fbx
-  artifactKey: Guid(39e44efe2a777194985bab18b8f14d7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ZRNAssets/Cars/Models/Car_TAXI_02.fbx using Guid(39e44efe2a777194985bab18b8f14d7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cabc2bb770c970871a4e9ee9241ee3f') in 0.069094 seconds 
-  Import took 0.072434 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000243 seconds.
-  path: Assets/ZRNAssets/Cars/Models/Car_Hatchback_01.fbx
-  artifactKey: Guid(5a6eed32a572e564cb45ed3a3d2df7e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ZRNAssets/Cars/Models/Car_Hatchback_01.fbx using Guid(5a6eed32a572e564cb45ed3a3d2df7e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96d7358a851d7d301eb6d062af0ee8ef') in 0.059201 seconds 
-  Import took 0.062896 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000309 seconds.
-  path: Assets/ZRNAssets/Cars/Models/Car_Kei_04.fbx
-  artifactKey: Guid(42a53a2738e7df043b79bfede1ca0fa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ZRNAssets/Cars/Models/Car_Kei_04.fbx using Guid(42a53a2738e7df043b79bfede1ca0fa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6b9bcf674d0ee50c3d0f0d48fa99df2') in 0.067543 seconds 
-  Import took 0.070535 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000299 seconds.
-  path: Assets/ZRNAssets/Cars/Car_Sedan_04.fbx
-  artifactKey: Guid(1fe8274d159fc4e618364536c2fde5a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ZRNAssets/Cars/Car_Sedan_04.fbx using Guid(1fe8274d159fc4e618364536c2fde5a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a93661580355add56b9e7ba6214591a7') in 0.056933 seconds 
-  Import took 0.059915 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.046173 seconds.
-  path: Assets/ZRNAssets/Cars/Car_Sedan_03.fbx
-  artifactKey: Guid(f8fb5be307ca84a53bf7b8b966a2b4da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ZRNAssets/Cars/Car_Sedan_03.fbx using Guid(f8fb5be307ca84a53bf7b8b966a2b4da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b2a9cb96e3bb7b985632f23d4eefbe2') in 0.051645 seconds 
-  Import took 0.055161 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000289 seconds.
-  path: Assets/ZRNAssets/Cars/Car_TAXI_02.fbx
-  artifactKey: Guid(84f061a46241e492fb7a857d85b3e4b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ZRNAssets/Cars/Car_TAXI_02.fbx using Guid(84f061a46241e492fb7a857d85b3e4b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67b6b41d3503d8dfe3673883ede47035') in 0.054774 seconds 
-  Import took 0.060818 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000347 seconds.
-  path: Assets/ZRNAssets/Cars/Models/Car_Track_01.fbx
-  artifactKey: Guid(e985a6d47f251464780287666d63a9bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ZRNAssets/Cars/Models/Car_Track_01.fbx using Guid(e985a6d47f251464780287666d63a9bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfa0dc0e89e8d8b95590558c83169f9f') in 0.066508 seconds 
-  Import took 0.069533 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000368 seconds.
-  path: Assets/ZRNAssets/Cars/Models/Car_TAXI_04.fbx
-  artifactKey: Guid(b75b28350f4a9ba4d86b15d5704f93c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ZRNAssets/Cars/Models/Car_TAXI_04.fbx using Guid(b75b28350f4a9ba4d86b15d5704f93c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5dcfee179c5841f991fcf2d1e8c75da0') in 0.055164 seconds 
-  Import took 0.058158 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000255 seconds.
-  path: Assets/ZRNAssets/Cars/Car_Sedan_03.fbx
-  artifactKey: Guid(f8fb5be307ca84a53bf7b8b966a2b4da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ZRNAssets/Cars/Car_Sedan_03.fbx using Guid(f8fb5be307ca84a53bf7b8b966a2b4da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b2a9cb96e3bb7b985632f23d4eefbe2') in 0.056405 seconds 
-  Import took 0.059561 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000333 seconds.
-  path: Assets/ZRNAssets/Cars/Car_Sedan_01.fbx
-  artifactKey: Guid(ca7ffa4613f44456e97dfb8df3dd1a13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ZRNAssets/Cars/Car_Sedan_01.fbx using Guid(ca7ffa4613f44456e97dfb8df3dd1a13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfcf3c74e85d34759016012dbdee8d90') in 0.055988 seconds 
-  Import took 0.058917 seconds .
-
-========================================================================
-Received Prepare
-Assets/MeshesModels/Helldemon/Helldemon.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
-
-Please note that FBX files exported from Cinema4D are still supported.
-
-Registering precompiled user dll's ...
-Registered in 0.004749 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.58 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.198 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1199ms)
-		BeginReloadAssembly (121ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (34ms)
-		EndReloadAssembly (997ms)
-			LoadAssemblies (97ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (306ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (45ms)
-			SetupLoadedEditorAssemblies (432ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (88ms)
-				ProcessInitializeOnLoadAttributes (324ms)
-				ProcessInitializeOnLoadMethodAttributes (5ms)
-				AfterProcessingInitializeOnLoad (9ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.53 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1409 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 97.4 MB.
-System memory in use after: 97.5 MB.
-
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1938.
-Total: 4.117000 ms (FindLiveObjects: 0.297200 ms CreateObjectMapping: 0.089000 ms MarkObjects: 3.706800 ms  DeleteObjects: 0.021700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 70.680069 seconds.
-  path: Assets/MeshesModels/Helldemon/Helldemon.obj
-  artifactKey: Guid(1c810f1f4c99bdb489ef06677b203b71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshesModels/Helldemon/Helldemon.obj using Guid(1c810f1f4c99bdb489ef06677b203b71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6f98c8616b91182e634f3d2fc1bf9ea') in 0.094767 seconds 
-  Import took 0.097802 seconds .
-
-========================================================================
-Received Prepare
-Assets/MeshesModels/Helldemon/Helldemon.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
-
-Please note that FBX files exported from Cinema4D are still supported.
-
-Registering precompiled user dll's ...
-Registered in 0.005232 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.64 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.248 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1249ms)
-		BeginReloadAssembly (129ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (37ms)
-		EndReloadAssembly (1038ms)
-			LoadAssemblies (103ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (321ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (53ms)
-			SetupLoadedEditorAssemblies (438ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (89ms)
-				ProcessInitializeOnLoadAttributes (327ms)
-				ProcessInitializeOnLoadMethodAttributes (5ms)
-				AfterProcessingInitializeOnLoad (9ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.52 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1409 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 97.4 MB.
-System memory in use after: 97.5 MB.
-
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1941.
-Total: 3.767900 ms (FindLiveObjects: 0.263000 ms CreateObjectMapping: 0.083700 ms MarkObjects: 3.396000 ms  DeleteObjects: 0.022800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Assets/MeshesModels/Helldemon/Helldemon.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
-
-Please note that FBX files exported from Cinema4D are still supported.
-
-Registering precompiled user dll's ...
-Registered in 0.004822 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.55 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.204 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1204ms)
-		BeginReloadAssembly (121ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (33ms)
-		EndReloadAssembly (1004ms)
-			LoadAssemblies (96ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (302ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (44ms)
-			SetupLoadedEditorAssemblies (437ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (91ms)
-				ProcessInitializeOnLoadAttributes (324ms)
-				ProcessInitializeOnLoadMethodAttributes (5ms)
-				AfterProcessingInitializeOnLoad (9ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.52 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1409 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 97.4 MB.
-System memory in use after: 97.5 MB.
-
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1943.
-Total: 3.728900 ms (FindLiveObjects: 0.272000 ms CreateObjectMapping: 0.085100 ms MarkObjects: 3.338200 ms  DeleteObjects: 0.030800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 138.112248 seconds.
-  path: Assets/Controllers/Enemy_Demon.controller
-  artifactKey: Guid(d18165e88a5f2d4408637a51a7767d63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Controllers/Enemy_Demon.controller using Guid(d18165e88a5f2d4408637a51a7767d63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da6790fd66e4e21eaf2b93c7d2ea1d49') in 0.029215 seconds 
-  Import took 0.032407 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 30.254490 seconds.
-  path: Assets/MeshesModels/Helldemon/Standing Melee Attack Horizontal.fbx
-  artifactKey: Guid(c63f1c776ba8f3949b4f13804863011e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshesModels/Helldemon/Standing Melee Attack Horizontal.fbx using Guid(c63f1c776ba8f3949b4f13804863011e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c66319f27ae24eaf9d733e678fb2daa') in 0.176287 seconds 
-  Import took 0.180582 seconds .
-
-========================================================================
-Received Prepare
-Assets/MeshesModels/Helldemon/Helldemon.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
-
-Please note that FBX files exported from Cinema4D are still supported.
-
-Registering precompiled user dll's ...
-Registered in 0.005088 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.52 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.229 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1229ms)
-		BeginReloadAssembly (129ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (37ms)
-		EndReloadAssembly (1018ms)
-			LoadAssemblies (108ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (316ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (45ms)
-			SetupLoadedEditorAssemblies (432ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (90ms)
-				ProcessInitializeOnLoadAttributes (321ms)
-				ProcessInitializeOnLoadMethodAttributes (5ms)
-				AfterProcessingInitializeOnLoad (9ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.55 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1409 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 97.4 MB.
-System memory in use after: 97.5 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1946.
-Total: 3.873100 ms (FindLiveObjects: 0.190500 ms CreateObjectMapping: 0.043600 ms MarkObjects: 3.610100 ms  DeleteObjects: 0.027600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 46.053399 seconds.
-  path: Assets/MeshesModels/Helldemon/Standing Melee Attack Horizontal.fbx
-  artifactKey: Guid(c63f1c776ba8f3949b4f13804863011e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshesModels/Helldemon/Standing Melee Attack Horizontal.fbx using Guid(c63f1c776ba8f3949b4f13804863011e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '655f051f27a57ecba7f1c4d975b302e1') in 0.197254 seconds 
-  Import took 0.200929 seconds .
-
-========================================================================
-Received Prepare
-Assets/MeshesModels/Helldemon/Helldemon.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
-
-Please note that FBX files exported from Cinema4D are still supported.
-
-Registering precompiled user dll's ...
-Registered in 0.004919 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.53 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.194 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1194ms)
-		BeginReloadAssembly (120ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (35ms)
-		EndReloadAssembly (994ms)
-			LoadAssemblies (99ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (313ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (47ms)
-			SetupLoadedEditorAssemblies (422ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (88ms)
-				ProcessInitializeOnLoadAttributes (313ms)
-				ProcessInitializeOnLoadMethodAttributes (5ms)
-				AfterProcessingInitializeOnLoad (9ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.52 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1409 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 97.5 MB.
-System memory in use after: 97.6 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1949.
-Total: 4.146600 ms (FindLiveObjects: 0.268700 ms CreateObjectMapping: 0.091100 ms MarkObjects: 3.757900 ms  DeleteObjects: 0.026400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 30.265181 seconds.
-  path: Assets/MeshesModels/Helldemon/Standing Melee Attack Horizontal.fbx
-  artifactKey: Guid(c63f1c776ba8f3949b4f13804863011e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshesModels/Helldemon/Standing Melee Attack Horizontal.fbx using Guid(c63f1c776ba8f3949b4f13804863011e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63484068228e8c48cef4e1496fafad33') in 0.185316 seconds 
-  Import took 0.191152 seconds .
-
-========================================================================
-Received Prepare
-Assets/MeshesModels/Helldemon/Helldemon.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
-
-Please note that FBX files exported from Cinema4D are still supported.
-
-Registering precompiled user dll's ...
-Registered in 0.004681 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.56 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.187 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1188ms)
-		BeginReloadAssembly (124ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (34ms)
-		EndReloadAssembly (981ms)
-			LoadAssemblies (102ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (302ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (46ms)
-			SetupLoadedEditorAssemblies (423ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (89ms)
-				ProcessInitializeOnLoadAttributes (312ms)
-				ProcessInitializeOnLoadMethodAttributes (5ms)
-				AfterProcessingInitializeOnLoad (9ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.53 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1409 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 97.5 MB.
-System memory in use after: 97.6 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1952.
-Total: 3.714300 ms (FindLiveObjects: 0.287900 ms CreateObjectMapping: 0.085100 ms MarkObjects: 3.307700 ms  DeleteObjects: 0.030600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 53.001507 seconds.
-  path: Assets/MeshesModels/Helldemon/Breathing Idle.fbx
-  artifactKey: Guid(209111909bd48a5418ab6264ad049381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshesModels/Helldemon/Breathing Idle.fbx using Guid(209111909bd48a5418ab6264ad049381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d2a04143ea7cda8848d712a78d1a0ce') in 0.193514 seconds 
-  Import took 0.197507 seconds .
-
-========================================================================
-Received Prepare
-Assets/MeshesModels/Helldemon/Helldemon.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
-
-Please note that FBX files exported from Cinema4D are still supported.
-
-Registering precompiled user dll's ...
-Registered in 0.004802 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.53 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.194 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1194ms)
-		BeginReloadAssembly (126ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (35ms)
-		EndReloadAssembly (987ms)
-			LoadAssemblies (100ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (304ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (46ms)
-			SetupLoadedEditorAssemblies (424ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (87ms)
-				ProcessInitializeOnLoadAttributes (316ms)
-				ProcessInitializeOnLoadMethodAttributes (5ms)
-				AfterProcessingInitializeOnLoad (9ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.53 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1409 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 97.5 MB.
-System memory in use after: 97.6 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1955.
-Total: 3.768100 ms (FindLiveObjects: 0.272100 ms CreateObjectMapping: 0.091200 ms MarkObjects: 3.373200 ms  DeleteObjects: 0.029600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Assets/MeshesModels/Helldemon/Helldemon.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
-
-Please note that FBX files exported from Cinema4D are still supported.
-
-Registering precompiled user dll's ...
-Registered in 0.004822 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.53 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.197 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1198ms)
-		BeginReloadAssembly (123ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (34ms)
-		EndReloadAssembly (996ms)
-			LoadAssemblies (98ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (310ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (46ms)
-			SetupLoadedEditorAssemblies (427ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (87ms)
-				ProcessInitializeOnLoadAttributes (319ms)
-				ProcessInitializeOnLoadMethodAttributes (5ms)
-				AfterProcessingInitializeOnLoad (9ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.52 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1409 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 97.5 MB.
-System memory in use after: 97.6 MB.
-
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1957.
-Total: 3.457800 ms (FindLiveObjects: 0.193900 ms CreateObjectMapping: 0.043000 ms MarkObjects: 3.198800 ms  DeleteObjects: 0.020400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 115.018365 seconds.
-  path: Assets/MeshesModels/Helldemon/Breathing Idle.fbx
-  artifactKey: Guid(209111909bd48a5418ab6264ad049381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshesModels/Helldemon/Breathing Idle.fbx using Guid(209111909bd48a5418ab6264ad049381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fe39830a64d7a4449e6494cc4e3fcc4') in 0.190433 seconds 
-  Import took 0.194346 seconds .
-
-========================================================================
-Received Prepare
-Assets/MeshesModels/Helldemon/Helldemon.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
-
-Please note that FBX files exported from Cinema4D are still supported.
-
-Registering precompiled user dll's ...
-Registered in 0.005310 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.255 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1256ms)
-		BeginReloadAssembly (125ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (36ms)
-		EndReloadAssembly (1049ms)
-			LoadAssemblies (106ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (320ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (52ms)
-			SetupLoadedEditorAssemblies (447ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (92ms)
-				ProcessInitializeOnLoadAttributes (334ms)
-				ProcessInitializeOnLoadMethodAttributes (5ms)
-				AfterProcessingInitializeOnLoad (9ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
+Native extension for WebGL target not found
 Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1409 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 97.5 MB.
-System memory in use after: 97.6 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1960.
-Total: 4.329000 ms (FindLiveObjects: 0.192000 ms CreateObjectMapping: 0.077800 ms MarkObjects: 4.026300 ms  DeleteObjects: 0.031400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Assets/MeshesModels/Helldemon/Helldemon.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
-
-Please note that FBX files exported from Cinema4D are still supported.
-
-Registering precompiled user dll's ...
-Registered in 0.006170 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.53 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.187 seconds
+- Completed reload, in  0.808 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1187ms)
-		BeginReloadAssembly (127ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (33ms)
-		EndReloadAssembly (981ms)
-			LoadAssemblies (94ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (306ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (46ms)
-			SetupLoadedEditorAssemblies (421ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (87ms)
-				ProcessInitializeOnLoadAttributes (313ms)
-				ProcessInitializeOnLoadMethodAttributes (4ms)
-				AfterProcessingInitializeOnLoad (9ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.52 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1409 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 97.5 MB.
-System memory in use after: 97.6 MB.
-
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1962.
-Total: 3.983700 ms (FindLiveObjects: 0.192100 ms CreateObjectMapping: 0.044900 ms MarkObjects: 3.722000 ms  DeleteObjects: 0.022800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 236.001667 seconds.
-  path: Assets/MeshesModels/Helldemon/Helldemon.mtl
-  artifactKey: Guid(c5eecade9e885af4ea3e96eb472a54a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshesModels/Helldemon/Helldemon.mtl using Guid(c5eecade9e885af4ea3e96eb472a54a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '848428eba542372fc97bed88a4b51c94') in 0.020376 seconds 
-  Import took 0.024018 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 27.993259 seconds.
-  path: Assets/MeshesModels/Helldemon/Helldemon.obj
-  artifactKey: Guid(1c810f1f4c99bdb489ef06677b203b71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshesModels/Helldemon/Helldemon.obj using Guid(1c810f1f4c99bdb489ef06677b203b71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd19f3e279e674b5ab528ae8101293d7e') in 0.097507 seconds 
-  Import took 0.101366 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 16.216868 seconds.
-  path: Assets/MeshesModels/Helldemon/Helldemon.obj
-  artifactKey: Guid(1c810f1f4c99bdb489ef06677b203b71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshesModels/Helldemon/Helldemon.obj using Guid(1c810f1f4c99bdb489ef06677b203b71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '987b25062a9888f78c3b772a70393f56') in 0.030158 seconds 
-  Import took 0.033171 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.002039 seconds.
-  path: Assets/MeshesModels/Helldemon/Helldemon.obj
-  artifactKey: Guid(1c810f1f4c99bdb489ef06677b203b71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshesModels/Helldemon/Helldemon.obj using Guid(1c810f1f4c99bdb489ef06677b203b71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '987b25062a9888f78c3b772a70393f56') in 0.044287 seconds 
-  Import took 0.047448 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 119.335124 seconds.
-  path: Assets/MeshesModels/Helldemon/Breathing Idle.fbx
-  artifactKey: Guid(209111909bd48a5418ab6264ad049381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshesModels/Helldemon/Breathing Idle.fbx using Guid(209111909bd48a5418ab6264ad049381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f460f3921e8b7b5d74897944c60f386') in 0.110164 seconds 
-  Import took 0.113773 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001155 seconds.
-  path: Assets/MeshesModels/Helldemon/Breathing Idle.fbx
-  artifactKey: Guid(209111909bd48a5418ab6264ad049381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshesModels/Helldemon/Breathing Idle.fbx using Guid(209111909bd48a5418ab6264ad049381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f460f3921e8b7b5d74897944c60f386') in 0.113376 seconds 
-  Import took 0.116909 seconds .
-
-========================================================================
-Received Prepare
-Assets/MeshesModels/Helldemon/Helldemon.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
-
-Please note that FBX files exported from Cinema4D are still supported.
-
-Registering precompiled user dll's ...
-Registered in 0.004688 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.58 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.233 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1234ms)
-		BeginReloadAssembly (128ms)
+	ReloadAssembly (808ms)
+		BeginReloadAssembly (96ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (34ms)
-		EndReloadAssembly (1026ms)
-			LoadAssemblies (96ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (664ms)
+			LoadAssemblies (65ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (320ms)
+			SetupTypeCache (210ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (47ms)
-			SetupLoadedEditorAssemblies (443ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (282ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (1ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (91ms)
-				ProcessInitializeOnLoadAttributes (329ms)
-				ProcessInitializeOnLoadMethodAttributes (5ms)
-				AfterProcessingInitializeOnLoad (9ms)
+				BeforeProcessingInitializeOnLoad (54ms)
+				ProcessInitializeOnLoadAttributes (218ms)
+				ProcessInitializeOnLoadMethodAttributes (3ms)
+				AfterProcessingInitializeOnLoad (2ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.54 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.72 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1409 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 97.6 MB.
-System memory in use after: 97.7 MB.
+System memory in use before: 70.7 MB.
+System memory in use after: 70.8 MB.
 
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1965.
-Total: 3.906300 ms (FindLiveObjects: 0.249100 ms CreateObjectMapping: 0.085400 ms MarkObjects: 3.544400 ms  DeleteObjects: 0.025700 ms)
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1874.
+Total: 2.832300 ms (FindLiveObjects: 0.184400 ms CreateObjectMapping: 0.036700 ms MarkObjects: 2.585500 ms  DeleteObjects: 0.024800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -1864,1270 +287,81 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 59.980864 seconds.
-  path: Assets/MeshesModels/Helldemon/Breathing Idle.fbx
-  artifactKey: Guid(209111909bd48a5418ab6264ad049381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshesModels/Helldemon/Breathing Idle.fbx using Guid(209111909bd48a5418ab6264ad049381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75b188bf7eace3b782a5294d49a3b8e0') in 0.212940 seconds 
-  Import took 0.216355 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.695552 seconds.
-  path: Assets/MeshesModels/Helldemon/Breathing Idle.fbx
-  artifactKey: Guid(209111909bd48a5418ab6264ad049381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshesModels/Helldemon/Breathing Idle.fbx using Guid(209111909bd48a5418ab6264ad049381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07d7a3875ddf1f9bf2bf2a8856354198') in 0.097937 seconds 
-  Import took 0.101804 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.957285 seconds.
-  path: Assets/MeshesModels/Helldemon/Helldemon.obj
-  artifactKey: Guid(1c810f1f4c99bdb489ef06677b203b71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshesModels/Helldemon/Helldemon.obj using Guid(1c810f1f4c99bdb489ef06677b203b71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8998c7ef0cabcae5dc013f0bbeed7125') in 0.029810 seconds 
-  Import took 0.033442 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.642634 seconds.
-  path: Assets/MeshesModels/Helldemon/Materials/Helldemon-defaultMat.mat
-  artifactKey: Guid(9a6ba2b659e6d9e408570bf1c95f680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshesModels/Helldemon/Materials/Helldemon-defaultMat.mat using Guid(9a6ba2b659e6d9e408570bf1c95f680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5897892a69cd012e89ab2620837b3f1b') in 0.023689 seconds 
-  Import took 0.026706 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.516545 seconds.
-  path: Assets/MeshesModels/Helldemon/Materials/tex/Helldemon-defaultMat.mat
-  artifactKey: Guid(e4da6ff42f21aa84fa43d88c9a80b065) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshesModels/Helldemon/Materials/tex/Helldemon-defaultMat.mat using Guid(e4da6ff42f21aa84fa43d88c9a80b065) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8129e1f7d00f2151305cd258908095a3') in 0.018330 seconds 
-  Import took 0.021971 seconds .
-
-========================================================================
 Received Prepare
 Assets/MeshesModels/Helldemon/Helldemon.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
 
 Please note that FBX files exported from Cinema4D are still supported.
 
 Registering precompiled user dll's ...
-Registered in 0.005704 seconds.
+Registered in 0.002523 seconds.
 Begin MonoManager ReloadAssembly
+Symbol file data-0000021E77A87EC0 doesn't match image D:\CSULA FALL 2021 Main\CS4555\tmp\KirbysAngels\Eternal\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021E6D83A950 doesn't match image D:\CSULA FALL 2021 Main\CS4555\tmp\KirbysAngels\Eternal\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021E98738010 doesn't match image D:\CSULA FALL 2021 Main\CS4555\tmp\KirbysAngels\Eternal\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021E73A5E020 doesn't match image D:\CSULA FALL 2021 Main\CS4555\tmp\KirbysAngels\Eternal\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021E75257DC0 doesn't match image D:\CSULA FALL 2021 Main\CS4555\tmp\KirbysAngels\Eternal\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021E6D83A950 doesn't match image D:\CSULA FALL 2021 Main\CS4555\tmp\KirbysAngels\Eternal\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021E7258E020 doesn't match image D:\CSULA FALL 2021 Main\CS4555\tmp\KirbysAngels\Eternal\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021E73A5E020 doesn't match image D:\CSULA FALL 2021 Main\CS4555\tmp\KirbysAngels\Eternal\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021E6D19C020 doesn't match image D:\CSULA FALL 2021 Main\CS4555\tmp\KirbysAngels\Eternal\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021E98738010 doesn't match image D:\CSULA FALL 2021 Main\CS4555\tmp\KirbysAngels\Eternal\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021E71AAE410 doesn't match image D:\CSULA FALL 2021 Main\CS4555\tmp\KirbysAngels\Eternal\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021E75034070 doesn't match image D:\CSULA FALL 2021 Main\CS4555\tmp\KirbysAngels\Eternal\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021E7384C030 doesn't match image D:\CSULA FALL 2021 Main\CS4555\tmp\KirbysAngels\Eternal\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.69 ms, found 2 plugins.
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.355 seconds
+- Completed reload, in  0.836 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1355ms)
-		BeginReloadAssembly (139ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (38ms)
-		EndReloadAssembly (1137ms)
-			LoadAssemblies (106ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (341ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (65ms)
-			SetupLoadedEditorAssemblies (450ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (92ms)
-				ProcessInitializeOnLoadAttributes (336ms)
-				ProcessInitializeOnLoadMethodAttributes (4ms)
-				AfterProcessingInitializeOnLoad (9ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.54 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1409 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 97.6 MB.
-System memory in use after: 97.7 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1968.
-Total: 4.151300 ms (FindLiveObjects: 0.353800 ms CreateObjectMapping: 0.092500 ms MarkObjects: 3.666200 ms  DeleteObjects: 0.035900 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 4007.933647 seconds.
-  path: Assets/MeshesModels/Fortnite - Snow Patroller
-  artifactKey: Guid(fa5cacae82183254cb5c7949f1c3c2ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshesModels/Fortnite - Snow Patroller using Guid(fa5cacae82183254cb5c7949f1c3c2ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a10fc57270cfa0b1b0b8f861b9db7119') in 0.084538 seconds 
-  Import took 0.152745 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000468 seconds.
-  path: Assets/MeshesModels/Fortnite - Snow Patroller/T_M_MED_MrIceGuy_hair_D.png
-  artifactKey: Guid(0a746ab0539c97f4092589cbb8871b39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshesModels/Fortnite - Snow Patroller/T_M_MED_MrIceGuy_hair_D.png using Guid(0a746ab0539c97f4092589cbb8871b39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '802d77c4c2ae15610d410ac4ea72b54c') in 0.163856 seconds 
-  Import took 0.167458 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000343 seconds.
-  path: Assets/MeshesModels/Fortnite - Snow Patroller/T_M_MED_MrIceGuy_body_N.png
-  artifactKey: Guid(417d1f6c8b8e55a4b8b7e22277ef489a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshesModels/Fortnite - Snow Patroller/T_M_MED_MrIceGuy_body_N.png using Guid(417d1f6c8b8e55a4b8b7e22277ef489a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '080c2da7847dfca308f632e769cb003c') in 0.035502 seconds 
-  Import took 0.039460 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000451 seconds.
-  path: Assets/MeshesModels/Fortnite - Snow Patroller/T_M_MED_ASN_Starfish_Head_01_Head_D.png
-  artifactKey: Guid(39384e2e51d03b74d9c1b00fdfdd5321) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshesModels/Fortnite - Snow Patroller/T_M_MED_ASN_Starfish_Head_01_Head_D.png using Guid(39384e2e51d03b74d9c1b00fdfdd5321) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ab98cd7a761728754a904539a51ef78') in 0.019068 seconds 
-  Import took 0.022622 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000269 seconds.
-  path: Assets/MeshesModels/Fortnite - Snow Patroller/T_M_MED_MrIceGuy_hair_N.png
-  artifactKey: Guid(981e0602ae4da36458606a120a52712b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshesModels/Fortnite - Snow Patroller/T_M_MED_MrIceGuy_hair_N.png using Guid(981e0602ae4da36458606a120a52712b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '800de71e401ced4a928c88dde61adfcc') in 0.025973 seconds 
-  Import took 0.029878 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000247 seconds.
-  path: Assets/MeshesModels/Fortnite - Snow Patroller/Snow Patroller.fbx
-  artifactKey: Guid(8aebb6df5e8dbea46bab956396459b0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshesModels/Fortnite - Snow Patroller/Snow Patroller.fbx using Guid(8aebb6df5e8dbea46bab956396459b0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31e3173eb96800b38fad3ecbc6313f02') in 0.193330 seconds 
-  Import took 0.197836 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000252 seconds.
-  path: Assets/MeshesModels/Fortnite - Snow Patroller/detail_skin.png
-  artifactKey: Guid(1a97174ddc9873d41ba0e49da272bae1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshesModels/Fortnite - Snow Patroller/detail_skin.png using Guid(1a97174ddc9873d41ba0e49da272bae1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd87ec007f4748f787a940aaf73b3be6') in 0.040684 seconds 
-  Import took 0.044571 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000334 seconds.
-  path: Assets/MeshesModels/Fortnite - Snow Patroller/T_M_MED_MrIceGuy_body_D.png
-  artifactKey: Guid(2d83683ff0de0f74496c6a400de49b9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshesModels/Fortnite - Snow Patroller/T_M_MED_MrIceGuy_body_D.png using Guid(2d83683ff0de0f74496c6a400de49b9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd99835664bd6e23fd66606557fca13c9') in 0.026274 seconds 
-  Import took 0.032966 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000417 seconds.
-  path: Assets/MeshesModels/Fortnite - Snow Patroller/Preview.jpg
-  artifactKey: Guid(43dcd2fddf6c0004eab2eb2f5d4428eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshesModels/Fortnite - Snow Patroller/Preview.jpg using Guid(43dcd2fddf6c0004eab2eb2f5d4428eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4500d8057dc81383e04560b42b185b11') in 0.024621 seconds 
-  Import took 0.030082 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000491 seconds.
-  path: Assets/MeshesModels/Fortnite - Snow Patroller/T_M_MED_ASN_Starfish_Head_01_Head_N.png
-  artifactKey: Guid(168063f580834bf4bb2732c01b5079ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshesModels/Fortnite - Snow Patroller/T_M_MED_ASN_Starfish_Head_01_Head_N.png using Guid(168063f580834bf4bb2732c01b5079ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f565bfd645e2886cbf37d4acbc53c1a') in 0.028404 seconds 
-  Import took 0.032297 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 18.986163 seconds.
-  path: Assets/MeshesModels/Fortnite - Snow Patroller/Mma Kick.fbx
-  artifactKey: Guid(15d7d23361cd1724e95d3a150ef370f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshesModels/Fortnite - Snow Patroller/Mma Kick.fbx using Guid(15d7d23361cd1724e95d3a150ef370f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cb1b42724fec23acd555faa4e49d622') in 0.123173 seconds 
-  Import took 0.128615 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000486 seconds.
-  path: Assets/MeshesModels/Fortnite - Snow Patroller/Punching.fbx
-  artifactKey: Guid(8c869fce32837ae4c8c5fbcdb6d997b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshesModels/Fortnite - Snow Patroller/Punching.fbx using Guid(8c869fce32837ae4c8c5fbcdb6d997b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de87301bb10a9f0b0e73c5741004c689') in 0.105678 seconds 
-  Import took 0.109804 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.617828 seconds.
-  path: Assets/MeshesModels/Fortnite - Snow Patroller/Fast Run.fbx
-  artifactKey: Guid(358736586069e6440a2dd80fdd5a2140) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshesModels/Fortnite - Snow Patroller/Fast Run.fbx using Guid(358736586069e6440a2dd80fdd5a2140) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c6672e840a8b8795a3688b861e35ccb') in 0.104522 seconds 
-  Import took 0.108645 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 29.201702 seconds.
-  path: Assets/MeshesModels/Fortnite - Snow Patroller/Idle.fbx
-  artifactKey: Guid(d54999c80a0b228439b9038a0739d657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshesModels/Fortnite - Snow Patroller/Idle.fbx using Guid(d54999c80a0b228439b9038a0739d657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b2669236526b89f223bc6a27ee6d107') in 0.105905 seconds 
-  Import took 0.110937 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 21.736833 seconds.
-  path: Assets/MeshesModels/Fortnite - Snow Patroller/Snow Patroller.fbx
-  artifactKey: Guid(8aebb6df5e8dbea46bab956396459b0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshesModels/Fortnite - Snow Patroller/Snow Patroller.fbx using Guid(8aebb6df5e8dbea46bab956396459b0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccdc7262cb12e0f6488e791e31005097') in 0.095700 seconds 
-  Import took 0.100111 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 41.726005 seconds.
-  path: Assets/MeshesModels/Fortnite - Snow Patroller/Snow Patroller.fbx
-  artifactKey: Guid(8aebb6df5e8dbea46bab956396459b0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshesModels/Fortnite - Snow Patroller/Snow Patroller.fbx using Guid(8aebb6df5e8dbea46bab956396459b0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a57b6a1107559fcc37e7243a1b0172d') in 0.078715 seconds 
-  Import took 0.082749 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 71.150175 seconds.
-  path: Assets/MeshesModels/Fortnite - Snow Patroller/Idle.fbx
-  artifactKey: Guid(d54999c80a0b228439b9038a0739d657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshesModels/Fortnite - Snow Patroller/Idle.fbx using Guid(d54999c80a0b228439b9038a0739d657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72317fbca9271c140bd276f07650ea32') in 0.095625 seconds 
-  Import took 0.099901 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.775206 seconds.
-  path: Assets/Font/Orchidee-Medium.ttf
-  artifactKey: Guid(7efb579918580fd4ab7f9bc7a131cf9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Font/Orchidee-Medium.ttf using Guid(7efb579918580fd4ab7f9bc7a131cf9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '943339f5a9dd5c996ed2b6b48487cdd0') in 0.034720 seconds 
-  Import took 0.038385 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.931433 seconds.
-  path: Assets/Controllers/MainCharacter.controller
-  artifactKey: Guid(3052abb47431105458195608257f1c31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Controllers/MainCharacter.controller using Guid(3052abb47431105458195608257f1c31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55cac249a0ce5b428460cacfc36ba131') in 0.010227 seconds 
-  Import took 0.013753 seconds .
-
-========================================================================
-Received Prepare
-Assets/MeshesModels/Helldemon/Helldemon.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
-
-Please note that FBX files exported from Cinema4D are still supported.
-
-Registering precompiled user dll's ...
-Registered in 0.005025 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.59 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.316 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1317ms)
-		BeginReloadAssembly (174ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (73ms)
-		EndReloadAssembly (1058ms)
-			LoadAssemblies (123ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (331ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (46ms)
-			SetupLoadedEditorAssemblies (442ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (90ms)
-				ProcessInitializeOnLoadAttributes (329ms)
-				ProcessInitializeOnLoadMethodAttributes (5ms)
-				AfterProcessingInitializeOnLoad (9ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.56 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1409 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 97.9 MB.
-System memory in use after: 98.0 MB.
-
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1976.
-Total: 4.218300 ms (FindLiveObjects: 0.266500 ms CreateObjectMapping: 0.087700 ms MarkObjects: 3.829400 ms  DeleteObjects: 0.032200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 35.690697 seconds.
-  path: Assets/MeshesModels/Fortnite - Snow Patroller/Idle.fbx
-  artifactKey: Guid(d54999c80a0b228439b9038a0739d657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshesModels/Fortnite - Snow Patroller/Idle.fbx using Guid(d54999c80a0b228439b9038a0739d657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5f0f68114b004efb9d5c7f51ab7f36d') in 0.178208 seconds 
-  Import took 0.184135 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.122050 seconds.
-  path: Assets/MeshesModels/Fortnite - Snow Patroller/Idle.fbx
-  artifactKey: Guid(d54999c80a0b228439b9038a0739d657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshesModels/Fortnite - Snow Patroller/Idle.fbx using Guid(d54999c80a0b228439b9038a0739d657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5f0f68114b004efb9d5c7f51ab7f36d') in 0.090036 seconds 
-  Import took 0.093905 seconds .
-
-========================================================================
-Received Prepare
-Assets/MeshesModels/Helldemon/Helldemon.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
-
-Please note that FBX files exported from Cinema4D are still supported.
-
-Registering precompiled user dll's ...
-Registered in 0.004720 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.53 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.216 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1217ms)
-		BeginReloadAssembly (124ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (38ms)
-		EndReloadAssembly (1014ms)
-			LoadAssemblies (99ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (319ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (48ms)
-			SetupLoadedEditorAssemblies (431ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (88ms)
-				ProcessInitializeOnLoadAttributes (322ms)
-				ProcessInitializeOnLoadMethodAttributes (5ms)
-				AfterProcessingInitializeOnLoad (9ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.53 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1409 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 97.9 MB.
-System memory in use after: 98.0 MB.
-
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1979.
-Total: 3.896100 ms (FindLiveObjects: 0.208900 ms CreateObjectMapping: 0.046300 ms MarkObjects: 3.615500 ms  DeleteObjects: 0.023600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 66.290827 seconds.
-  path: Assets/MeshesModels/Fortnite - Snow Patroller/mt_MainFace.mat
-  artifactKey: Guid(921ce3f20e44a824a9d2995b578e38c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshesModels/Fortnite - Snow Patroller/mt_MainFace.mat using Guid(921ce3f20e44a824a9d2995b578e38c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b016f812d75c4c7de5355bf5de55666') in 0.081026 seconds 
-  Import took 0.084326 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 18.018166 seconds.
-  path: Assets/MeshesModels/Fortnite - Snow Patroller/mt_MainBody.mat
-  artifactKey: Guid(a6f9eae26f3f4684bab1a0fea2d9906f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshesModels/Fortnite - Snow Patroller/mt_MainBody.mat using Guid(a6f9eae26f3f4684bab1a0fea2d9906f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1116dfc31721c049b925bec6953e0abd') in 0.018487 seconds 
-  Import took 0.021673 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.656486 seconds.
-  path: Assets/MeshesModels/Fortnite - Snow Patroller/mt_MainBody.mat
-  artifactKey: Guid(a6f9eae26f3f4684bab1a0fea2d9906f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshesModels/Fortnite - Snow Patroller/mt_MainBody.mat using Guid(a6f9eae26f3f4684bab1a0fea2d9906f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd099e085e81c12bb8b60446f05578ce') in 0.021016 seconds 
-  Import took 0.024191 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000316 seconds.
-  path: Assets/MeshesModels/Fortnite - Snow Patroller/mt_MainFace.mat
-  artifactKey: Guid(921ce3f20e44a824a9d2995b578e38c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MeshesModels/Fortnite - Snow Patroller/mt_MainFace.mat using Guid(921ce3f20e44a824a9d2995b578e38c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a155a5ec3e29c572b8c9f10b49abbc5') in 0.024621 seconds 
-  Import took 0.028118 seconds .
-
-========================================================================
-Received Prepare
-Assets/MeshesModels/Helldemon/Helldemon.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
-
-Please note that FBX files exported from Cinema4D are still supported.
-
-Registering precompiled user dll's ...
-Registered in 0.004623 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.56 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.259 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1259ms)
-		BeginReloadAssembly (139ms)
+	ReloadAssembly (837ms)
+		BeginReloadAssembly (103ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (41ms)
-		EndReloadAssembly (1034ms)
-			LoadAssemblies (121ms)
+		EndReloadAssembly (677ms)
+			LoadAssemblies (73ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (315ms)
+			SetupTypeCache (211ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (45ms)
-			SetupLoadedEditorAssemblies (438ms)
+			RebuildScriptCaches (31ms)
+			SetupLoadedEditorAssemblies (287ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (1ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (89ms)
-				ProcessInitializeOnLoadAttributes (327ms)
-				ProcessInitializeOnLoadMethodAttributes (5ms)
-				AfterProcessingInitializeOnLoad (9ms)
+				BeforeProcessingInitializeOnLoad (55ms)
+				ProcessInitializeOnLoadAttributes (221ms)
+				ProcessInitializeOnLoadMethodAttributes (3ms)
+				AfterProcessingInitializeOnLoad (2ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.54 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1409 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 97.9 MB.
-System memory in use after: 98.0 MB.
-
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1982.
-Total: 4.019900 ms (FindLiveObjects: 0.270000 ms CreateObjectMapping: 0.087100 ms MarkObjects: 3.636400 ms  DeleteObjects: 0.024400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Assets/MeshesModels/Helldemon/Helldemon.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
-
-Please note that FBX files exported from Cinema4D are still supported.
-
-Registering precompiled user dll's ...
-Registered in 0.004666 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.87 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.209 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1210ms)
-		BeginReloadAssembly (121ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (34ms)
-		EndReloadAssembly (1008ms)
-			LoadAssemblies (97ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (308ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (49ms)
-			SetupLoadedEditorAssemblies (433ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (86ms)
-				ProcessInitializeOnLoadAttributes (326ms)
-				ProcessInitializeOnLoadMethodAttributes (5ms)
-				AfterProcessingInitializeOnLoad (9ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.53 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1409 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 97.9 MB.
-System memory in use after: 98.0 MB.
-
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1984.
-Total: 4.036500 ms (FindLiveObjects: 0.208900 ms CreateObjectMapping: 0.043600 ms MarkObjects: 3.759200 ms  DeleteObjects: 0.023000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Assets/MeshesModels/Helldemon/Helldemon.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
-
-Please note that FBX files exported from Cinema4D are still supported.
-
-Registering precompiled user dll's ...
-Registered in 0.005685 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.200 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1200ms)
-		BeginReloadAssembly (121ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (34ms)
-		EndReloadAssembly (999ms)
-			LoadAssemblies (97ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (305ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (47ms)
-			SetupLoadedEditorAssemblies (432ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (93ms)
-				ProcessInitializeOnLoadAttributes (318ms)
-				ProcessInitializeOnLoadMethodAttributes (5ms)
-				AfterProcessingInitializeOnLoad (9ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.53 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1409 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 97.9 MB.
-System memory in use after: 98.0 MB.
-
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1986.
-Total: 4.344900 ms (FindLiveObjects: 0.286400 ms CreateObjectMapping: 0.085700 ms MarkObjects: 3.948500 ms  DeleteObjects: 0.021800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Assets/MeshesModels/Helldemon/Helldemon.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
-
-Please note that FBX files exported from Cinema4D are still supported.
-
-Registering precompiled user dll's ...
-Registered in 0.004633 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.54 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.207 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1207ms)
-		BeginReloadAssembly (128ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (34ms)
-		EndReloadAssembly (998ms)
-			LoadAssemblies (96ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (310ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (44ms)
-			SetupLoadedEditorAssemblies (431ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (85ms)
-				ProcessInitializeOnLoadAttributes (324ms)
-				ProcessInitializeOnLoadMethodAttributes (5ms)
-				AfterProcessingInitializeOnLoad (10ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.59 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1409 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 97.9 MB.
-System memory in use after: 98.0 MB.
-
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1988.
-Total: 3.681700 ms (FindLiveObjects: 0.227200 ms CreateObjectMapping: 0.048000 ms MarkObjects: 3.381000 ms  DeleteObjects: 0.023400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Assets/MeshesModels/Helldemon/Helldemon.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
-
-Please note that FBX files exported from Cinema4D are still supported.
-
-Registering precompiled user dll's ...
-Registered in 0.004696 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.54 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.212 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1213ms)
-		BeginReloadAssembly (127ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (40ms)
-		EndReloadAssembly (1007ms)
-			LoadAssemblies (102ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (320ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (49ms)
-			SetupLoadedEditorAssemblies (423ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (84ms)
-				ProcessInitializeOnLoadAttributes (318ms)
-				ProcessInitializeOnLoadMethodAttributes (5ms)
-				AfterProcessingInitializeOnLoad (9ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.54 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1409 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 97.9 MB.
-System memory in use after: 98.0 MB.
-
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1990.
-Total: 3.541400 ms (FindLiveObjects: 0.194300 ms CreateObjectMapping: 0.043300 ms MarkObjects: 3.278900 ms  DeleteObjects: 0.023300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Assets/MeshesModels/Helldemon/Helldemon.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
-
-Please note that FBX files exported from Cinema4D are still supported.
-
-Registering precompiled user dll's ...
-Registered in 0.004828 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.34 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.275 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1276ms)
-		BeginReloadAssembly (135ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (34ms)
-		EndReloadAssembly (1062ms)
-			LoadAssemblies (100ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (319ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (57ms)
-			SetupLoadedEditorAssemblies (465ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (100ms)
-				ProcessInitializeOnLoadAttributes (340ms)
-				ProcessInitializeOnLoadMethodAttributes (5ms)
-				AfterProcessingInitializeOnLoad (10ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.53 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1409 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 97.9 MB.
-System memory in use after: 98.0 MB.
-
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1992.
-Total: 4.199200 ms (FindLiveObjects: 0.194000 ms CreateObjectMapping: 0.043700 ms MarkObjects: 3.932200 ms  DeleteObjects: 0.026900 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Assets/MeshesModels/Helldemon/Helldemon.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
-
-Please note that FBX files exported from Cinema4D are still supported.
-
-Registering precompiled user dll's ...
-Registered in 0.004701 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.56 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.218 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1219ms)
-		BeginReloadAssembly (117ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (34ms)
-		EndReloadAssembly (1018ms)
-			LoadAssemblies (96ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (304ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (44ms)
-			SetupLoadedEditorAssemblies (452ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (91ms)
-				ProcessInitializeOnLoadAttributes (338ms)
-				ProcessInitializeOnLoadMethodAttributes (5ms)
-				AfterProcessingInitializeOnLoad (10ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (10ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.53 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1409 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 97.9 MB.
-System memory in use after: 98.0 MB.
-
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1994.
-Total: 3.586900 ms (FindLiveObjects: 0.229200 ms CreateObjectMapping: 0.043500 ms MarkObjects: 3.290000 ms  DeleteObjects: 0.021800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Assets/MeshesModels/Helldemon/Helldemon.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
-
-Please note that FBX files exported from Cinema4D are still supported.
-
-Registering precompiled user dll's ...
-Registered in 0.004640 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.53 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.220 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1220ms)
-		BeginReloadAssembly (131ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (35ms)
-		EndReloadAssembly (1010ms)
-			LoadAssemblies (96ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (311ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (48ms)
-			SetupLoadedEditorAssemblies (432ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (86ms)
-				ProcessInitializeOnLoadAttributes (324ms)
-				ProcessInitializeOnLoadMethodAttributes (5ms)
-				AfterProcessingInitializeOnLoad (10ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.53 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1409 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 97.9 MB.
-System memory in use after: 98.0 MB.
-
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1996.
-Total: 4.239200 ms (FindLiveObjects: 0.281600 ms CreateObjectMapping: 0.086900 ms MarkObjects: 3.847200 ms  DeleteObjects: 0.021300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Assets/MeshesModels/Helldemon/Helldemon.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
-
-Please note that FBX files exported from Cinema4D are still supported.
-
-Registering precompiled user dll's ...
-Registered in 0.004857 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.54 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.230 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1231ms)
-		BeginReloadAssembly (122ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (36ms)
-		EndReloadAssembly (1029ms)
-			LoadAssemblies (97ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (316ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (47ms)
-			SetupLoadedEditorAssemblies (447ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (88ms)
-				ProcessInitializeOnLoadAttributes (338ms)
-				ProcessInitializeOnLoadMethodAttributes (5ms)
-				AfterProcessingInitializeOnLoad (9ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.55 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1409 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 97.9 MB.
-System memory in use after: 98.0 MB.
-
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1998.
-Total: 3.731600 ms (FindLiveObjects: 0.245300 ms CreateObjectMapping: 0.043900 ms MarkObjects: 3.418000 ms  DeleteObjects: 0.022000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Assets/MeshesModels/Helldemon/Helldemon.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
-
-Please note that FBX files exported from Cinema4D are still supported.
-
-Registering precompiled user dll's ...
-Registered in 0.004687 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.53 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.208 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1208ms)
-		BeginReloadAssembly (121ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (35ms)
-		EndReloadAssembly (1009ms)
-			LoadAssemblies (97ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (301ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (46ms)
-			SetupLoadedEditorAssemblies (448ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (88ms)
-				ProcessInitializeOnLoadAttributes (338ms)
-				ProcessInitializeOnLoadMethodAttributes (6ms)
-				AfterProcessingInitializeOnLoad (9ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.52 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1409 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 97.9 MB.
-System memory in use after: 98.0 MB.
-
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2000.
-Total: 3.882100 ms (FindLiveObjects: 0.189900 ms CreateObjectMapping: 0.042000 ms MarkObjects: 3.625800 ms  DeleteObjects: 0.022500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Assets/MeshesModels/Helldemon/Helldemon.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
-
-Please note that FBX files exported from Cinema4D are still supported.
-
-Registering precompiled user dll's ...
-Registered in 0.004706 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.59 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.266 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1266ms)
-		BeginReloadAssembly (128ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (34ms)
-		EndReloadAssembly (1061ms)
-			LoadAssemblies (94ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (321ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (48ms)
-			SetupLoadedEditorAssemblies (469ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (93ms)
-				ProcessInitializeOnLoadAttributes (351ms)
-				ProcessInitializeOnLoadMethodAttributes (6ms)
-				AfterProcessingInitializeOnLoad (10ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.59 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1409 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 97.9 MB.
-System memory in use after: 98.0 MB.
-
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2002.
-Total: 3.959800 ms (FindLiveObjects: 0.220100 ms CreateObjectMapping: 0.048500 ms MarkObjects: 3.667700 ms  DeleteObjects: 0.021800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Assets/MeshesModels/Helldemon/Helldemon.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
-
-Please note that FBX files exported from Cinema4D are still supported.
-
-Registering precompiled user dll's ...
-Registered in 0.004675 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.54 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.216 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1217ms)
-		BeginReloadAssembly (122ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (37ms)
-		EndReloadAssembly (1016ms)
-			LoadAssemblies (95ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (305ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (48ms)
-			SetupLoadedEditorAssemblies (446ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (88ms)
-				ProcessInitializeOnLoadAttributes (336ms)
-				ProcessInitializeOnLoadMethodAttributes (5ms)
-				AfterProcessingInitializeOnLoad (9ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.56 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1409 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 97.9 MB.
-System memory in use after: 98.1 MB.
+System memory in use before: 70.7 MB.
+System memory in use after: 70.8 MB.
 
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2004.
-Total: 4.156000 ms (FindLiveObjects: 0.244700 ms CreateObjectMapping: 0.043400 ms MarkObjects: 3.843000 ms  DeleteObjects: 0.023100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Assets/MeshesModels/Helldemon/Helldemon.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
-
-Please note that FBX files exported from Cinema4D are still supported.
-
-Registering precompiled user dll's ...
-Registered in 0.004629 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.54 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.217 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1218ms)
-		BeginReloadAssembly (129ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (34ms)
-		EndReloadAssembly (1008ms)
-			LoadAssemblies (95ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (308ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (47ms)
-			SetupLoadedEditorAssemblies (439ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (88ms)
-				ProcessInitializeOnLoadAttributes (330ms)
-				ProcessInitializeOnLoadMethodAttributes (4ms)
-				AfterProcessingInitializeOnLoad (8ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.71 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1409 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 97.9 MB.
-System memory in use after: 98.1 MB.
-
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2006.
-Total: 4.046100 ms (FindLiveObjects: 0.223400 ms CreateObjectMapping: 0.044900 ms MarkObjects: 3.750800 ms  DeleteObjects: 0.025200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Assets/MeshesModels/Helldemon/Helldemon.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
-
-Please note that FBX files exported from Cinema4D are still supported.
-
-Registering precompiled user dll's ...
-Registered in 0.004661 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.52 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.189 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1189ms)
-		BeginReloadAssembly (120ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (33ms)
-		EndReloadAssembly (992ms)
-			LoadAssemblies (93ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (300ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (44ms)
-			SetupLoadedEditorAssemblies (437ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (84ms)
-				ProcessInitializeOnLoadAttributes (330ms)
-				ProcessInitializeOnLoadMethodAttributes (5ms)
-				AfterProcessingInitializeOnLoad (11ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (10ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.52 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1409 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 98.0 MB.
-System memory in use after: 98.1 MB.
-
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2008.
-Total: 3.934100 ms (FindLiveObjects: 0.294100 ms CreateObjectMapping: 0.103000 ms MarkObjects: 3.512700 ms  DeleteObjects: 0.021800 ms)
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1876.
+Total: 3.581400 ms (FindLiveObjects: 0.210500 ms CreateObjectMapping: 0.036300 ms MarkObjects: 3.303000 ms  DeleteObjects: 0.030200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 

@@ -3478,7 +3478,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   npc: {fileID: 11400000, guid: b08f053f3fd35ab49a67bf174d856f32, type: 2}
-  player: {fileID: 0}
+  player: {fileID: 236675080}
   dialogueUI: {fileID: 1815597444}
   npcNameAtManager: {fileID: 559914106}
   npcDialogueBox: {fileID: 59247598}
@@ -4591,7 +4591,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   npc: {fileID: 11400000, guid: 0df3157fd0004404493e9e34fe5bf7c5, type: 2}
-  player: {fileID: 0}
+  player: {fileID: 236675080}
   dialogueUI: {fileID: 1815597444}
   npcNameAtManager: {fileID: 559914106}
   npcDialogueBox: {fileID: 59247598}
