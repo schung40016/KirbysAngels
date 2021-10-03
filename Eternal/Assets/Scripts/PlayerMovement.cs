@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
 
     Vector3 velocity;
     bool isGrounded;
+    bool isBlocked = false;
 
     public float forwardInput;
     public float horizontalInput;
@@ -51,31 +52,35 @@ public class PlayerMovement : MonoBehaviour
             velocity.y = -2f;
         }
 
-        // Move player.
-        forwardInput = Input.GetAxis("Vertical");
-        horizontalInput = Input.GetAxis("Horizontal");
-
-        Vector3 move = transform.right * horizontalInput + transform.forward * forwardInput;
-        controller.Move(move * speed * Time.deltaTime);
-        animator.SetFloat("SideRunSpeed", horizontalInput);
-        animator.SetFloat("RunSpeed", forwardInput);
-
-        // Jump!!
-        if (Input.GetButtonDown("Jump") && isGrounded)
+        if (!isBlocked) // As long as the player is not stuck in a fighting animation, we can let the player move.
         {
-            velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
-            animator.SetTrigger("Jump");
+            // Move player.
+            forwardInput = Input.GetAxis("Vertical");
+            horizontalInput = Input.GetAxis("Horizontal");
+
+            Vector3 move = transform.right * horizontalInput + transform.forward * forwardInput;
+            controller.Move(move * speed * Time.deltaTime);
+            animator.SetFloat("SideRunSpeed", horizontalInput);
+            animator.SetFloat("RunSpeed", forwardInput);
+
+            // Jump!!
+            if (Input.GetButtonDown("Jump") && isGrounded)
+            {
+                velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
+                animator.SetTrigger("Jump");
+            }
+
+            // Responsible for applying gravity to the player.
+            velocity.y += gravity * Time.deltaTime;
+
+            controller.Move(velocity * Time.deltaTime);
         }
-
-        // Responsible for applying gravity to the player.
-        velocity.y += gravity * Time.deltaTime;
-
-        controller.Move(velocity * Time.deltaTime);
     }
 
-    public void PlayMove(Moves move, int comboPriority, int damage)
+    // Executes the player's move.
+    public void PlayMove(Moves move, int comboPriority, int damage, float moveWaitTime)
     {
-        if (Moves.None != move)
+        if (Moves.None != move && !isBlocked)
         {
             if (comboPriority > currentComboPriority)
             {
@@ -100,11 +105,13 @@ public class PlayerMovement : MonoBehaviour
                     animator.SetTrigger("UpperCut");
                     break;
             }
+            StartCoroutine(StopPlayerInput(moveWaitTime));
             Attack(damage);
             currentComboPriority = 0;
         }
     }
 
+    // Reset animation for smooth animation transition.
     void ResetTriggers()
     {
         foreach(AnimatorControllerParameter parameter in animator.parameters)
@@ -113,6 +120,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    // Handles damaging the enemy caught within player's hurtbox.
     void Attack(int damage)
     {
         // Check to see if anyone was in range.
@@ -126,6 +134,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    // Draws the hurtbox of the Player's range.
     private void OnDrawGizmosSelected()
     {
         if (attackPoint == null)
@@ -133,5 +142,13 @@ public class PlayerMovement : MonoBehaviour
 
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(attackPoint.position, attackRange);
+    }
+
+    // Disables player input for a given time.
+    IEnumerator StopPlayerInput(float moveTime)
+    {
+        isBlocked = true;
+        yield return new WaitForSeconds(moveTime);
+        isBlocked = false;
     }
 }

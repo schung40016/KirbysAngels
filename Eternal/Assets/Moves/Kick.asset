@@ -16,3 +16,4 @@ MonoBehaviour:
   moveType: 2
   comboPriority: 2
   damage: 45
+  movetime: 2
