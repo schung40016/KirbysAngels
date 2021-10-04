@@ -8,7 +8,8 @@ public class HealthEXPSystem
     private int exp;        //experience
 
 
-    public HealthEXPSystem(int hp, int exp) {
+    public HealthEXPSystem(int hp, int exp)
+    {
 
         this.hp = hp;
         this.exp = exp;
@@ -16,11 +17,13 @@ public class HealthEXPSystem
 
 
 
-    public int getHP() {
+    public int getHP()
+    {
         return hp;
     }
 
-    public void addHP(int value) {
+    public void addHP(int value)
+    {
 
         hp += value;
     }
