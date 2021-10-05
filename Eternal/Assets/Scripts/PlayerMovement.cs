@@ -15,10 +15,10 @@ public class PlayerMovement : MonoBehaviour
 
     Vector3 velocity;
     bool isGrounded;
-    bool isBlocked = false;
+    private bool isBlocked = false;
 
-    public float forwardInput;
-    public float horizontalInput;
+    private float forwardInput;
+    private float horizontalInput;
 
     // Combo & Animation
     Animator animator;
@@ -78,7 +78,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     // Executes the player's move.
-    public void PlayMove(Moves move, int comboPriority, int damage, float moveWaitTime)
+    public void PlayMove(Moves move, int comboPriority, int damage, float moveWaitTime, float knockBackMultiplier, Vector3 knockBackDirection)
     {
         if (Moves.None != move && !isBlocked)
         {
@@ -106,7 +106,7 @@ public class PlayerMovement : MonoBehaviour
                     break;
             }
             StartCoroutine(StopPlayerInput(moveWaitTime));
-            Attack(damage);
+            Attack(damage, knockBackMultiplier, knockBackDirection);
             currentComboPriority = 0;
         }
     }
@@ -121,7 +121,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     // Handles damaging the enemy caught within player's hurtbox.
-    void Attack(int damage)
+    void Attack(int damage, float knockBackMultiplier, Vector3 knockBackDirection)
     {
         // Check to see if anyone was in range.
         Collider[] hitEnemies = Physics.OverlapSphere(attackPoint.position, attackRange, enemyLayers);
@@ -131,6 +131,23 @@ public class PlayerMovement : MonoBehaviour
         {
             Debug.Log("We hit " + enemy.name + " for " + damage + " health points.");
             enemy.GetComponent<Enemy>().TakeDamage(damage);
+            KnockBackEnemy(enemy, knockBackMultiplier, knockBackDirection);
+        }
+    }
+
+    private void KnockBackEnemy(Collider enemy, float knockBackMultiplier, Vector3 knockBackDirection)
+    {
+        // Obtain the enemy's virtual body.
+        Rigidbody body = enemy.GetComponent<Rigidbody>();
+
+        if (body != null)
+        {
+            Vector3 direction = enemy.transform.position - transform.position;
+            direction.x *= knockBackDirection.x;
+            direction.y *= knockBackDirection.y;
+            direction.z *= knockBackDirection.z;
+            Debug.Log(direction);
+            body.AddForce(direction.normalized * knockBackMultiplier, ForceMode.VelocityChange);
         }
     }
 
@@ -151,4 +168,6 @@ public class PlayerMovement : MonoBehaviour
         yield return new WaitForSeconds(moveTime);
         isBlocked = false;
     }
+
+
 }

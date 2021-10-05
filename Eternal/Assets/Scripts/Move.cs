@@ -9,7 +9,9 @@ public class Move : ScriptableObject
     [SerializeField] private Moves moveType;             // Defines the moves.
     [SerializeField] private int comboPriority = 0;             // Gives priority to harder moves.
     [SerializeField] private int damage;
-    [SerializeField] private float movetime = 0; 
+    [SerializeField] private float movetime = 0;
+    [SerializeField] private float knockBackMultiplier = 1;
+    [SerializeField] private Vector3 knockBackDirection = new Vector3(1,1,1);
  
     public bool isMoveAvailable(List<KeyCode> playerKeyCodes)
     {
@@ -57,5 +59,15 @@ public class Move : ScriptableObject
     public float GetMoveTime()
     {
         return movetime;
+    }
+
+    public float GetKnockBackMultiplier()
+    {
+        return knockBackMultiplier;
+    }
+
+    public Vector3 GetKnockBackDirection()
+    {
+        return knockBackDirection;
     }
 }
