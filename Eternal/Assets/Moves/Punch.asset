@@ -16,3 +16,6 @@ MonoBehaviour:
   moveType: 1
   comboPriority: 1
   damage: 30
+  movetime: 1.267
+  knockBackMultiplier: 2
+  knockBackDirection: {x: 1, y: 1, z: 1}
