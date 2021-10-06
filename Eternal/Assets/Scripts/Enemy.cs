@@ -7,11 +7,14 @@ public class Enemy : MonoBehaviour
     public int maxHealth = 100;
     int currentHealth;
     [SerializeField] GameObject body;
+    Rigidbody virtualBody;
 
     // Start is called before the first frame update
     void Start()
     {
         currentHealth = maxHealth;
+        virtualBody = body.GetComponent<Rigidbody>();
+        virtualBody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
     }
 
     // Update is called once per frame

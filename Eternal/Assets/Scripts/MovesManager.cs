@@ -34,7 +34,7 @@ public class MovesManager : MonoBehaviour
         {
             if (move.isMoveAvailable(keycodes))
             {
-                playerController.PlayMove(move.GetMove(), move.GetMoveComboPriority(), move.GetDamage());
+                playerController.PlayMove(move.GetMove(), move.GetMoveComboPriority(), move.GetDamage(), move.GetMoveTime(), move.GetKnockBackMultiplier(), move.GetKnockBackDirection());
                 break;
             }
         }
