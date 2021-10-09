@@ -16,7 +16,9 @@ MonoBehaviour:
   dialogue:
   - Hi! My name is miku. You can call me miku chun.
   - I sing for the people everyday.
-  - From the land of the eternal, I will sing for the people in this city.
+  - For the land of the Eternal, I will sing for the people in this city.
+  - Bye.
   playerDialogue:
   - What do you do?
   - What do you want to do?
+  - Bye~
