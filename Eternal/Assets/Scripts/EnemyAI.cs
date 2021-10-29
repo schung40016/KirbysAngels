@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 using UnityEngine.AI;
 
 public class EnemyAI : MonoBehaviour
@@ -25,11 +26,20 @@ public class EnemyAI : MonoBehaviour
     public float sightRange, attackRange;
     public bool playerInSightRange, playerInAttackRange;
 
+    // For Knockback physics
+    bool knockBack;
+    public Vector3 direction;
+
     // Initialize variables.
     private void Awake()
     {
         player = GameObject.Find("Player").transform;
         agent = GetComponent<NavMeshAgent>();
+    }
+
+    private void Start()
+    {
+        knockBack = false;
     }
 
     private void Update()
@@ -42,8 +52,40 @@ public class EnemyAI : MonoBehaviour
         if (playerInSightRange && !playerInAttackRange) ChasePlayer();      // Did not see a player, stroll.
         if (playerInSightRange && playerInAttackRange) AttackPlayer();      // Did not see a player, stroll.
 
+        if (knockBack)
+        {
+            agent.velocity = direction * 8;
+        }
+    }
+/*
+    IEnumerator KnockBack()
+    {
+        knockBack = true;
+        agent.speed = 10;
+        agent.angularSpeed = 0;         // Keeps agent from spinning.
+        agent.acceleration = 20;
+
+        Debug.Log(agent.acceleration);
+
+        yield return new WaitForSeconds(0.2f);      // Knock enemy back for a little bit of time.
+
+        // Knockback finished, return speed to normal.
+        knockBack = false;
+        agent.speed = 10;
+        agent.angularSpeed = 180;         // Keeps agent from spinning.
+        agent.acceleration = 10;
     }
 
+    private void OnTriggerEnter(Collider other)
+    {   
+        direction = other.transform.forward;
+        if (other.name.Length == ("HurtBox(Clone)".Length)) 
+        {
+            StartCoroutine(KnockBack());
+            Destroy(other.gameObject);
+        }
+    }
+*/
     private void Patrolling()
     {
         if (!walkPointSet) 
@@ -91,10 +133,10 @@ public class EnemyAI : MonoBehaviour
         if (!alreadyAttacked)
         {
             // Initiate attack code.
-            Rigidbody rb = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<Rigidbody>();
+            //Rigidbody rb = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<Rigidbody>();
 
-            rb.AddForce(transform.forward * 32f, ForceMode.Impulse);
-            rb.AddForce(transform.up * 8f, ForceMode.Impulse);
+            //rb.AddForce(transform.forward * 32f, ForceMode.Impulse);
+            //rb.AddForce(transform.up * 8f, ForceMode.Impulse);
 
 
             alreadyAttacked = true;

@@ -27,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
     public Transform attackPoint;
     public float attackRange = 0.5f;
     public LayerMask enemyLayers;
+    public GameObject hurtB;
 
     // Start is called before the first frame update
     void Awake()
@@ -92,6 +93,9 @@ public class PlayerMovement : MonoBehaviour
             {
                 return;
             }
+
+            GameObject clone;
+
             // Use Switch statements to handle animation and call the Attack Move.
             switch (move)
             {
@@ -103,6 +107,7 @@ public class PlayerMovement : MonoBehaviour
                     break;
                 case Moves.Uppercut:
                     animator.SetTrigger("UpperCut");
+                    //clone = Instantiate(hurtB, new Vector3(transform.position.x, transform.position.y + 1, transform.position.z) + transform.forward * 1f, transform.rotation) as GameObject;
                     break;
             }
             StartCoroutine(StopPlayerInput(moveWaitTime));
@@ -129,11 +134,11 @@ public class PlayerMovement : MonoBehaviour
         foreach (Collider enemy in hitEnemies)
         {
             Debug.Log("We hit " + enemy.name + " for " + damage + " health points.");
-            enemy.GetComponent<Enemy>().TakeDamage(damage);
-            KnockBackEnemy(enemy, knockBackMultiplier, knockBackDirection);
+            enemy.GetComponent<EnemyAI>().TakeDamage(damage);
+            //KnockBackEnemy(enemy, knockBackMultiplier, knockBackDirection);
         }
     }
-
+/*
     private void KnockBackEnemy(Collider enemy, float knockBackMultiplier, Vector3 knockBackDirection)
     {
         // Obtain the enemy's virtual body.
@@ -145,10 +150,10 @@ public class PlayerMovement : MonoBehaviour
             direction.x *= knockBackDirection.x;
             direction.y *= knockBackDirection.y;
             direction.z *= knockBackDirection.z;
-            Debug.Log(direction);
             body.AddForce(direction.normalized * knockBackMultiplier, ForceMode.VelocityChange);
         }
     }
+*/
 
     // Draws the hurtbox of the Player's range.
     private void OnDrawGizmosSelected()
