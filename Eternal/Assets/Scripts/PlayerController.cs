@@ -29,7 +29,6 @@ public class PlayerController : MonoBehaviour
         //But it shouldn't be an issue for prfabs
         //To Do: Need to find a way to see what object was touched.
 
-        Debug.Log(other.name);
         if (other.name == "Health Point")
         {
             float distance_hp = Vector3.Distance(other.transform.position, this.transform.position);
