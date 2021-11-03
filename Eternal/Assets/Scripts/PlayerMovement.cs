@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float gravity = -9.81f;
     [SerializeField] private float jumpHeight = 3f;
     [SerializeField] private Transform groundCheck;
-    [SerializeField] private float groundDistance = 0.4f;
+    [SerializeField] private float groundDistance = 5f;       // 0.4f
     [SerializeField] LayerMask groundMask;
 
     Vector3 velocity;
@@ -28,10 +28,12 @@ public class PlayerMovement : MonoBehaviour
     public float attackRange = 0.5f;
     public LayerMask enemyLayers;
     public GameObject hurtB;
+    private Transform playerTrans;
 
     // Start is called before the first frame update
     void Awake()
     {
+        playerTrans = GetComponent<Transform>();
         if (controlManager == null)
         {
             controlManager = FindObjectOfType<ControlManager>();
@@ -94,8 +96,6 @@ public class PlayerMovement : MonoBehaviour
                 return;
             }
 
-            GameObject clone;
-
             // Use Switch statements to handle animation and call the Attack Move.
             switch (move)
             {
@@ -135,25 +135,12 @@ public class PlayerMovement : MonoBehaviour
         {
             Debug.Log("We hit " + enemy.name + " for " + damage + " health points.");
             enemy.GetComponent<EnemyAI>().TakeDamage(damage);
-            //KnockBackEnemy(enemy, knockBackMultiplier, knockBackDirection);
-        }
-    }
-/*
-    private void KnockBackEnemy(Collider enemy, float knockBackMultiplier, Vector3 knockBackDirection)
-    {
-        // Obtain the enemy's virtual body.
-        Rigidbody body = enemy.GetComponent<Rigidbody>();
 
-        if (body != null)
-        {
-            Vector3 direction = enemy.transform.position - transform.position;
-            direction.x *= knockBackDirection.x;
-            direction.y *= knockBackDirection.y;
-            direction.z *= knockBackDirection.z;
-            body.AddForce(direction.normalized * knockBackMultiplier, ForceMode.VelocityChange);
+            // Handles enemy knock back.
+            enemy.GetComponentInChildren<ImpactReceiver>().AddImpact(playerTrans.forward, 50f);
         }
     }
-*/
+
 
     // Draws the hurtbox of the Player's range.
     private void OnDrawGizmosSelected()

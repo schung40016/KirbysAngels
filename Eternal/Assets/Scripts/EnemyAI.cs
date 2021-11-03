@@ -8,13 +8,6 @@ public class EnemyAI : MonoBehaviour
 
     private PlayerController playerControllerScript;
 
-
-
-
-
-
-
-
     //Testing above
 
     public NavMeshAgent agent;
@@ -27,6 +20,7 @@ public class EnemyAI : MonoBehaviour
 
     // player object
     public GameObject playerObj;
+    public ImpactReceiver playerObjImpact;
 
     // Patrolling
     public Vector3 walkPoint;
@@ -51,6 +45,7 @@ public class EnemyAI : MonoBehaviour
     {
         player = GameObject.Find("Player").transform;
         agent = GetComponent<NavMeshAgent>();
+        playerObjImpact = player.GetComponentInChildren<ImpactReceiver>();
     }
 
     private void Start()
@@ -59,28 +54,6 @@ public class EnemyAI : MonoBehaviour
         
     }
 
-    private void Update()
-    {
-
-        /*
-        // Check whether player is in sight or in attack range.
-        playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
-        playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
-
-        if (!playerInSightRange && !playerInAttackRange) Patrolling();      // Did not see a player, stroll.
-        if (playerInSightRange && !playerInAttackRange) ChasePlayer();      // Did not see a player, stroll.
-        if (playerInSightRange && playerInAttackRange) AttackPlayer();      // Did not see a player, stroll.
-
-        if (knockBack)
-        {
-            agent.velocity = direction * 8;
-
-        }
-        */
-
-    }
-
-     
     void FixedUpdate()
     {
         // Check whether player is in sight or in attack range.
@@ -94,40 +67,9 @@ public class EnemyAI : MonoBehaviour
         if (knockBack)
         {
             agent.velocity = direction * 8;
-
         }
-    }
-
-    
-    /*
-        IEnumerator KnockBack()
-        {
-            knockBack = true;
-            agent.speed = 10;
-            agent.angularSpeed = 0;         // Keeps agent from spinning.
-            agent.acceleration = 20;
-
-            Debug.Log(agent.acceleration);
-
-            yield return new WaitForSeconds(0.2f);      // Knock enemy back for a little bit of time.
-
-            // Knockback finished, return speed to normal.
-            knockBack = false;
-            agent.speed = 10;
-            agent.angularSpeed = 180;         // Keeps agent from spinning.
-            agent.acceleration = 10;
-        }
-
-        private void OnTriggerEnter(Collider other)
-        {   
-            direction = other.transform.forward;
-            if (other.name.Length == ("HurtBox(Clone)".Length)) 
-            {
-                StartCoroutine(KnockBack());
-                Destroy(other.gameObject);
-            }
-        }
-    */
+    }   
+ 
     private void Patrolling()
     {
         if (!walkPointSet) 
@@ -173,27 +115,16 @@ public class EnemyAI : MonoBehaviour
 
         transform.LookAt(player);
 
-        Debug.Log("To Attack!~~~");
         if (!alreadyAttacked)
         {
-            Debug.Log("Attack~~~"+ playerObj.gameObject.tag+"~~~");
             // Initiate attack code.
             Rigidbody rb = playerObj.GetComponent<Rigidbody>();
-
-
  
             Vector3 lookDirection =(player.position - transform.position).normalized;
 
             Vector3 curr_pos = player.position;
 
-            // playerObj.transform.position = new Vector3(100, 100, 100);
-            playerObj.transform.position = new Vector3(player.position.x + 5, player.position.y+2, player.position.z + 5);
-
-
-            //Rigidbody rb = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<Rigidbody>();
-
-            //rb.AddForce(transform.up * 320000000f, ForceMode.Impulse);
-            //rb.AddForce(transform.up * 8f, ForceMode.Impulse);
+            playerObjImpact.AddImpact(Vector3.up, 500.0f);
 
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);        // Ensures our enemy won't deal infinite damage to the player.
