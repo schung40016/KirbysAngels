@@ -219,16 +219,17 @@ MonoBehaviour:
   whatIsPlayer:
     serializedVersion: 2
     m_Bits: 512
-  playerObj: {fileID: 0}
   walkPoint: {x: 10, y: 0, z: 10}
   walkPointRange: 10
   timeBetweenAttacks: 1
   projectile: {fileID: 4922240339376909662, guid: 5fbd3a912f455c74588acc6d3834aaa1, type: 3}
-  sightRange: 20
-  attackRange: 12
+  sightRange: 30
+  attackRange: 20
   playerInSightRange: 0
   playerInAttackRange: 0
   direction: {x: 0, y: 0, z: 0}
+  upwardVelocity: 0
+  fowardVelocity: 32
 --- !u!195 &6564347194274153211
 NavMeshAgent:
   m_ObjectHideFlags: 0

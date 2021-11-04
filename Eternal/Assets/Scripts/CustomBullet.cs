@@ -19,6 +19,8 @@ public class CustomBullet : MonoBehaviour
     public float maxLifeTime;
     public bool explodeOnTouch = true;
 
+    private GameObject impactGo;
+
     int collisions;
     PhysicMaterial physics_mat;
 
@@ -39,9 +41,10 @@ public class CustomBullet : MonoBehaviour
 
     private void Explode()
     {
+
         if (explosion != null)
         {
-            Instantiate(explosion, transform.position, Quaternion.identity);
+            impactGo = Instantiate(explosion, transform.position, Quaternion.identity);
         }
 
         // Check all objects caught within the explosion.
@@ -57,6 +60,7 @@ public class CustomBullet : MonoBehaviour
 
     private void Delay()
     {
+        Destroy(impactGo);
         Destroy(gameObject);
     }
 
@@ -66,7 +70,10 @@ public class CustomBullet : MonoBehaviour
         collisions++;
 
         // Explode if the bullets hits object/enemy directly
-        if (collision.collider.CompareTag("Player_Tag") && explodeOnTouch) Explode();
+        if (collision.collider.CompareTag("Player_Tag") && explodeOnTouch)
+        {
+            Explode();
+        }
     }
 
     private void Setup()

@@ -15,7 +15,6 @@ public class EnemyAI : MonoBehaviour
     public LayerMask whatIsGround, whatIsPlayer;
 
     // player object
-    public GameObject playerObj;
     ImpactReceiver playerObjImpact;
 
     // Patrolling
@@ -36,7 +35,10 @@ public class EnemyAI : MonoBehaviour
     bool knockBack;
     public Vector3 direction;
 
-    // Initialize variables.
+    // Initialize projectile variables.
+    [SerializeField] private float upwardVelocity = 0.0f;
+    [SerializeField] private float fowardVelocity = 32.0f;
+
     private void Awake()
     {
         player = GameObject.Find("Player").transform;
@@ -91,7 +93,7 @@ public class EnemyAI : MonoBehaviour
         walkPoint = new Vector3(transform.position.x + randomX, transform.position.y, transform.position.z + randomZ);
 
         // Using a raycast check if the enemy can walk on the ground (not midair). 
-        if (Physics.Raycast(walkPoint, -transform.up, 2f, whatIsGround));
+        if (Physics.Raycast(walkPoint, -transform.up, 2f, whatIsGround))
         {
             walkPointSet = true;
         }
@@ -114,12 +116,8 @@ public class EnemyAI : MonoBehaviour
             // Initiate attack code.
             Rigidbody rb = Instantiate(projectile, transform.position + transform.forward, Quaternion.identity).GetComponent<Rigidbody>();
 
-            rb.AddForce(transform.forward * 32f, ForceMode.Impulse);
-
-            if (projectile.name.Equals("ExplosiveSphere"))
-            {
-                rb.AddForce(transform.up * 8f, ForceMode.Impulse);
-            }
+            rb.AddForce(transform.forward * fowardVelocity, ForceMode.Impulse);
+            rb.AddForce(transform.up * upwardVelocity, ForceMode.Impulse);
 
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);        // Ensures our enemy won't deal infinite damage to the player.
