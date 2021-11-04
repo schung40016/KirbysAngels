@@ -64,6 +64,7 @@ public class PlayerController : MonoBehaviour
         healthEXP.addHP(-damage);
         if (healthEXP.getHP() <= 0)
         {
+            Debug.Log("Player Dead. Game Over.");
             Invoke(nameof(KillPlayer), 0.5f);
         }
     }
