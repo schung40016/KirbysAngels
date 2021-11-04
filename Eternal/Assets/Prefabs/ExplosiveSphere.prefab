@@ -127,16 +127,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 4922240339376909661}
-  explosion: {fileID: 0}
+  explosion: {fileID: 1000011128802252, guid: 96730f8640590934eacb6f860058e7f9, type: 3}
   whatIsEnemies:
     serializedVersion: 2
     m_Bits: 512
   bounciness: 0.8
   useGravity: 1
-  explosionDamage: 5
-  explosionRange: 5
+  explosionDamage: 10
+  explosionRange: 10
   maxCollisions: 10
-  maxLifeTime: 4
+  maxLifeTime: 3
   explodeOnTouch: 1
 --- !u!96 &4922240339376909663
 TrailRenderer:
@@ -209,8 +209,8 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 0.0179291, b: 0, a: 1}
-      key1: {r: 1, g: 0.559062, b: 0, a: 1}
+      key0: {r: 0, g: 0.89888954, b: 1, a: 1}
+      key1: {r: 0.027233878, g: 0.28685793, b: 0.6415094, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
