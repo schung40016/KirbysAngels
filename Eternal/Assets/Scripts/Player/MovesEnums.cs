@@ -3,5 +3,6 @@ public enum Moves
     None,
     Punch,
     Kick,
-    Uppercut
+    Uppercut,
+    Windblast
 }
