@@ -10,6 +10,7 @@ public class Move : ScriptableObject
     [SerializeField] private int comboPriority = 0;                                 // Gives priority to harder moves.
     [SerializeField] private int damage;
     [SerializeField] private float movetime = 0;                                    // Keeps track of how long the controls should be disabled.
+    [SerializeField] private int manaUsage = 0;
     [SerializeField] private float knockBackMultiplier = 1;                     
     [SerializeField] private Vector3 knockBackDirection = new Vector3(1, 1, 1);     
 
@@ -59,6 +60,11 @@ public class Move : ScriptableObject
     public float GetMoveTime()
     {
         return movetime;
+    }
+
+    public int GetManaUsage()
+    {
+        return manaUsage;
     }
 
     public float GetKnockBackMultiplier()
