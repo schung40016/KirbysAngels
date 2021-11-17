@@ -7,15 +7,15 @@ public class EnemyAI : MonoBehaviour
     private PlayerController playerControllerScript;
 
     //Testing above
-
     public NavMeshAgent agent;
-
     public Transform player;
-
     public LayerMask whatIsGround, whatIsPlayer;
 
     // player object
     ImpactReceiver playerObjImpact;
+
+    // Animation related.
+    private Animator animator;
 
     // Patrolling
     public Vector3 walkPoint;
@@ -44,6 +44,11 @@ public class EnemyAI : MonoBehaviour
         player = GameObject.Find("Player").transform;
         agent = GetComponent<NavMeshAgent>();
         playerObjImpact = player.GetComponentInChildren<ImpactReceiver>();
+
+        if (animator == null)
+        {
+            animator = GetComponent<Animator>();
+        }
     }
 
     private void Start()
@@ -57,9 +62,15 @@ public class EnemyAI : MonoBehaviour
         playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
         playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
 
+        animator.SetBool("isWalking", true);
+
         if (!playerInSightRange && !playerInAttackRange) Patrolling();      // Did not see a player, stroll.
         if (playerInSightRange && !playerInAttackRange) ChasePlayer();      // Did not see a player, stroll.
-        if (playerInSightRange && playerInAttackRange) AttackPlayer();      // Did not see a player, stroll.
+        if (playerInSightRange && playerInAttackRange)
+        {
+            animator.SetBool("isWalking", false);
+            AttackPlayer();      // Did not see a player, stroll.
+        }
 
         if (knockBack)
         {
@@ -113,6 +124,8 @@ public class EnemyAI : MonoBehaviour
 
         if (!alreadyAttacked)
         {
+            animator.SetTrigger("isAttacking");
+
             // Initiate attack code.
             Rigidbody rb = Instantiate(projectile, transform.position + transform.forward, Quaternion.identity).GetComponent<Rigidbody>();
 
