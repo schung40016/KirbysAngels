@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Collections;
 using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
@@ -16,9 +15,11 @@ public class PlayerController : MonoBehaviour
     public int maxHealth = 100;
     public int currentHealth;
 
+    private bool isAlive = true;
+    [SerializeField] private GameObject deathScreen;
+
     public int maxMana = 100;
     public int currentMana;
-    private bool isRegenMana = false;
     private WaitForSeconds regenTick = new WaitForSeconds(0.1f);
 
     public int playerExp = 0;
@@ -71,6 +72,13 @@ public class PlayerController : MonoBehaviour
 
     private void KillPlayer()
     {
-        Destroy(gameObject);
+        isAlive = false;
+        deathScreen.SetActive(true);
+        Time.timeScale = 0f;
+    }
+
+    public bool GetState()
+    {
+        return isAlive;
     }
 }

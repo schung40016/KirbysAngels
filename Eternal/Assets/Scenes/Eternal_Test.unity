@@ -855,6 +855,7 @@ GameObject:
   - component: {fileID: 259373653}
   - component: {fileID: 259373652}
   - component: {fileID: 259373651}
+  - component: {fileID: 259373654}
   m_Layer: 5
   m_Name: ReturnButton
   m_TagString: Untagged
@@ -880,7 +881,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -37.99}
-  m_SizeDelta: {x: 160, y: 30}
+  m_SizeDelta: {x: 230.06, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &259373651
 MonoBehaviour:
@@ -925,7 +926,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 259373652}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1013700447}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_MethodName: MainMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &259373652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -939,7 +952,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.16981131, g: 0.16981131, b: 0.16981131, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -964,6 +977,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 259373649}
   m_CullTransparentMesh: 1
+--- !u!114 &259373654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 259373649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!1 &276815446 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100540, guid: c925872ce3bfa384589bf34b953d5a65, type: 3}
@@ -2654,6 +2682,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 411144275}
+  player: {fileID: 919132148581629756}
 --- !u!1 &1022414282 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 101646, guid: c925872ce3bfa384589bf34b953d5a65, type: 3}
@@ -4011,7 +4040,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 0.8616718, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4019,7 +4048,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 7efb579918580fd4ab7f9bc7a131cf9c, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
@@ -4031,7 +4060,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: Return to Main Menu
 --- !u!222 &1578477045
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5794,6 +5823,10 @@ PrefabInstance:
       propertyPath: experience
       value: 
       objectReference: {fileID: 1678624629}
+    - target: {fileID: 8029000494073279758, guid: f86b4df48e363f84f905ee154d650fa1, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 7754658}
     - target: {fileID: 8029000494073279759, guid: f86b4df48e363f84f905ee154d650fa1, type: 3}
       propertyPath: hurtB
       value: 
