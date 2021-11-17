@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 5857047722344223717}
   m_Layer: 0
   m_Name: Exp Point
-  m_TagString: Untagged
+  m_TagString: ExpPack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
