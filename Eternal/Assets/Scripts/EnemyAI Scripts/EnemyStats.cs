@@ -5,7 +5,6 @@ using UnityEngine;
 public class EnemyStats : MonoBehaviour
 {
     public float health;
-
     public GameObject expPoint;
 
     public void TakeDamage(int damage)

@@ -1,78 +1,84 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
-    public GameObject hp_pack;
+    //public GameObject hp_pack;
+    //public GameObject exp_pack;
 
-    public GameObject exp_pack;
+    public HealthBar healthBar;
+    public ManaBar manaBar;
+    public Text experience;
 
-    HealthEXPSystem healthEXP;
+    public int maxHealth = 100;
+    public int currentHealth;
+
+    private bool isAlive = true;
+    [SerializeField] private GameObject deathScreen;
+
+    public int maxMana = 100;
+    public int currentMana;
+    private WaitForSeconds regenTick = new WaitForSeconds(0.1f);
+
+    public int playerExp = 0;
+
+    [SerializeField] private float timeStamp = 2.0f;
 
     // Start is called before the first frame update
     void Start()
     {
-        healthEXP = new HealthEXPSystem(100, 0);
+        currentHealth = maxHealth; 
+        healthBar.SetMaxHealth(maxHealth);
+        currentMana = maxMana;
+        manaBar.SetMaxMana(maxMana);
+        experience.text = "Exp: " + playerExp;
     }
 
-    // Update is called once per frame
-    void Update()
+    private IEnumerator RegenMana()
     {
-        Debug.Log(healthEXP.getHP());
+        // Delays out mana regeneration.
+        yield return new WaitForSeconds(timeStamp);
+
+        while ( currentMana < maxMana)
+        {
+            currentMana += maxMana / 100;
+            manaBar.SetMana(currentMana);
+            yield return regenTick;
+        }
     }
 
-    private void OnTriggerEnter(Collider other)
+    public void UseMana(int mana)
     {
-
-        //Flaw here, it may destory all the hp pac or exp pack at the end.
-        //But it shouldn't be an issue for prfabs
-        //To Do: Need to find a way to see what object was touched.
-
-        if (other.name == "Health Point")
-        {
-            float distance_hp = Vector3.Distance(other.transform.position, this.transform.position);
-            if (distance_hp <= 2.5f)
-            {
-                Debug.Log("HP Before: " + healthEXP.getHP().ToString());
-                Debug.Log("HP point got and increase 100 health point");
-                healthEXP.addHP(100);
-                Debug.Log("HP After: " + healthEXP.getHP().ToString());
-
-                //Destroy(hp_pack);
-            }
-        }
-        else if (other.name == "Exp Point")
-        {
-            float distance_exp = Vector3.Distance(other.transform.position, this.transform.position);
-
-
-
-            if (distance_exp <= 2.5f)
-            {
-                Debug.Log("EXP Before: " + healthEXP.getEXP().ToString());
-                Debug.Log("EXP point got and increase 100 EXP point");
-                healthEXP.addEXP(100);
-                Debug.Log("EXP After: " + healthEXP.getEXP().ToString());
-
-                //Destroy(exp_pack);
-            }
-        }
+        currentMana -= mana;
+        manaBar.SetMana(currentMana);
+        StartCoroutine(RegenMana());
     }
 
     public void TakeDamage(int damage)
     {
-        healthEXP.addHP(-damage);
-        if (healthEXP.getHP() <= 0)
+        currentHealth-= damage;
+
+        if (currentHealth <= 0)
         {
             //Health point is below or equal to zero, so player dead.
             Debug.Log("Player Dead. Game Over.");
             Invoke(nameof(KillPlayer), 0.5f);
         }
+
+        healthBar.SetHealth(currentHealth);
     }
 
     private void KillPlayer()
     {
-        Destroy(gameObject);
+        isAlive = false;
+        deathScreen.SetActive(true);
+        Time.timeScale = 0f;
+    }
+
+    public bool GetState()
+    {
+        return isAlive;
     }
 }

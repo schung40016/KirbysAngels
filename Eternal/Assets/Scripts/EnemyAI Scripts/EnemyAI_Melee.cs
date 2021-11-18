@@ -17,6 +17,9 @@ public class EnemyAI_Melee : MonoBehaviour
     // player object
     ImpactReceiver playerObjImpact;
 
+    // Animator
+    Animator animator;
+
     // Patrolling
     public Vector3 walkPoint;
     bool walkPointSet;              // Checks if our AI can walk at a certain spot.
@@ -44,6 +47,7 @@ public class EnemyAI_Melee : MonoBehaviour
         player = GameObject.Find("Player").transform;
         agent = GetComponent<NavMeshAgent>();
         playerObjImpact = player.GetComponentInChildren<ImpactReceiver>();
+        animator = GetComponent<Animator>();
     }
 
     private void Start()
@@ -57,9 +61,21 @@ public class EnemyAI_Melee : MonoBehaviour
         playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
         playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
 
-        if (!playerInSightRange && !playerInAttackRange) Patrolling();      // Did not see a player, stroll.
-        if (playerInSightRange && !playerInAttackRange) ChasePlayer();      // Did not see a player, stroll.
-        if (playerInSightRange && playerInAttackRange) AttackPlayer();      // Did not see a player, stroll.
+        if (!playerInSightRange && !playerInAttackRange)
+        {
+            animator.SetBool("isWalking", true);
+            Patrolling();      // Did not see a player, stroll.
+        }
+        if (playerInSightRange && !playerInAttackRange)
+        {
+            animator.SetBool("isWalking", true);
+            ChasePlayer();      // Did not see a player, stroll.
+        }
+        if (playerInSightRange && playerInAttackRange)
+        {
+            animator.SetBool("isWalking", false);
+            AttackPlayer();      // Did not see a player, stroll.
+        }
 
         if (knockBack)
         {
@@ -106,6 +122,8 @@ public class EnemyAI_Melee : MonoBehaviour
 
     private void AttackPlayer()
     {
+        animator.SetTrigger("isAttacking");
+
         // Make sure enemy stays still when trying to attack player.
         agent.SetDestination(transform.position);
 

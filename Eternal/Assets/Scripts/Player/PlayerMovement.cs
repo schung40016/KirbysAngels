@@ -29,6 +29,7 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask enemyLayers;
     public GameObject hurtB;
     private Transform playerTrans;
+    [SerializeField] PlayerController player;
 
     // Start is called before the first frame update
     void Awake()
@@ -81,7 +82,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     // Executes the player's move.
-    public void PlayMove(Moves move, int comboPriority, int damage, float moveWaitTime, float knockBackMultiplier, Vector3 knockBackDirection)
+    public void PlayMove(Moves move, int comboPriority, int damage, float moveWaitTime, float knockBackMultiplier, Vector3 knockBackDirection, int manaUsage)
     {
         if (Moves.None != move && !isBlocked)
         {
@@ -96,22 +97,29 @@ public class PlayerMovement : MonoBehaviour
                 return;
             }
 
-            // Use Switch statements to handle animation and call the Attack Move.
-            switch (move)
+            if (player.currentMana - manaUsage > 0)
             {
-                case Moves.Punch:
-                    animator.SetTrigger("Punch");
-                    break;
-                case Moves.Kick:
-                    animator.SetTrigger("Kick");
-                    break;
-                case Moves.Uppercut:
-                    animator.SetTrigger("UpperCut");
-                    //clone = Instantiate(hurtB, new Vector3(transform.position.x, transform.position.y + 1, transform.position.z) + transform.forward * 1f, transform.rotation) as GameObject;
-                    break;
+                // Use Switch statements to handle animation and call the Attack Move.
+                switch (move)
+                {
+                    case Moves.Punch:
+                        animator.SetTrigger("Punch");
+                        break;
+                    case Moves.Kick:
+                        animator.SetTrigger("Kick");
+                        break;
+                    case Moves.Uppercut:
+                        animator.SetTrigger("UpperCut");
+                        break;
+                    case Moves.Windblast:
+                        Debug.Log("Wind blast");
+                        break;
+                }
+                StartCoroutine(StopPlayerInput(moveWaitTime));
+                Attack(damage, knockBackMultiplier, knockBackDirection);
+                player.UseMana(manaUsage);
             }
-            StartCoroutine(StopPlayerInput(moveWaitTime));
-            Attack(damage, knockBackMultiplier, knockBackDirection);
+
             currentComboPriority = 0;
         }
     }
@@ -130,6 +138,7 @@ public class PlayerMovement : MonoBehaviour
         // Check to see if anyone was in range.
         Collider[] hitEnemies = Physics.OverlapSphere(attackPoint.position, attackRange, enemyLayers);
 
+        Debug.Log("damage");
         // Apply damage.
         foreach (Collider enemy in hitEnemies)
         {
