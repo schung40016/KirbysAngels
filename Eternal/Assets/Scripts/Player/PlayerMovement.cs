@@ -138,6 +138,7 @@ public class PlayerMovement : MonoBehaviour
         // Check to see if anyone was in range.
         Collider[] hitEnemies = Physics.OverlapSphere(attackPoint.position, attackRange, enemyLayers);
 
+        Debug.Log("damage");
         // Apply damage.
         foreach (Collider enemy in hitEnemies)
         {

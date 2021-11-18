@@ -1,22 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Collections;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
-    public GameObject hp_pack;
-    public GameObject exp_pack;
+    //public GameObject hp_pack;
+    //public GameObject exp_pack;
 
     public HealthBar healthBar;
     public ManaBar manaBar;
+    public Text experience;
 
     public int maxHealth = 100;
     public int currentHealth;
 
+    private bool isAlive = true;
+    [SerializeField] private GameObject deathScreen;
+
     public int maxMana = 100;
     public int currentMana;
-    private bool isRegenMana = false;
     private WaitForSeconds regenTick = new WaitForSeconds(0.1f);
 
     public int playerExp = 0;
@@ -30,6 +33,7 @@ public class PlayerController : MonoBehaviour
         healthBar.SetMaxHealth(maxHealth);
         currentMana = maxMana;
         manaBar.SetMaxMana(maxMana);
+        experience.text = "Exp: " + playerExp;
     }
 
     private IEnumerator RegenMana()
@@ -52,42 +56,6 @@ public class PlayerController : MonoBehaviour
         StartCoroutine(RegenMana());
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-
-        //Flaw here, it may destory all the hp pac or exp pack at the end.
-        //But it shouldn't be an issue for prfabs
-        //To Do: Need to find a way to see what object was touched.
-
-        if (other.name == "Health Point")
-        {
-            float distance_hp = Vector3.Distance(other.transform.position, this.transform.position);
-            if (distance_hp <= 2.5f)
-            {
-                Debug.Log("HP point got and increase 100 health point");
-                currentHealth += 50;
-                if (currentHealth > maxHealth)
-                {
-                    currentHealth = maxHealth;
-                }
-
-                //Destroy(hp_pack);
-            }
-        }
-        else if (other.name == "Exp Point")
-        {
-            float distance_exp = Vector3.Distance(other.transform.position, this.transform.position);
-
-            if (distance_exp <= 2.5f)
-            {
-                Debug.Log("EXP point got and increase 100 EXP point");
-                playerExp += 100;
-
-                //Destroy(exp_pack);
-            }
-        }
-    }
-
     public void TakeDamage(int damage)
     {
         currentHealth-= damage;
@@ -104,6 +72,13 @@ public class PlayerController : MonoBehaviour
 
     private void KillPlayer()
     {
-        Destroy(gameObject);
+        isAlive = false;
+        deathScreen.SetActive(true);
+        Time.timeScale = 0f;
+    }
+
+    public bool GetState()
+    {
+        return isAlive;
     }
 }
