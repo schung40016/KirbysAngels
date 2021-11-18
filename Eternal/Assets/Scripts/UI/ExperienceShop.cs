@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ExperienceShop : MonoBehaviour
 {
@@ -16,6 +17,19 @@ public class ExperienceShop : MonoBehaviour
     [SerializeField] private int damageUpgradeCost = 500;
     [SerializeField] private int ComboUpgradeCost = 400;
     [SerializeField] private int manaUpgradeCost = 300;
+
+    [SerializeField] private Text hpTier;
+    [SerializeField] private Text mnTier;
+    [SerializeField] private Text cbTier;
+    [SerializeField] private Text dmgTier;
+
+    public void Start()
+    {
+        hpTier.text = healthTier.ToString();
+        mnTier.text = manaTier.ToString();
+        cbTier.text = comboTier.ToString();
+        dmgTier.text = damageTier.ToString();
+    }
 
     // Opens up the experience shop.
     public void OpenExperienceShop()
