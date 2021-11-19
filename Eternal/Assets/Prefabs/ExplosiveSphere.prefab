@@ -135,8 +135,8 @@ MonoBehaviour:
   useGravity: 1
   explosionDamage: 10
   explosionRange: 10
-  maxCollisions: 10
-  maxLifeTime: 3
+  maxCollisions: 1
+  maxLifeTime: 1
   explodeOnTouch: 1
 --- !u!96 &4922240339376909663
 TrailRenderer:
