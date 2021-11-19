@@ -36,6 +36,11 @@ public class PlayerController : MonoBehaviour
         experience.text = "Exp: " + playerExp;
     }
 
+    private void Update()
+    {
+        experience.text = "Exp: " + playerExp;
+    }
+
     private IEnumerator RegenMana()
     {
         // Delays out mana regeneration.

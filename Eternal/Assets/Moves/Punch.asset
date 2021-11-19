@@ -15,7 +15,8 @@ MonoBehaviour:
   movesKeyCodes: 6a000000
   moveType: 1
   comboPriority: 1
-  damage: 30
+  damage: 15
   movetime: 0.4
+  manaUsage: 0
   knockBackMultiplier: 3
   knockBackDirection: {x: 1, y: 0, z: 1}
