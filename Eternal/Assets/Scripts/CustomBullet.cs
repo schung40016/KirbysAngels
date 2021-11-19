@@ -52,7 +52,7 @@ public class CustomBullet : MonoBehaviour
         for (int i = 0; i < enemies.Length; i++)
         {
             // Get component of target and call take Damage.
-            enemies[i].GetComponent<PlayerController>().TakeDamage(explosionDamage);
+           // enemies[i].GetComponent<PlayerController>().TakeDamage(explosionDamage);
         }
 
         Invoke("Delay", 0.01f);
