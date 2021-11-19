@@ -2585,13 +2585,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalRotation: {x: 0.7229188, y: -0.17158937, z: 0.19370659, w: 0.6406429}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 96.90799, y: -30.044006, z: -0.04901123}
 --- !u!1 &759347489 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 101134, guid: c925872ce3bfa384589bf34b953d5a65, type: 3}
@@ -3390,7 +3390,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   npc: {fileID: 11400000, guid: b08f053f3fd35ab49a67bf174d856f32, type: 2}
   player: {fileID: 919132148581629752}
-  dialogueUI: {fileID: 1815597444}
+  dialogueUI: {fileID: 74792413}
   npcNameAtManager: {fileID: 559914106}
   npcDialogueBox: {fileID: 59247598}
   playerResponse: {fileID: 617483084}
@@ -6016,7 +6016,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1994634171}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 2
@@ -6099,7 +6099,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   npc: {fileID: 11400000, guid: 0df3157fd0004404493e9e34fe5bf7c5, type: 2}
   player: {fileID: 919132148581629752}
-  dialogueUI: {fileID: 1815597444}
+  dialogueUI: {fileID: 74792413}
   npcNameAtManager: {fileID: 559914106}
   npcDialogueBox: {fileID: 59247598}
   playerResponse: {fileID: 617483084}
