@@ -11,6 +11,13 @@ public class EnemyAI : MonoBehaviour
     public Transform player;
     public LayerMask whatIsGround, whatIsPlayer;
 
+    // Audio
+    private AudioSource audioPlayer;
+    [SerializeField] private AudioClip[] audioPlayList;
+    private bool playPatrol = true;
+    private bool playChase = true;
+    private bool playAttack = true;
+
     // player object
     ImpactReceiver playerObjImpact;
 
@@ -44,6 +51,7 @@ public class EnemyAI : MonoBehaviour
         player = GameObject.Find("Player").transform;
         agent = GetComponent<NavMeshAgent>();
         playerObjImpact = player.GetComponentInChildren<ImpactReceiver>();
+        audioPlayer = GetComponent<AudioSource>();
 
         if (animator == null)
         {
@@ -64,10 +72,28 @@ public class EnemyAI : MonoBehaviour
 
         animator.SetBool("isWalking", true);
 
-        if (!playerInSightRange && !playerInAttackRange) Patrolling();      // Did not see a player, stroll.
-        if (playerInSightRange && !playerInAttackRange) ChasePlayer();      // Did not see a player, stroll.
+        if (!playerInSightRange && !playerInAttackRange)
+        {
+            if (playPatrol)
+            {
+                SoundControl(audioPlayList[0], ref playPatrol, ref playChase, ref playAttack);
+            }
+            Patrolling();      // Did not see a player, stroll.
+        }
+        if (playerInSightRange && !playerInAttackRange) 
+        {
+            if (playChase)
+            {
+                SoundControl(audioPlayList[1], ref playChase, ref playPatrol, ref playAttack);
+            }
+            ChasePlayer();      // Did not see a player, stroll.
+        }
         if (playerInSightRange && playerInAttackRange)
         {
+            if (playAttack)
+            {
+                SoundControl(audioPlayList[2], ref playAttack, ref playPatrol, ref playChase);
+            }
             animator.SetBool("isWalking", false);
             AttackPlayer();      // Did not see a player, stroll.
         }
@@ -76,12 +102,24 @@ public class EnemyAI : MonoBehaviour
         {
             agent.velocity = direction * 8;
         }
+
     }   
  
+    private void SoundControl(AudioClip audioPlayClip, ref bool notPlay, ref bool play1, ref bool play2)
+    {
+        audioPlayer.clip = audioPlayClip;
+        audioPlayer.Play();
+        notPlay = false;
+        play1 = true;
+        play2 = true;
+    }
+
     private void Patrolling()
     {
-        if (!walkPointSet) 
+        if (!walkPointSet)
+        {
             SearchWalkPoint();
+        }
 
         // Move enemy to the point.
         if (walkPointSet)

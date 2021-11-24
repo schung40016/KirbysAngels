@@ -7,12 +7,16 @@ public class EnemyAI_Melee : MonoBehaviour
     private PlayerController playerControllerScript;
 
     //Testing above
-
     public NavMeshAgent agent;
-
     public Transform player;
-
     public LayerMask whatIsGround, whatIsPlayer;
+
+    // Audio
+    private AudioSource audioPlayer;
+    [SerializeField] private AudioClip[] audioPlayList;
+    private bool playPatrol = true;
+    private bool playChase = true;
+    private bool playAttack = true;
 
     // player object
     ImpactReceiver playerObjImpact;
@@ -47,7 +51,12 @@ public class EnemyAI_Melee : MonoBehaviour
         player = GameObject.Find("Player").transform;
         agent = GetComponent<NavMeshAgent>();
         playerObjImpact = player.GetComponentInChildren<ImpactReceiver>();
-        animator = GetComponent<Animator>();
+        audioPlayer = GetComponent<AudioSource>();
+
+        if (animator == null)
+        {
+            animator = GetComponent<Animator>();
+        }
     }
 
     private void Start()
@@ -63,16 +72,28 @@ public class EnemyAI_Melee : MonoBehaviour
 
         if (!playerInSightRange && !playerInAttackRange)
         {
+            if (playPatrol)
+            {
+                SoundControl(audioPlayList[0], ref playPatrol, ref playChase, ref playAttack);
+            }
             animator.SetBool("isWalking", true);
             Patrolling();      // Did not see a player, stroll.
         }
         if (playerInSightRange && !playerInAttackRange)
         {
+            if (playChase)
+            {
+                SoundControl(audioPlayList[1], ref playChase, ref playPatrol, ref playAttack);
+            }
             animator.SetBool("isWalking", true);
             ChasePlayer();      // Did not see a player, stroll.
         }
         if (playerInSightRange && playerInAttackRange)
         {
+            if (playAttack)
+            {
+                SoundControl(audioPlayList[2], ref playAttack, ref playPatrol, ref playChase);
+            }
             animator.SetBool("isWalking", false);
             AttackPlayer();      // Did not see a player, stroll.
         }
@@ -81,6 +102,14 @@ public class EnemyAI_Melee : MonoBehaviour
         {
             agent.velocity = direction * 8;
         }
+    }
+    private void SoundControl(AudioClip audioPlayClip, ref bool notPlay, ref bool play1, ref bool play2)
+    {
+        audioPlayer.clip = audioPlayClip;
+        audioPlayer.Play();
+        notPlay = false;
+        play1 = true;
+        play2 = true;
     }
 
     private void Patrolling()
