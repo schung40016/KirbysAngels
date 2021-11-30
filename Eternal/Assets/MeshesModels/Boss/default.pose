@@ -1,0 +1,189 @@
+root ground: -90 0 0 0 0 0 1 1 1
+pelvis: 0 0 0 0 0 0 1 1 1
+spine lower: 0 0 0 0 0 0 1 1 1
+spine middle: 0 0 0 0 0 0 1 1 1
+spine upper: 0 0 0 0 0 0 1 1 1
+arm left shoulder 1: 0 0 0 0 0 0 1 1 1
+arm left shoulder 2: 0 0 0 0 0 0 1 1 1
+arm left forearm: 0 0 0 0 0 0 1 1 1
+arm left wrist: 0 0 0 0 0 0 1 1 1
+arm left finger 2a: 0 0 0 0 0 0 1 1 1
+arm left finger 2b: 0 0 0 0 0 0 1 1 1
+arm left finger 2c: 0 0 0 0 0 0 1 1 1
+arm left finger 1a: 0 0 0 0 0 0 1 1 1
+arm left finger 1b: 0 0 0 0 0 0 1 1 1
+arm left finger 1c: 0 0 0 0 0 0 1 1 1
+arm left finger 4a: 0 0 0 0 0 0 1 1 1
+arm left finger 4b: 0 0 0 0 0 0 1 1 1
+arm left finger 4c: 0 0 0 0 0 0 1 1 1
+arm left finger 3a: 0 0 0 0 0 0 1 1 1
+arm left finger 3b: 0 0 0 0 0 0 1 1 1
+arm left finger 3c: 0 0 0 0 0 0 1 1 1
+arm left finger 5a: 0 0 0 0 0 0 1 1 1
+arm left finger 5b: 0 0 0 0 0 0 1 1 1
+arm left finger 5c: 0 0 0 0 0 0 1 1 1
+Book: 0 0 0 0 0 0 1 1 1
+arm left forearm twist: 0 0 0 0 0 0 1 1 1
+arm left forearm adj: 0 0 0 0 0 0 1 1 1
+Elbow Armor L: 0 0 0 0 0 0 1 1 1
+Elbow Armor02 L: 0 0 0 0 0 0 1 1 1
+Elbow Armor 04 L: 0 0 0 0 0 0 1 1 1
+Elbow Armor 05 L: 0 0 0 0 0 0 1 1 1
+Fluted lowarmCorrect Armor L: 0 0 0 0 0 0 1 1 1
+arm left shoulder twist: 0 0 0 0 0 0 1 1 1
+Correct twist 02 l: 0 0 0 0 0 0 1 1 1
+Correct twist 03 l: 0 0 0 0 0 0 1 1 1
+FlutedShArmor02 L: 0 0 0 0 0 0 1 1 1
+hvi A torch: 0 0 0 0 0 0 1 1 1
+hvi A torch visula2: 0 0 0 0 0 0 1 1 1
+hvi A torch visula1: 0 0 0 0 0 0 1 1 1
+arm left shoulder twist 1: 0 0 0 0 0 0 1 1 1
+arm left shoulder twist 2: 0 0 0 0 0 0 1 1 1
+arm left shoulder adj: 0 0 0 0 0 0 1 1 1
+Elbow Armor 03 L: 0 0 0 0 0 0 1 1 1
+sh Armor L: 0 0 0 0 0 0 1 1 1
+arm left sabre: 0 0 0 0 0 0 1 1 1
+FlutedShArmor01 L: 0 0 0 0 0 0 1 1 1
+arm left roll: 0 0 0 0 0 0 1 1 1
+arm left neck: 0 0 0 0 0 0 1 1 1
+arm right shoulder 1: 0 0 0 0 0 0 1 1 1
+arm right shoulder 2: 0 0 0 0 0 0 1 1 1
+arm right forearm: 0 0 0 0 0 0 1 1 1
+arm right wrist: 0 0 0 0 0 0 1 1 1
+arm right finger 2a: 0 0 0 0 0 0 1 1 1
+arm right finger 2b: 0 0 0 0 0 0 1 1 1
+arm right finger 2c: 0 0 0 0 0 0 1 1 1
+arm right finger 1a: 0 0 0 0 0 0 1 1 1
+arm right finger 1b: 0 0 0 0 0 0 1 1 1
+arm right finger 1c: 0 0 0 0 0 0 1 1 1
+arm right finger 4a: 0 0 0 0 0 0 1 1 1
+arm right finger 4b: 0 0 0 0 0 0 1 1 1
+arm right finger 4c: 0 0 0 0 0 0 1 1 1
+arm right finger 3a: 0 0 0 0 0 0 1 1 1
+arm right finger 3b: 0 0 0 0 0 0 1 1 1
+arm right finger 3c: 0 0 0 0 0 0 1 1 1
+arm right finger 5a: 0 0 0 0 0 0 1 1 1
+arm right finger 5b: 0 0 0 0 0 0 1 1 1
+arm right finger 5c: 0 0 0 0 0 0 1 1 1
+Sword Joint: 0 0 0 0 0 0 1 1 1
+Page Joint: 0 0 0 0 0 0 1 1 1
+Spider joint01: 0 0 0 0 0 0 1 1 1
+arm right forearm twist: 0 0 0 0 0 0 1 1 1
+arm right forearm adj: 0 0 0 0 0 0 1 1 1
+Elbow Armor R: 0 0 0 0 0 0 1 1 1
+Elbow Armor02 R: 0 0 0 0 0 0 1 1 1
+Elbow Armor 04 L2: 0 0 0 0 0 0 1 1 1
+Elbow Armor 05 L2: 0 0 0 0 0 0 1 1 1
+Fluted lowarmCorrect Armor R: 0 0 0 0 0 0 1 1 1
+arm right shoulder twist: 0 0 0 0 0 0 1 1 1
+Correct twist 02 r: 0 0 0 0 0 0 1 1 1
+Correct twist 03 r: 0 0 0 0 0 0 1 1 1
+FlutedShArmor02 R: 0 0 0 0 0 0 1 1 1
+arm right shoulder twist 1: 0 0 0 0 0 0 1 1 1
+upperarm twist 02 r1: 0 0 0 0 0 0 1 1 1
+upperarm twist 02 r4: 0 0 0 0 0 0 1 1 1
+Elbow Armor 03 L2: 0 0 0 0 0 0 1 1 1
+sh Armor R: 0 0 0 0 0 0 1 1 1
+arm right sabre: 0 0 0 0 0 0 1 1 1
+FlutedShArmor01 R: 0 0 0 0 0 0 1 1 1
+arm right roll: 0 0 0 0 0 0 1 1 1
+arm right neck: 0 0 0 0 0 0 1 1 1
+head neck lower: 0 0 0 0 0 0 1 1 1
+head neck upper: 0 0 0 0 0 0 1 1 1
+hvi A head: 0 0 0 0 0 0 1 1 1
+coif back L: 0 0 0 0 0 0 1 1 1
+coif front L: 0 0 0 0 0 0 1 1 1
+coif front R: 0 0 0 0 0 0 1 1 1
+coif back R: 0 0 0 0 0 0 1 1 1
+back muscle left 1: 0 0 0 0 0 0 1 1 1
+back muscle right 1: 0 0 0 0 0 0 1 1 1
+chest armor 01 L: 0 0 0 0 0 0 1 1 1
+chest armor 02 L: 0 0 0 0 0 0 1 1 1
+sh blade armor 01 L: 0 0 0 0 0 0 1 1 1
+sh blade armor 02 L: 0 0 0 0 0 0 1 1 1
+chest armor01 R: 0 0 0 0 0 0 1 1 1
+chest armor02 R: 0 0 0 0 0 0 1 1 1
+sh blade armor 01 R: 0 0 0 0 0 0 1 1 1
+sh blade armor 02 R: 0 0 0 0 0 0 1 1 1
+back muscle right 2: 0 0 0 0 0 0 1 1 1
+back muscle right 3: 0 0 0 0 0 0 1 1 1
+back muscle left 2: 0 0 0 0 0 0 1 1 1
+back muscle left 3: 0 0 0 0 0 0 1 1 1
+hvi A spine visula: 0 0 0 0 0 0 1 1 1
+hvi A spine visula1: 0 0 0 0 0 0 1 1 1
+hvi A spine visula L: 0 0 0 0 0 0 1 1 1
+hvi A spine visula L1: 0 0 0 0 0 0 1 1 1
+hvi A spine visula R: 0 0 0 0 0 0 1 1 1
+hvi A spine visula R1: 0 0 0 0 0 0 1 1 1
+neck korrect L: 0 0 0 0 0 0 1 1 1
+neck korrect R: 0 0 0 0 0 0 1 1 1
+Ballista: 0 0 0 0 0 0 1 1 1
+Spider joint02: 0 0 0 0 0 0 1 1 1
+leg left thigh: 0 0 0 0 0 0 1 1 1
+leg left knee: 0 0 0 0 0 0 1 1 1
+leg left calftwist: 0 0 0 0 0 0 1 1 1
+leg left ankle: 0 0 0 0 0 0 1 1 1
+leg left toes: 0 0 0 0 0 0 1 1 1
+Knee Armor L: 0 0 0 0 0 0 1 1 1
+leg left thigh twist: 0 0 0 0 0 0 1 1 1
+Fluted legArmor 022 L: 0 0 0 0 0 0 1 1 1
+leg right thigh: 0 0 0 0 0 0 1 1 1
+leg right knee: 0 0 0 0 0 0 1 1 1
+leg right calftwist: 0 0 0 0 0 0 1 1 1
+leg right ankle: 0 0 0 0 0 0 1 1 1
+foot r1: 0 0 0 0 0 0 1 1 1
+Knee Armor R: 0 0 0 0 0 0 1 1 1
+leg right thigh twist: 0 0 0 0 0 0 1 1 1
+Fluted legArmor 022 R: 0 0 0 0 0 0 1 1 1
+Leg Armor L: 0 0 0 0 0 0 1 1 1
+Leg Armor R: 0 0 0 0 0 0 1 1 1
+Belt3: 0 0 0 0 0 0 1 1 1
+Belt6: 0 0 0 0 0 0 1 1 1
+Belt7: 0 0 0 0 0 0 1 1 1
+Belt8: 0 0 0 0 0 0 1 1 1
+Belt9: 0 0 0 0 0 0 1 1 1
+Belt10: 0 0 0 0 0 0 1 1 1
+Belt11: 0 0 0 0 0 0 1 1 1
+Belt12: 0 0 0 0 0 0 1 1 1
+Belt L: 0 0 0 0 0 0 1 1 1
+Belt back: 0 0 0 0 0 0 1 1 1
+Belt R: 0 0 0 0 0 0 1 1 1
+Cloth R1: 0 0 0 0 0 0 1 1 1
+Cloth R2: 0 0 0 0 0 0 1 1 1
+Cloth R3: 0 0 0 0 0 0 1 1 1
+Cloth R4: 0 0 0 0 0 0 1 1 1
+Cloth R5: 0 0 0 0 0 0 1 1 1
+Cloth L1: 0 0 0 0 0 0 1 1 1
+Cloth L2: 0 0 0 0 0 0 1 1 1
+Cloth L3: 0 0 0 0 0 0 1 1 1
+Cloth L4: 0 0 0 0 0 0 1 1 1
+Cloth L5: 0 0 0 0 0 0 1 1 1
+Cloth b L1: 0 0 0 0 0 0 1 1 1
+Cloth b L2: 0 0 0 0 0 0 1 1 1
+Cloth b L3: 0 0 0 0 0 0 1 1 1
+Cloth b L4: 0 0 0 0 0 0 1 1 1
+Cloth b L5: 0 0 0 0 0 0 1 1 1
+Cloth b L6: 0 0 0 0 0 0 1 1 1
+Cloth b L7: 0 0 0 0 0 0 1 1 1
+Cloth b R2: 0 0 0 0 0 0 1 1 1
+Cloth b R3: 0 0 0 0 0 0 1 1 1
+Cloth b R4: 0 0 0 0 0 0 1 1 1
+Cloth b R5: 0 0 0 0 0 0 1 1 1
+Cloth b R6: 0 0 0 0 0 0 1 1 1
+Cloth b R7: 0 0 0 0 0 0 1 1 1
+Cloth b R8: 0 0 0 0 0 0 1 1 1
+Fluted legArmor 01 L: 0 0 0 0 0 0 1 1 1
+Fluted legArmor 01 R: 0 0 0 0 0 0 1 1 1
+Fluted cloth front: 0 0 0 0 0 0 1 1 1
+Fluted cloth back: 0 0 0 0 0 0 1 1 1
+hvi A visulia: 0 0 0 0 0 0 1 1 1
+trinket waist: 0 0 0 0 0 0 1 1 1
+ik hand root: 0 0 0 0 0 0 1 1 1
+ik hand gun: 0 0 0 0 0 0 1 1 1
+ik hand l: 0 0 0 0 0 0 1 1 1
+ik hand r: 0 0 0 0 0 0 1 1 1
+ik foot root: 0 0 0 0 0 0 1 1 1
+ik foot l: 0 0 0 0 0 0 1 1 1
+ik foot r: 0 0 0 0 0 0 1 1 1
+cam: 0 0 0 0 0 0 1 1 1
+camTarget: 0 0 0 0 0 0 1 1 1

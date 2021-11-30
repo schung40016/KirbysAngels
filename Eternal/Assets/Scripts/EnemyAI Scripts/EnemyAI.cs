@@ -12,17 +12,17 @@ public class EnemyAI : MonoBehaviour
     public LayerMask whatIsGround, whatIsPlayer;
 
     // Audio
-    private AudioSource audioPlayer;
-    [SerializeField] private AudioClip[] audioPlayList;
-    private bool playPatrol = true;
-    private bool playChase = true;
-    private bool playAttack = true;
+    protected AudioSource audioPlayer;
+    [SerializeField] protected AudioClip[] audioPlayList;
+    protected bool playPatrol = true;
+    protected bool playChase = true;
+    protected bool playAttack = true;
 
     // player object
     ImpactReceiver playerObjImpact;
 
     // Animation related.
-    private Animator animator;
+    protected Animator animator;
 
     // Patrolling
     public Vector3 walkPoint;
@@ -31,7 +31,7 @@ public class EnemyAI : MonoBehaviour
 
     // Attacking
     public float timeBetweenAttacks;
-    bool alreadyAttacked;
+    protected bool alreadyAttacked;
     public GameObject projectile;
 
     // States 
@@ -43,8 +43,8 @@ public class EnemyAI : MonoBehaviour
     public Vector3 direction;
 
     // Initialize projectile variables.
-    [SerializeField] private float upwardVelocity = 0.0f;
-    [SerializeField] private float fowardVelocity = 32.0f;
+    [SerializeField] protected float upwardVelocity = 0.0f;
+    [SerializeField] protected float fowardVelocity = 32.0f;
 
     private void Awake()
     {
@@ -153,7 +153,7 @@ public class EnemyAI : MonoBehaviour
         agent.SetDestination(player.position);
     }
 
-    private void AttackPlayer()
+    protected virtual void AttackPlayer()
     {
         // Make sure enemy stays still when trying to attack player.
         agent.SetDestination(transform.position);
@@ -175,7 +175,7 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
-    private void ResetAttack()
+    protected void ResetAttack()
     {
         alreadyAttacked = false;
     }
