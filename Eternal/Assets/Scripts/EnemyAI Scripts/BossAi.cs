@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 public class BossAi : EnemyAI
 {
-    private string[] attackAnimations = new string[] { "attack1", "attack2", "attack3" };
+    private string[] attackAnimations = new string[] { "isAttacking", "isAttacking2", "isAttacking3" };
+    [SerializeField] GameObject[] attackModes;
 
     System.Random r = new System.Random();
+
 
     protected override void AttackPlayer()
     {
@@ -16,20 +18,29 @@ public class BossAi : EnemyAI
 
         if (!alreadyAttacked)
         {
-            int pick = r.Next(2);
-            Attack(attackAnimations[pick]);        
+            int pick = r.Next(0, attackModes.Length);
+            Debug.Log(pick);
+            Attack(attackAnimations[pick], attackModes[pick]);        
         }
     }
 
-    private void Attack(string AttackAnim)
+    private void Attack(string AttackAnim, GameObject attackMode)
     {
         animator.SetTrigger(AttackAnim);
 
         // Initiate attack code.
-        Rigidbody rb = Instantiate(projectile, transform.position + transform.forward, Quaternion.identity).GetComponent<Rigidbody>();
+        Rigidbody rb = Instantiate(attackMode, transform.position + transform.forward * 3, Quaternion.identity).GetComponent<Rigidbody>();
 
         rb.AddForce(transform.forward * fowardVelocity, ForceMode.Impulse);
-        rb.AddForce(transform.up * upwardVelocity, ForceMode.Impulse);
+        
+        if (attackMode.name.Equals("BulletSphere"))
+        {
+            rb.AddForce(transform.up * 0, ForceMode.Impulse);
+        }
+        else
+        {
+            rb.AddForce(transform.up * upwardVelocity, ForceMode.Impulse);
+        }
 
         alreadyAttacked = true;
         Invoke(nameof(ResetAttack), timeBetweenAttacks);        // Ensures our enemy won't deal infinite damage to the player.

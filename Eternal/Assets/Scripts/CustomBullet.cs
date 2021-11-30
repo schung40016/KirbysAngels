@@ -19,6 +19,8 @@ public class CustomBullet : MonoBehaviour
     public float maxLifeTime;
     public bool explodeOnTouch = true;
 
+    public Collider bullCollider;
+
     private GameObject impactGo;
 
     int collisions;
@@ -32,8 +34,11 @@ public class CustomBullet : MonoBehaviour
     private void Update()
     {
         // When to explode our projectile.
-        if (collisions > maxCollisions) Explode();
-
+        if (collisions > maxCollisions)
+        {
+            Debug.Log("ini");
+            Explode();
+        }
         // Countdown the lifetime of the explosive.
         maxLifeTime -= Time.deltaTime;
         if (maxLifeTime <= 0) Explode();
@@ -41,7 +46,6 @@ public class CustomBullet : MonoBehaviour
 
     private void Explode()
     {
-
         if (explosion != null)
         {
             impactGo = Instantiate(explosion, transform.position, Quaternion.identity);
@@ -52,7 +56,7 @@ public class CustomBullet : MonoBehaviour
         for (int i = 0; i < enemies.Length; i++)
         {
             // Get component of target and call take Damage.
-           // enemies[i].GetComponent<PlayerController>().TakeDamage(explosionDamage);
+            enemies[i].GetComponent<PlayerController>().TakeDamage(explosionDamage);
         }
 
         Invoke("Delay", 0.01f);
@@ -67,7 +71,8 @@ public class CustomBullet : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         // Coutn up collisions.
-        collisions++;
+        if (!collision.gameObject.layer.Equals("Enemy"))
+            collisions++;
 
         // Explode if the bullets hits object/enemy directly
         if (collision.collider.CompareTag("Player_Tag") && explodeOnTouch)
@@ -84,7 +89,8 @@ public class CustomBullet : MonoBehaviour
         physics_mat.frictionCombine = PhysicMaterialCombine.Minimum;
         physics_mat.bounceCombine = PhysicMaterialCombine.Maximum;
 
-        GetComponent<SphereCollider>().material = physics_mat;
+        //GetComponent<SphereCollider>().material = physics_mat;
+        bullCollider.material = physics_mat;
 
         rb.useGravity = useGravity;
     }

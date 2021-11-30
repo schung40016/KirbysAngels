@@ -39,7 +39,7 @@ public class EnemyAI : MonoBehaviour
     public bool playerInSightRange, playerInAttackRange;
 
     // For Knockback physics
-    bool knockBack;
+    bool knockBack = false;
     public Vector3 direction;
 
     // Initialize projectile variables.
@@ -57,11 +57,6 @@ public class EnemyAI : MonoBehaviour
         {
             animator = GetComponent<Animator>();
         }
-    }
-
-    private void Start()
-    {
-        knockBack = false;
     }
 
     void FixedUpdate()

@@ -10,11 +10,13 @@ public class ExperienceShop : MonoBehaviour
     [SerializeField] private PauseMenu pauseMenu;
     [SerializeField] private GameObject experiencePanel;
     [SerializeField] private GameObject errorMessage;
+    [SerializeField] private GameObject boss;
 
     private int healthTier = 1;
     private int damageTier = 1;
     private int comboTier = 1;
     private int manaTier = 1;
+    private int upgradeCounter = 0;
 
     [SerializeField] private int healthUpgradeCost = 300;
     [SerializeField] private int damageUpgradeCost = 500;
@@ -77,8 +79,24 @@ public class ExperienceShop : MonoBehaviour
         {
             player.maxHealth += 100;
             player.currentHealth = player.maxHealth;
+            player.healthBar.SetMaxHealth(player.maxHealth);
             SubtractExp(healthTier, healthUpgradeCost);
             healthTier += 1;
+            InitBoss();
+            errorMessage.SetActive(false);
+        }
+        else
+        {
+            GetException();
+        }
+    }
+
+    public void BuyDamageUpgrade()
+    {
+        if (damageTier < 5)
+        {
+            damageTier += 1;
+            InitBoss();
             errorMessage.SetActive(false);
         }
         else
@@ -96,11 +114,21 @@ public class ExperienceShop : MonoBehaviour
             player.currentMana = player.maxMana;
             SubtractExp(manaTier, manaUpgradeCost);
             manaTier += 1;
+            InitBoss();
             errorMessage.SetActive(false);
         }
         else
         {
             GetException();
+        }
+    }
+
+    private void InitBoss()
+    {
+        upgradeCounter++;
+        if (upgradeCounter == 6)
+        {
+            boss.SetActive(true);
         }
     }
 
@@ -122,5 +150,15 @@ public class ExperienceShop : MonoBehaviour
     public int GetManaTier()
     {
         return manaTier;
+    }
+
+    public int GetDamageTier()
+    {
+        return damageTier;
+    }
+
+    public int GetUpgradeCounter()
+    {
+        return upgradeCounter;
     }
 }

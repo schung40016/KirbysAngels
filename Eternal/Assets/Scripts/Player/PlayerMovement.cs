@@ -30,6 +30,8 @@ public class PlayerMovement : MonoBehaviour
     public GameObject hurtB;
     private Transform playerTrans;
     [SerializeField] PlayerController player;
+    [SerializeField] GameObject expShop;
+    private int damageTier; 
 
     // Start is called before the first frame update
     void Awake()
@@ -116,7 +118,10 @@ public class PlayerMovement : MonoBehaviour
                         break;
                 }
                 StartCoroutine(StopPlayerInput(moveWaitTime));
-                Attack(damage, knockBackMultiplier, knockBackDirection);
+
+                damageTier = expShop.GetComponent<ExperienceShop>().GetDamageTier();
+
+                Attack(damage * damageTier, knockBackMultiplier, knockBackDirection);
                 player.UseMana(manaUsage);
             }
 
