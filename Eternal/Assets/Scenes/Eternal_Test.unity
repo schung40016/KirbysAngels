@@ -6691,13 +6691,17 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 543450653107234178}
+    - target: {fileID: 897714990798036623, guid: f5feec7d8e7c45a44ae6006c20780442, type: 3}
+      propertyPath: audioPlayList.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 897714991125325573, guid: f5feec7d8e7c45a44ae6006c20780442, type: 3}
       propertyPath: m_Name
       value: Enemy-Grenadier
       objectReference: {fileID: 0}
     - target: {fileID: 897714991125325573, guid: f5feec7d8e7c45a44ae6006c20780442, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 897714991125325574, guid: f5feec7d8e7c45a44ae6006c20780442, type: 3}
       propertyPath: m_RootOrder
@@ -6741,6 +6745,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 897714991125325574, guid: f5feec7d8e7c45a44ae6006c20780442, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4220648929905335092, guid: f5feec7d8e7c45a44ae6006c20780442, type: 3}
+      propertyPath: MaxDistance
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4220648929905335092, guid: f5feec7d8e7c45a44ae6006c20780442, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4220648929905335092, guid: f5feec7d8e7c45a44ae6006c20780442, type: 3}
+      propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -6914,7 +6930,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1377235889868400154, guid: 3a52b78bedd08e04e92d561581249bf9, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a52b78bedd08e04e92d561581249bf9, type: 3}
