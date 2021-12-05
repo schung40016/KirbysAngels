@@ -5,9 +5,6 @@ using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
-    //public GameObject hp_pack;
-    //public GameObject exp_pack;
-
     public HealthBar healthBar;
     public ManaBar manaBar;
     public Text experience;

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnemyStats : MonoBehaviour
 {
@@ -29,6 +30,11 @@ public class EnemyStats : MonoBehaviour
     {
         // Spawn a experience point when killing an enemy.
         Instantiate(expPoint, transform.position, Quaternion.identity).GetComponent<Rigidbody>();
+
+        if (name.Equals("Boss"))
+        {
+            SceneManager.LoadScene("GameEndingScreen");
+        }
 
         Destroy(gameObject);
     }

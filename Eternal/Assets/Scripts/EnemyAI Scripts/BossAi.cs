@@ -8,7 +8,6 @@ public class BossAi : EnemyAI
 
     System.Random r = new System.Random();
 
-
     protected override void AttackPlayer()
     {
         // Make sure enemy stays still when trying to attack player.

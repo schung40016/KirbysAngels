@@ -20,7 +20,7 @@ public class ExperienceShop : MonoBehaviour
 
     [SerializeField] private int healthUpgradeCost = 300;
     [SerializeField] private int damageUpgradeCost = 500;
-    [SerializeField] private int ComboUpgradeCost = 400;
+    [SerializeField] private int comboUpgradeCost = 400;
     [SerializeField] private int manaUpgradeCost = 300;
 
     [SerializeField] private Text hpTier;
@@ -35,10 +35,10 @@ public class ExperienceShop : MonoBehaviour
 
     private void Start()
     {
-        hpTier.text = healthTier.ToString();
-        mnTier.text = manaTier.ToString();
-        cbTier.text = comboTier.ToString();
-        dmgTier.text = damageTier.ToString();
+        hpTier.text = "Health: " + healthTier.ToString();
+        mnTier.text = "Mana: " + manaTier.ToString();
+        cbTier.text = "Speed: " + comboTier.ToString();
+        dmgTier.text = "Damage: " + damageTier.ToString();
     }
     private void Update()
     {
@@ -82,6 +82,7 @@ public class ExperienceShop : MonoBehaviour
             player.healthBar.SetMaxHealth(player.maxHealth);
             SubtractExp(healthTier, healthUpgradeCost);
             healthTier += 1;
+            hpTier.text = "Health: " + healthTier.ToString();
             InitBoss();
             errorMessage.SetActive(false);
         }
@@ -91,11 +92,14 @@ public class ExperienceShop : MonoBehaviour
         }
     }
 
+    // Allows player to upgrade their damage potential.
     public void BuyDamageUpgrade()
     {
-        if (damageTier < 5)
+        if (player.playerExp >= damageTier * 300 && damageTier < 5)
         {
             damageTier += 1;
+            SubtractExp(manaTier, manaUpgradeCost);
+            dmgTier.text = "Damage: " + damageTier.ToString();
             InitBoss();
             errorMessage.SetActive(false);
         }
@@ -105,17 +109,38 @@ public class ExperienceShop : MonoBehaviour
         }
     }
 
-    // Allows player to buy and upgrade their max health.
+    // Allows player to buy and upgrade their max mana.
     public void BuyManaUpgrade()
     {
         if (player.playerExp >= manaTier * 300 && manaTier < 5)
         {
             player.maxMana += 100;
             player.currentMana = player.maxMana;
+            player.manaBar.SetMaxMana(player.maxMana);
             SubtractExp(manaTier, manaUpgradeCost);
             manaTier += 1;
+            mnTier.text = "Mana: " + manaTier.ToString();
             InitBoss();
             errorMessage.SetActive(false);
+        }
+        else
+        {
+            GetException();
+        }
+    }
+
+    // Allows player to buy and upgrade their max speed.
+    public void BuyComboUpgrade()
+    {
+        if (player.playerExp >= comboTier * 300 && comboTier < 5)
+        {
+            playerMovement.UpgradeSpeed(comboTier);
+            SubtractExp(comboTier, comboUpgradeCost);
+            comboTier += 1;
+            cbTier.text = "Speed: " + comboTier.ToString();
+            InitBoss();
+            errorMessage.SetActive(false);
+
         }
         else
         {

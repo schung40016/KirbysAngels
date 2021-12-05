@@ -10,7 +10,6 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private GameObject btnPlay;
     [SerializeField] private GameObject btnQuit;
 
-
     public void StartGame()
     {
         SceneManager.LoadScene("Eternal_Test");

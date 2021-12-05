@@ -21,7 +21,7 @@ public class CustomBullet : MonoBehaviour
 
     public Collider bullCollider;
 
-    private GameObject impactGo;
+    protected GameObject impactGo;
 
     int collisions;
     PhysicMaterial physics_mat;
@@ -44,7 +44,7 @@ public class CustomBullet : MonoBehaviour
         if (maxLifeTime <= 0) Explode();
     }
 
-    private void Explode()
+    protected virtual void Explode()
     {
         if (explosion != null)
         {

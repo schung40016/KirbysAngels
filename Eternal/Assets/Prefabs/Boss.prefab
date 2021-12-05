@@ -704,7 +704,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35a9f240a12d253489d27b89027b173a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 1200
+  health: 1500
   expPoint: {fileID: 3374846963275981117, guid: 01aca4bb0df88ab49948e0c7fce2babd, type: 3}
   hurtClip: {fileID: 8300000, guid: a9ae51ea2e7e30c479aafccf7f1aa058, type: 3}
 --- !u!95 &2596190823362318847

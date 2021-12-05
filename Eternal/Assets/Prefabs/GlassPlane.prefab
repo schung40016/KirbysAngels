@@ -133,7 +133,7 @@ MonoBehaviour:
     m_Bits: 512
   bounciness: 0.8
   useGravity: 1
-  explosionDamage: 15
+  explosionDamage: 30
   explosionRange: 1
   maxCollisions: 1
   maxLifeTime: 2

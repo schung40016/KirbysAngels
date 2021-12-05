@@ -6,11 +6,11 @@ public class PlayerMovement : MonoBehaviour
 {
     // Physics
     [SerializeField] private CharacterController controller;
-    [SerializeField] private float speed = 20.0f;
+    [SerializeField] private float speed = 5.0f;
     [SerializeField] private float gravity = -9.81f;
     [SerializeField] private float jumpHeight = 3f;
     [SerializeField] private Transform groundCheck;
-    [SerializeField] private float groundDistance = 5f;       // 0.4f
+    [SerializeField] private float groundDistance = 10f;       // 0.4f
     [SerializeField] LayerMask groundMask;
 
     Vector3 velocity;
@@ -30,8 +30,12 @@ public class PlayerMovement : MonoBehaviour
     public GameObject hurtB;
     private Transform playerTrans;
     [SerializeField] PlayerController player;
+    private int bulletType = 0;
     [SerializeField] GameObject expShop;
-    private int damageTier; 
+    private int damageTier;
+    private bool isMelee = true;
+    [SerializeField] protected float fowardVelocity = 32.0f;
+    [SerializeField] GameObject[] attackModes;          // Stores all the projectile types that the player can shoot.
 
     // Start is called before the first frame update
     void Awake()
@@ -106,27 +110,47 @@ public class PlayerMovement : MonoBehaviour
                 {
                     case Moves.Punch:
                         animator.SetTrigger("Punch");
+                        isMelee = true;
                         break;
                     case Moves.Kick:
                         animator.SetTrigger("Kick");
+                        isMelee = true;
                         break;
                     case Moves.Uppercut:
                         animator.SetTrigger("UpperCut");
+                        isMelee = true;
                         break;
                     case Moves.Windblast:
-                        Debug.Log("Wind blast");
+                        animator.SetTrigger("Punch");
+                        bulletType = 0;
+                        isMelee = false;
                         break;
                 }
                 StartCoroutine(StopPlayerInput(moveWaitTime));
 
                 damageTier = expShop.GetComponent<ExperienceShop>().GetDamageTier();
 
-                Attack(damage * damageTier, knockBackMultiplier, knockBackDirection);
+                if (isMelee)
+                {
+                    Attack(damage * damageTier, knockBackMultiplier, knockBackDirection);
+                }
+                else
+                {
+                    Shoot(attackModes[bulletType], damageTier);
+                }
+                
                 player.UseMana(manaUsage);
             }
 
             currentComboPriority = 0;
         }
+    }
+
+    void Shoot(GameObject attackMode, int damageMult)
+    {
+        Rigidbody rb = Instantiate(attackMode, transform.position + transform.forward * 2 + transform.up * 2, Quaternion.identity).GetComponent<Rigidbody>();
+        rb.AddForce(transform.forward * fowardVelocity, ForceMode.Impulse);
+        rb.AddForce(transform.up * 0, ForceMode.Impulse);
     }
 
     void ResetTriggers()
@@ -146,7 +170,6 @@ public class PlayerMovement : MonoBehaviour
         // Apply damage.
         foreach (Collider enemy in hitEnemies)
         {
-            Debug.Log("We hit " + enemy.name + " for " + damage + " health points.");
             enemy.GetComponent<EnemyStats>().TakeDamage(damage);
 
             // Handles enemy knock back.
@@ -173,4 +196,8 @@ public class PlayerMovement : MonoBehaviour
         isBlocked = false;
     }
 
+    public void UpgradeSpeed(int multiplier)
+    {
+        this.speed = 5 * multiplier;
+    }
 }
